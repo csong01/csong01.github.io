@@ -3,11 +3,11 @@
   <title>CSONG</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://csong01.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://csong01.github.io/"/>
   <updated>2021-03-29T08:31:17.329Z</updated>
-  <id>http://example.com/</id>
+  <id>https://csong01.github.io/</id>
   
   <author>
     <name>csong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title></title>
-    <link href="http://example.com/2021/04/02/css-ru-men-xue-xi/"/>
-    <id>http://example.com/2021/04/02/css-ru-men-xue-xi/</id>
+    <link href="https://csong01.github.io/2021/04/02/css-ru-men-xue-xi/"/>
+    <id>https://csong01.github.io/2021/04/02/css-ru-men-xue-xi/</id>
     <published>2021-04-02T04:34:27.845Z</published>
     <updated>2021-03-29T08:31:17.329Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title></title>
-    <link href="http://example.com/2021/04/02/xue-xi-bi-ji/"/>
-    <id>http://example.com/2021/04/02/xue-xi-bi-ji/</id>
+    <link href="https://csong01.github.io/2021/04/02/xue-xi-bi-ji/"/>
+    <id>https://csong01.github.io/2021/04/02/xue-xi-bi-ji/</id>
     <published>2021-04-02T04:34:27.842Z</published>
     <updated>2021-03-28T09:23:45.306Z</updated>
     
@@ -62,8 +62,8 @@
   
   <entry>
     <title></title>
-    <link href="http://example.com/2021/04/02/js-ru-men-xue-xi-bi-ji/"/>
-    <id>http://example.com/2021/04/02/js-ru-men-xue-xi-bi-ji/</id>
+    <link href="https://csong01.github.io/2021/04/02/js-ru-men-xue-xi-bi-ji/"/>
+    <id>https://csong01.github.io/2021/04/02/js-ru-men-xue-xi-bi-ji/</id>
     <published>2021-04-02T04:34:13.022Z</published>
     <updated>2021-04-01T07:05:02.396Z</updated>
     
