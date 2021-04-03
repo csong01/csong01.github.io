@@ -26,3 +26,10 @@
 #pagination{
     opacity: 0;
 }
+@font-face{
+    font-family: 'huayuan';
+    src: url('/fonts/huayuan.ttf');
+}
+body{
+    font-family: 'huayuan';
+}
