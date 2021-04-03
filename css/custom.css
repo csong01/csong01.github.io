@@ -36,3 +36,30 @@ body{
 #go-up,#readmode,#darkmode,#rightside_config,#mobile-toc-button,#to_comment,#hide-aside-btn{
     background-color: #535353!important;
 }
+.blog-slider__button,.swiper-pagination-bullet,.swiper-pagination-bullet-active{
+    background-color: #535353!important;
+}
+/* .tk-admin[data-v-45b8c260]::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+.tk-admin[data-v-45b8c260]::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.tk-admin[data-v-45b8c260]::-webkit-scrollbar-thumb {
+    background-color: #ffffff50;
+} */
+/* 滚动条 */
+::-webkit-scrollbar-thumb {
+    background-color: #535353!important;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+}
+::-webkit-scrollbar-track {
+    background-color: #ffffff!important;
+    border-radius: 3em;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 15px;
+}
