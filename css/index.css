@@ -222,7 +222,7 @@ body{
     background-color: #535353!important;
 }
 #sidebar-menus{
-    background: rgba(255,255,255,.8)!important;
+    background: rgba(255,255,255,.9)!important;
 }
 /* 滚动条 */
 ::-webkit-scrollbar-thumb {
@@ -249,20 +249,6 @@ body{
 .item-headline i{
     display: none!important;
 }
-
-#body-wrap{
-    background: transparent!important;
-}
-
-@font-face{
-    font-family: 'pmzdcst';
-    src: url('/fonts/pmzdcst.ttf');
-}
-body{
-    font-family: 'pmzdcst';
-    font-size: large;
-}
-
 .limit-one-line,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-name,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-desc,
