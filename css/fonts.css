@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'pmzdcst';
-    src: url('/fonts/pmzdcst.ttf');
+    src: url('https://cdn.jsdelivr.net/gh/csong01/picgo@master/pmzdcst.ttf');
 }
 body{
     font-family: 'pmzdcst';
