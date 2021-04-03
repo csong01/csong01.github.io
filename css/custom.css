@@ -23,3 +23,6 @@
 #card-info-btn{
     background-color: #535353!important;
   }
+#pagination{
+    opacity: 0;
+}
