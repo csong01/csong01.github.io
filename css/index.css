@@ -206,29 +206,22 @@ template {
 #pagination{
     opacity: 0;
 }
-/* @font-face{
+
+@font-face{
     font-family: 'huayuan';
     src: url('/fonts/huayuan.ttf');
 }
 body{
     font-family: 'huayuan';
-} */
+}
+
 #go-up,#readmode,#darkmode,#rightside_config,#mobile-toc-button,#to_comment,#hide-aside-btn{
     background-color: #535353!important;
 }
 .blog-slider__button,.swiper-pagination-bullet,.swiper-pagination-bullet-active{
     background-color: #535353!important;
 }
-/* .tk-admin[data-v-45b8c260]::-webkit-scrollbar {
-    width: 5px;
-    background-color: transparent;
-}
-.tk-admin[data-v-45b8c260]::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-.tk-admin[data-v-45b8c260]::-webkit-scrollbar-thumb {
-    background-color: #ffffff50;
-} */
+
 /* 滚动条 */
 ::-webkit-scrollbar-thumb {
     background-color: #535353!important;
