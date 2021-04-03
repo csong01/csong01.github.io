@@ -207,13 +207,13 @@ template {
     opacity: 0;
 }
 
-@font-face{
+/* @font-face{
     font-family: 'huayuan';
     src: url('/fonts/huayuan.ttf');
 }
 body{
     font-family: 'huayuan';
-}
+} */
 
 #go-up,#readmode,#darkmode,#rightside_config,#mobile-toc-button,#to_comment,#hide-aside-btn{
     background-color: #535353!important;
@@ -221,7 +221,9 @@ body{
 .blog-slider__button,.swiper-pagination-bullet,.swiper-pagination-bullet-active{
     background-color: #535353!important;
 }
-
+#sidebar-menus{
+    background: rgba(255,255,255,.8)!important;
+}
 /* 滚动条 */
 ::-webkit-scrollbar-thumb {
     background-color: #535353!important;
@@ -235,6 +237,17 @@ body{
 ::-webkit-scrollbar {
     width: 8px;
     height: 15px;
+}
+#site-title,#site-subtitle,#post-meta,.post-meta-categories,.post-title,#menus,#site-name,#footer-wrap{
+    color: #000!important;
+}
+#footer-wrap a{
+    color: #000!important;
+}
+
+/* 公告图标隐藏 */
+.item-headline i{
+    display: none!important;
 }
 
 .limit-one-line,

@@ -1,0 +1,8 @@
+@font-face{
+    font-family: 'pmzdcst';
+    src: url('/fonts/pmzdcst.ttf');
+}
+body{
+    font-family: 'pmzdcst';
+    font-size: large;
+}
