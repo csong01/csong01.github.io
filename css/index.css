@@ -203,17 +203,6 @@ template {
 #card-info-btn{
     background-color: #535353!important;
   }
-/* #pagination{
-    opacity: 0;
-} */
-
-/* @font-face{
-    font-family: 'huayuan';
-    src: url('/fonts/huayuan.ttf');
-}
-body{
-    font-family: 'huayuan';
-} */
 
 #go-up,#readmode,#darkmode,#rightside_config,#mobile-toc-button,#to_comment,#hide-aside-btn{
     background-color: #535353!important;
@@ -255,7 +244,11 @@ body{
 #local-search hr{
     display: none!important;
 }
-
+/* 灰化 */
+html{
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
 .limit-one-line,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-name,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-desc,
