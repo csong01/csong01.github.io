@@ -22,6 +22,69 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML5学习笔记</title>
+    <url>/2021/04/17/html5-xue-xi-bi-ji/</url>
+    <content><![CDATA[<blockquote>
+<p>IE9+以上浏览器兼容</p>
+</blockquote>
+<h2 id="新增的语义化标签"><a href="#新增的语义化标签" class="headerlink" title="新增的语义化标签"></a>新增的语义化标签</h2><pre><code>- 这种语义化标准主要是针对搜索引擎的
+- 这些新标签页面中可以使用多次
+- 在IE9中，需要把这些元素转换为块级元素 display: block
+- 移动端更喜欢使用这些标签
+</code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span> :头部标签
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span>:导航标签
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">></span></span>内容标签
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">></span></span>:定义文档某个区域
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span><span class="token punctuation">></span></span> :侧边栏标签
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">></span></span> :尾部标签
+</code></pre>
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415160729817.png" alt="image-20210415160729817"></p>
+<h2 id="新增的多媒体标签"><a href="#新增的多媒体标签" class="headerlink" title="新增的多媒体标签"></a>新增的多媒体标签</h2><h3 id="1-音频"><a href="#1-音频" class="headerlink" title="1. 音频"></a><strong>1.<audio> 音频</strong></h3><pre><code>当前&lt;audio&gt;元素支持三种视频格式MP3、Wav、Ogg，尽量使用mp3格式。
+</code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>audio</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>文件地址<span class="token punctuation">"</span></span> <span class="token attr-name">controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span> controls<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>&lt;/ audio>
+
+<span class="token comment" spellcheck="true">&lt;!--开发优化--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>audio</span> <span class="token attr-name">controls</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>horse.mp3<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>audio/mpeg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>horse.ogg<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>audio/ogg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  Your browser does not support this audio format.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>audio</span><span class="token punctuation">></span></span>
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415165747670.png" alt="image-20210415165747670"></p>
+<h3 id="2-视频"><a href="#2-视频" class="headerlink" title="2. 视频"></a>2.<video> 视频</h3><pre><code>当前&lt;video&gt;元素支持三种视频格式MP4、WebM、Ogg，尽量使用mp4格式。
+1. controls 属性供添加播放、暂停和音量控件。
+2. &lt;video&gt; 与 &lt;/video&gt; 之间插入的内容是供不支持 video 元素的浏览器显示的。
+</code></pre>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>文件地址<span class="token punctuation">"</span></span> <span class="token attr-name">controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>controls<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">></span></span>
+
+<span class="token comment" spellcheck="true">&lt;!--开发优化--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>controls<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>300<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>move.ogg<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video/ogg<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>souree</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>move.mp4<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video/mp4<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span>
+    您的浏览器暂不支持<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span><span class="token punctuation">></span></span>标签播放视频
+&lt;/ video >
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415164818736.png" alt="image-20210415164818736"></p>
+<h2 id="新增的input类型"><a href="#新增的input类型" class="headerlink" title="新增的input类型"></a>新增的input类型</h2><pre><code>我们验证的时候必须添加form表单域
+</code></pre>
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415170217357.png" alt="image-20210415170217357"></p>
+<h2 id="新增的表单属性"><a href="#新增的表单属性" class="headerlink" title="新增的表单属性"></a>新增的表单属性</h2><pre><code>我们验证的时候必须添加form表单域
+</code></pre>
+<pre><code>input::placeholder&#123;
+        color: pink;
+&#125;
+</code></pre>
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415171352091.png" alt="image-20210415171352091"></p>
+]]></content>
+      <categories>
+        <category>前端笔记</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSS入门学习笔记</title>
     <url>/2021/04/03/css-ru-men-xue-xi/</url>
     <content><![CDATA[<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><h3 id="（1）元素选择器"><a href="#（1）元素选择器" class="headerlink" title="（1）元素选择器"></a>（1）元素选择器</h3> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/f7afcbdda1aa6gga07a3b59g.png" alt="f7afcbdda1aa6gga07a3b59g"  />
@@ -298,66 +361,27 @@ border-color: red;
       </tags>
   </entry>
   <entry>
-    <title>HTML5学习笔记</title>
-    <url>/2021/04/17/html5-xue-xi-bi-ji/</url>
+    <title>一次学习中的崩溃经历</title>
+    <url>/2021/04/03/yi-ci-xue-xi-zhong-de-beng-kui-jing-li/</url>
     <content><![CDATA[<blockquote>
-<p>IE9+以上浏览器兼容</p>
+<p>这是大一上学期临近期末考试，自己每天早出晚归独自学习的一次崩溃经历。</p>
 </blockquote>
-<h2 id="新增的语义化标签"><a href="#新增的语义化标签" class="headerlink" title="新增的语义化标签"></a>新增的语义化标签</h2><pre><code>- 这种语义化标准主要是针对搜索引擎的
-- 这些新标签页面中可以使用多次
-- 在IE9中，需要把这些元素转换为块级元素 display: block
-- 移动端更喜欢使用这些标签
-</code></pre>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span> :头部标签
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span><span class="token punctuation">></span></span>:导航标签
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">></span></span>内容标签
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span><span class="token punctuation">></span></span>:定义文档某个区域
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span><span class="token punctuation">></span></span> :侧边栏标签
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">></span></span> :尾部标签
-</code></pre>
-<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415160729817.png" alt="image-20210415160729817"></p>
-<h2 id="新增的多媒体标签"><a href="#新增的多媒体标签" class="headerlink" title="新增的多媒体标签"></a>新增的多媒体标签</h2><h3 id="1-音频"><a href="#1-音频" class="headerlink" title="1. 音频"></a><strong>1.<audio> 音频</strong></h3><pre><code>当前&lt;audio&gt;元素支持三种视频格式MP3、Wav、Ogg，尽量使用mp3格式。
-</code></pre>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>audio</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>文件地址<span class="token punctuation">"</span></span> <span class="token attr-name">controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span> controls<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>&lt;/ audio>
-
-<span class="token comment" spellcheck="true">&lt;!--开发优化--></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>audio</span> <span class="token attr-name">controls</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>horse.mp3<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>audio/mpeg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>horse.ogg<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>audio/ogg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  Your browser does not support this audio format.
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>audio</span><span class="token punctuation">></span></span>
-</code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415165747670.png" alt="image-20210415165747670"></p>
-<h3 id="2-视频"><a href="#2-视频" class="headerlink" title="2. 视频"></a>2.<video> 视频</h3><pre><code>当前&lt;video&gt;元素支持三种视频格式MP4、WebM、Ogg，尽量使用mp4格式。
-1. controls 属性供添加播放、暂停和音量控件。
-2. &lt;video&gt; 与 &lt;/video&gt; 之间插入的内容是供不支持 video 元素的浏览器显示的。
-</code></pre>
-<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>文件地址<span class="token punctuation">"</span></span> <span class="token attr-name">controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>controls<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">></span></span>
-
-<span class="token comment" spellcheck="true">&lt;!--开发优化--></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">controls</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>controls<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>300<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>move.ogg<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video/ogg<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>souree</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>move.mp4<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video/mp4<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span>
-    您的浏览器暂不支持<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span><span class="token punctuation">></span></span>标签播放视频
-&lt;/ video >
-</code></pre>
-<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415164818736.png" alt="image-20210415164818736"></p>
-<h2 id="新增的input类型"><a href="#新增的input类型" class="headerlink" title="新增的input类型"></a>新增的input类型</h2><pre><code>我们验证的时候必须添加form表单域
-</code></pre>
-<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415170217357.png" alt="image-20210415170217357"></p>
-<h2 id="新增的表单属性"><a href="#新增的表单属性" class="headerlink" title="新增的表单属性"></a>新增的表单属性</h2><pre><code>我们验证的时候必须添加form表单域
-</code></pre>
-<pre><code>input::placeholder&#123;
-        color: pink;
-&#125;
-</code></pre>
-<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415171352091.png" alt="image-20210415171352091"></p>
+<p>今天我很难受，有一点抑郁，就是很茫然，不知道要做什么，确实我有很多任务要去完成，但就是不想做，没有任何想去做的欲望和动力。呼吸好像也很沉重迟缓，头脑有似曾相识的放空感。我也不知道该说什么了，懒得去写了。</p>
+<p>我到底想要什么呢？想做什么呢？不知道。是打篮球？做程序题？画画？看电影？打游戏？找APP？好像都没有兴趣了。我到底该做些什么呢？</p>
+<p>期末考试要到了，可以说明天考英语口语，我有些担心，但事实上这并没有那么重要，而且精心准备或许还是被束缚在条条框框里。那个高数期末考试也要来了，这本书看起来很简单，就是说极限和微积分的，考的题目大都一样。但为什么我就是不能写出来或是很快写出来呢？内容并没有那么多啊，为什么？<br>再说说程序设计，它也就是那样，看懂，记住，做经典题型也就没有什么东西了，但什么但，我不知道。但我做得很慢，而且很明显，我有一些不懂，没记住。</p>
+<p>这都是让我烦心的事，我却没有任何动力去一个一个地解决。为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么？我在凑字数吗？可能吧。</p>
+<p>所以，我现在该做什么呢？</p>
+<p>刚才看了闻香识女人的劝说片段，感觉好了很多，很理解中校的心情，失去珍贵的一切，而又孤独一人，确实没有什么值得再留恋的。<br>跳探戈和开法拉利很帅。<br>这是他那一瞬间活下去的唯一理由，我又想到了在暑假时对人生意义的思考了，人生短短，人生苦长，人生又有什么意义呢？支持我们无意义人生存在的是什么呢？可能就是自己喜欢的人或东西上了吧。<br>烦心了就跳探戈。<br>跳探戈时很自豪很快乐，心中没有无尽的苦恼，而且身边又有佳人为伴。</p>
+<p>所以快乐，喜悦，兴奋是那份支持的感觉吧。现在想到复习高数和程序设计就有很大的厌烦和不情愿，这可能就是我之前做了那么多的学习方案却没有任何作用的原因了吧。</p>
+<p>对学习的热爱可以基本满足学好的要素。<br>热爱学习，自然愿意投入大量时间。<br>热爱学习，自然愿意迎接挑战。<br>热爱学习，自然不会被其他的事物给分散注意力。<br>热爱学习，自然能形成正反馈。<br>热爱学习，自然能有一种一切尽在掌握之中的感觉。<br>总之，我离学习好和爱学习只差一步了——找到我爱学习的理由，以及如何真正地爱上学习。</p>
+<p>好的。</p>
 ]]></content>
       <categories>
-        <category>前端笔记</category>
+        <category>思考记录</category>
       </categories>
       <tags>
-        <tag>HTML5</tag>
+        <tag>大学</tag>
+        <tag>困扰</tag>
       </tags>
   </entry>
   <entry>
@@ -520,30 +544,6 @@ border-color: red;
       </tags>
   </entry>
   <entry>
-    <title>一次学习中的崩溃经历</title>
-    <url>/2021/04/03/yi-ci-xue-xi-zhong-de-beng-kui-jing-li/</url>
-    <content><![CDATA[<blockquote>
-<p>这是大一上学期临近期末考试，自己每天早出晚归独自学习的一次崩溃经历。</p>
-</blockquote>
-<p>今天我很难受，有一点抑郁，就是很茫然，不知道要做什么，确实我有很多任务要去完成，但就是不想做，没有任何想去做的欲望和动力。呼吸好像也很沉重迟缓，头脑有似曾相识的放空感。我也不知道该说什么了，懒得去写了。</p>
-<p>我到底想要什么呢？想做什么呢？不知道。是打篮球？做程序题？画画？看电影？打游戏？找APP？好像都没有兴趣了。我到底该做些什么呢？</p>
-<p>期末考试要到了，可以说明天考英语口语，我有些担心，但事实上这并没有那么重要，而且精心准备或许还是被束缚在条条框框里。那个高数期末考试也要来了，这本书看起来很简单，就是说极限和微积分的，考的题目大都一样。但为什么我就是不能写出来或是很快写出来呢？内容并没有那么多啊，为什么？<br>再说说程序设计，它也就是那样，看懂，记住，做经典题型也就没有什么东西了，但什么但，我不知道。但我做得很慢，而且很明显，我有一些不懂，没记住。</p>
-<p>这都是让我烦心的事，我却没有任何动力去一个一个地解决。为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么？我在凑字数吗？可能吧。</p>
-<p>所以，我现在该做什么呢？</p>
-<p>刚才看了闻香识女人的劝说片段，感觉好了很多，很理解中校的心情，失去珍贵的一切，而又孤独一人，确实没有什么值得再留恋的。<br>跳探戈和开法拉利很帅。<br>这是他那一瞬间活下去的唯一理由，我又想到了在暑假时对人生意义的思考了，人生短短，人生苦长，人生又有什么意义呢？支持我们无意义人生存在的是什么呢？可能就是自己喜欢的人或东西上了吧。<br>烦心了就跳探戈。<br>跳探戈时很自豪很快乐，心中没有无尽的苦恼，而且身边又有佳人为伴。</p>
-<p>所以快乐，喜悦，兴奋是那份支持的感觉吧。现在想到复习高数和程序设计就有很大的厌烦和不情愿，这可能就是我之前做了那么多的学习方案却没有任何作用的原因了吧。</p>
-<p>对学习的热爱可以基本满足学好的要素。<br>热爱学习，自然愿意投入大量时间。<br>热爱学习，自然愿意迎接挑战。<br>热爱学习，自然不会被其他的事物给分散注意力。<br>热爱学习，自然能形成正反馈。<br>热爱学习，自然能有一种一切尽在掌握之中的感觉。<br>总之，我离学习好和爱学习只差一步了——找到我爱学习的理由，以及如何真正地爱上学习。</p>
-<p>好的。</p>
-]]></content>
-      <categories>
-        <category>思考记录</category>
-      </categories>
-      <tags>
-        <tag>大学</tag>
-        <tag>困扰</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>也入一场辩论赛</title>
     <url>/2021/04/03/ye-ru-yi-chang-bian-lun-sai/</url>
     <content><![CDATA[<blockquote>
@@ -633,29 +633,6 @@ border-color: red;
       </tags>
   </entry>
   <entry>
-    <title>给可爱的小朋友的一封信</title>
-    <url>/2021/04/03/gei-ke-ai-de-xiao-peng-you-de-yi-feng-xin/</url>
-    <content><![CDATA[<blockquote>
-<p>这篇文章是大学学校给“特殊”小朋友的征文活动写的，没有敷衍混学时，写的是自己的真实想法。</p>
-</blockquote>
-<p>因为我想要给特殊儿童关爱和祝福，所以我选择了参与这个活动。虽然一开始是想要做个手工当你们的玩具，但想了想你们可能最需要的不是玩具，所以我就写了这封信，写下自己想要对你们说的话。</p>
-<p>首先呢，关于特殊儿童这个词，我一开始不是很明白，我想是不是有什么特长而特殊呢，但仔细一想既然需要关爱和祝福，可能就不是这样了。其实对于我来说，这个世界上的每一个人真的没有什么特殊的，只是不同罢了。他选择了一个别人都不建议的行业是特殊吗？只不过就是根据他自己的想法做自己想做的事。我时常在自己的心里告诉自己，在某些事上，我也会成为别人眼中的特殊，遭到特殊的对待，所以我更应该从对方的角度看问题，尊重别人的想法。总而言之，没有什么特殊的。</p>
-<p>然后是关于我自己的经历了。小时候，我的家庭就不和睦，没有父母在身边，一个人在外住校学习，自己也不喜欢和别人说太多话，只想做好自己的事。基本上没有人会关心和理解我的感受，但其实我并不在乎，我只觉得更加自由自在，能专心做一件事就已经足够了。但偶尔我也会感到难过无比，特别是家长会的时候，我只能做自己的家长。我还记得自己打电话告诉妈妈家长会的事，我明明知道她远在千里之外辛苦工作根本没有可能参加，但我就是想要打那个电话，心里想着我能不能也能骄傲地看着自己家长会上的父母，让他们知道我付出了多少的努力，在多少的痛苦孤独的时光中不断进步，成绩名列前茅。但现实就是现实，她只是说知道了，然后就不知道说什么了，我也明白她的为难，只能在哭出声前挂了电话，回到寝室一个人愤怒地锤铁柜子，哭得稀里哗啦。</p>
-<p>但现在我不会再这样了，为什么呢？因为我已经长大了，成为一个男子汉，我不能再在没有实际作用的事上去浪费时间，我必须不断努力，向着自己的目标前进，在别人都在熟睡的时间去学习新技能，为了将来能多赚一点钱。我时常问自己，如果我找到了自己喜欢的人，在她也喜欢我的情况下，如果我没有能力让她让孩子过上幸福的生活，我还算是什么男人呢？我现在的小小肩膀能够承担得起家庭的重担吗？</p>
-<p>我说这些事并不为了回顾自己的过去，我只想告诉你们，不管是男孩还是女孩，不管你有多么特殊，在我眼里都只是不同，我会为你的痛苦经历而感到伤心，但如果你只是沉浸在悲伤之中，我只会认为你是是个懦弱的人，没有尊严的人。</p>
-<p>在你们这样宝贵的年纪里，有无限的可能性。总有人说自己已经努力了，但结果就是这样，我也无可奈何，这都是命，我的努力又能改变什么呢？我的亲身经历让我明白，这些人并没有真正地努力，因为每个人的条件不同，引起质变的努力也不同，如果你真的有勇气，相信自己，愿意做任何的尝试，放弃许多东西，你就一定可以。如果你虽然努力坚持，但在内心深处仍然悄悄地告诉自己不可能的话，虽然你会进步许多，但仍不会达到最初的目标。</p>
-<p>我不懂得如何安慰和关心别人，因为我也从不安慰和关心自己，认真做事，严格要求，不断思考，是我唯一会做的事。</p>
-<p>祝你开心。</p>
-]]></content>
-      <categories>
-        <category>思考记录</category>
-      </categories>
-      <tags>
-        <tag>大学</tag>
-        <tag>人生</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>已选择的路</title>
     <url>/2021/04/12/yi-xuan-ze-de-lu/</url>
     <content><![CDATA[<blockquote>
@@ -709,6 +686,29 @@ border-color: red;
       </categories>
       <tags>
         <tag>大学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给可爱的小朋友的一封信</title>
+    <url>/2021/04/03/gei-ke-ai-de-xiao-peng-you-de-yi-feng-xin/</url>
+    <content><![CDATA[<blockquote>
+<p>这篇文章是大学学校给“特殊”小朋友的征文活动写的，没有敷衍混学时，写的是自己的真实想法。</p>
+</blockquote>
+<p>因为我想要给特殊儿童关爱和祝福，所以我选择了参与这个活动。虽然一开始是想要做个手工当你们的玩具，但想了想你们可能最需要的不是玩具，所以我就写了这封信，写下自己想要对你们说的话。</p>
+<p>首先呢，关于特殊儿童这个词，我一开始不是很明白，我想是不是有什么特长而特殊呢，但仔细一想既然需要关爱和祝福，可能就不是这样了。其实对于我来说，这个世界上的每一个人真的没有什么特殊的，只是不同罢了。他选择了一个别人都不建议的行业是特殊吗？只不过就是根据他自己的想法做自己想做的事。我时常在自己的心里告诉自己，在某些事上，我也会成为别人眼中的特殊，遭到特殊的对待，所以我更应该从对方的角度看问题，尊重别人的想法。总而言之，没有什么特殊的。</p>
+<p>然后是关于我自己的经历了。小时候，我的家庭就不和睦，没有父母在身边，一个人在外住校学习，自己也不喜欢和别人说太多话，只想做好自己的事。基本上没有人会关心和理解我的感受，但其实我并不在乎，我只觉得更加自由自在，能专心做一件事就已经足够了。但偶尔我也会感到难过无比，特别是家长会的时候，我只能做自己的家长。我还记得自己打电话告诉妈妈家长会的事，我明明知道她远在千里之外辛苦工作根本没有可能参加，但我就是想要打那个电话，心里想着我能不能也能骄傲地看着自己家长会上的父母，让他们知道我付出了多少的努力，在多少的痛苦孤独的时光中不断进步，成绩名列前茅。但现实就是现实，她只是说知道了，然后就不知道说什么了，我也明白她的为难，只能在哭出声前挂了电话，回到寝室一个人愤怒地锤铁柜子，哭得稀里哗啦。</p>
+<p>但现在我不会再这样了，为什么呢？因为我已经长大了，成为一个男子汉，我不能再在没有实际作用的事上去浪费时间，我必须不断努力，向着自己的目标前进，在别人都在熟睡的时间去学习新技能，为了将来能多赚一点钱。我时常问自己，如果我找到了自己喜欢的人，在她也喜欢我的情况下，如果我没有能力让她让孩子过上幸福的生活，我还算是什么男人呢？我现在的小小肩膀能够承担得起家庭的重担吗？</p>
+<p>我说这些事并不为了回顾自己的过去，我只想告诉你们，不管是男孩还是女孩，不管你有多么特殊，在我眼里都只是不同，我会为你的痛苦经历而感到伤心，但如果你只是沉浸在悲伤之中，我只会认为你是是个懦弱的人，没有尊严的人。</p>
+<p>在你们这样宝贵的年纪里，有无限的可能性。总有人说自己已经努力了，但结果就是这样，我也无可奈何，这都是命，我的努力又能改变什么呢？我的亲身经历让我明白，这些人并没有真正地努力，因为每个人的条件不同，引起质变的努力也不同，如果你真的有勇气，相信自己，愿意做任何的尝试，放弃许多东西，你就一定可以。如果你虽然努力坚持，但在内心深处仍然悄悄地告诉自己不可能的话，虽然你会进步许多，但仍不会达到最初的目标。</p>
+<p>我不懂得如何安慰和关心别人，因为我也从不安慰和关心自己，认真做事，严格要求，不断思考，是我唯一会做的事。</p>
+<p>祝你开心。</p>
+]]></content>
+      <categories>
+        <category>思考记录</category>
+      </categories>
+      <tags>
+        <tag>大学</tag>
+        <tag>人生</tag>
       </tags>
   </entry>
   <entry>
