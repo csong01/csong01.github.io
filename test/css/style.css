@@ -1,0 +1,221 @@
+body {
+  background-color: #f2f2f2;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.fa fa-arrow-up {
+  color: #1fa67a;
+}
+#totop {
+  position: fixed;
+  right: 7.5%;
+  bottom: -100px;
+  z-index: 2;
+  overflow: auto;
+  width: 54px;
+  height: 54px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  background-color: #000;
+  background-position: 0 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+}
+#sma {
+  background: #000;
+  width: 38px;
+  height: 38px;
+  display: block;
+  position: fixed;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 170px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 998;
+  cursor: pointer;
+}
+#sma .fa-moon-o {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  font-size: 1.48rem !important;
+}
+#sma .fa-lightbulb-o {
+  position: absolute;
+  right: 13px;
+  bottom: 8px;
+  font-size: 1.5rem !important;
+}
+.fa-moon-o:before {
+  content: '\f186';
+}
+.fa-comments:before {
+  content: '\f086';
+}
+body.dark .fas,
+body.dark .title,
+body.dark .row .text,
+body.dark article .article-content .summary,
+body.dark .card .card-image .card-title,
+body.dark .fa-moon-o:before,
+body.dark .fa-lightbulb-o:before,
+body.dark article .article-tags .chip,
+body.dark .chip-container .tag-title,
+body.dark div.jqcloud a,
+body.dark .friends-container .tag-title,
+body.dark .frind-ship .title h1,
+body.dark .card .card-content p,
+body.dark .v[data-class=v] .vcount,
+body.dark .v[data-class=v] .vcount .vnum,
+body.dark pre code,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark li,
+body.dark p,
+body.dark header .side-nav .mobile-head .logo-name,
+body.dark header .side-nav .mobile-head .logo-desc,
+body.dark header .side-nav .menu-list a,
+body.dark .bg-cover .post-title,
+body.dark a {
+  color: rgba(255,255,255,0.6);
+}
+body.dark .card,
+body.dark .block-with-text:after {
+  background-color: #282c34;
+}
+body.dark,
+body.dark .v[data-class=v] .vcount,
+body.dark #rewardModal .modal-content,
+body.dark .modal,
+body.dark header .side-nav,
+body.dark header .side-nav .menu-list .m-nav-show {
+  background-color: #12121c;
+}
+body.dark .aplayer {
+  background: #2f3742 !important;
+}
+body.dark img,
+body.dark strong {
+  filter: brightness(0.7);
+}
+.search-pop-overlay {
+  background: rgba(0,0,0,0.3);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1400;
+}
+.search-popup {
+  background: #fff;
+  border-radius: 5px;
+  color: #333;
+  display: none;
+  height: 80%;
+  left: 50%;
+  margin-left: -350px;
+  padding: 0;
+  position: fixed;
+  top: 15%;
+  width: 700px;
+  z-index: 1500;
+}
+@media (max-width: 767px) {
+  .search-popup {
+    border-radius: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    top: 50px;
+    width: 100%;
+  }
+}
+.search-popup .popup-btn-close,
+.search-popup .search-icon {
+  color: #999;
+  font-size: 18px;
+  height: 36px;
+  padding-right: 10px;
+  width: 18px;
+}
+.search-popup .popup-btn-close {
+  border-left: 1px solid #eee;
+  cursor: pointer;
+  float: right;
+}
+.search-popup .popup-btn-close:hover .fa {
+  color: #222;
+}
+.search-popup .search-header {
+  background: #f5f5f5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px;
+}
+.search-loading-icon {
+  margin: 20% auto 0 auto;
+  text-align: center;
+}
+.search-popup ul.search-result-list {
+  margin: 0 5px;
+  padding: 0;
+}
+.search-popup p.search-result {
+  border-bottom: 1px dashed #ccc;
+  padding: 5px 0;
+}
+.search-popup a.search-result-title {
+  font-weight: 700;
+}
+.search-popup .search-keyword {
+  border-bottom: 1px dashed #ff2a2a;
+  color: #ff2a2a;
+  font-weight: 700;
+}
+.search-popup #search-result {
+  height: calc(100% - 55px);
+  overflow: auto;
+  padding: 5px 25px;
+  position: relative;
+}
+.search-popup .search-input-container {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  width: calc(100% - 90px);
+}
+.search-popup .search-input-container input {
+  background: 0 0;
+  border: 0;
+  display: block;
+  height: 20px;
+  outline: 0;
+  padding: 8px 0;
+  vertical-align: middle;
+  width: 100%;
+}
+.search-popup #no-result {
+  color: #ccc;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
