@@ -85,6 +85,189 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML入门学习笔记</title>
+    <url>/2021/04/03/html-ru-men-xue-xi-bi-ji/</url>
+    <content><![CDATA[<blockquote>
+<p>对功能模块代码进行注释尤为重要</p>
+</blockquote>
+<blockquote>
+<h2 id="文字标签"><a href="#文字标签" class="headerlink" title="文字标签"></a>文字标签</h2><table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">语义</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">strong</td>
+<td align="left">strong（强调）</td>
+<td align="left">粗体</td>
+</tr>
+<tr>
+<td align="left">em</td>
+<td align="left">emphasized（强调）</td>
+<td align="left">斜体</td>
+</tr>
+<tr>
+<td align="left">sup</td>
+<td align="left">superscripted（上标）</td>
+<td align="left">上标</td>
+</tr>
+<tr>
+<td align="left">sub</td>
+<td align="left">subscripted（下标）</td>
+<td align="left">下标</td>
+</tr>
+</tbody></table>
+<h2 id="自闭合标签"><a href="#自闭合标签" class="headerlink" title="自闭合标签"></a>自闭合标签</h2><table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><meta /></td>
+<td align="left">定义网页的信息（供搜索引擎查看）</td>
+</tr>
+<tr>
+<td align="left"><link /></td>
+<td align="left">引入“外部CSS文件”</td>
+</tr>
+<tr>
+<td align="left"><br /></td>
+<td align="left">换行标签</td>
+</tr>
+<tr>
+<td align="left"><hr /></td>
+<td align="left">水平线标签</td>
+</tr>
+<tr>
+<td align="left"><img /></td>
+<td align="left">图片标签</td>
+</tr>
+<tr>
+<td align="left"><input /></td>
+<td align="left">表单标签</td>
+</tr>
+</tbody></table>
+<h2 id="有序列表标签"><a href="#有序列表标签" class="headerlink" title="有序列表标签"></a>有序列表标签</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>属性值<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+&lt;/ol
+</code></pre>
+<h2 id="无序列表标签"><a href="#无序列表标签" class="headerlink" title="无序列表标签"></a>无序列表标签</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
+</code></pre>
+<h2 id="定义列表标签"><a href="#定义列表标签" class="headerlink" title="定义列表标签"></a>定义列表标签</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>HTML<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>制作网页的标准语言，控制网页的结构<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>CSS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>层叠样式表，控制网页的样式<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>JavaScript<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>脚本语言，控制网页的行为<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">></span></span>
+</code></pre>
+<h2 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h2><blockquote>
+<p>完整语义化及合并行列的用法</p>
+</blockquote>
+<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>编程题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">
+        table,tr,td&amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span><span class="token property">border</span><span class="token punctuation">:</span><span class="token number">1</span>px solid silver<span class="token punctuation">;</span>&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>caption</span><span class="token punctuation">></span></span>学生成绩表<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>caption</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>姓名<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>性别<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>成绩<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>张三<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>男<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>250<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>李四<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>男<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>520<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tfoot</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>平均分<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">colspan</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>385<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tfoot</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<blockquote>
+<p>效果图 </p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/QQ%E6%88%AA%E5%9B%BE20210328152741.png"></p>
+<h2 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/2.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/3.gif<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>                
+</code></pre>
+<h2 id="a标签-超链接"><a href="#a标签-超链接" class="headerlink" title="a标签(超链接)"></a>a标签(超链接)</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.lvyestudy.com<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>_blank<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>绿叶学习网<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+</code></pre>
+<h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><p>单选框，多选框的Name属性不要忘。暂时可以用该代码来调整位置。</p>
+<pre class=" language-html"><code class="language-html"><span class="token entity" title="&nbsp;">&amp;nbsp;</span>
+</code></pre>
+</blockquote>
+]]></content>
+      <categories>
+        <category>前端笔记</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一次学习中的崩溃经历</title>
+    <url>/2021/04/03/yi-ci-xue-xi-zhong-de-beng-kui-jing-li/</url>
+    <content><![CDATA[<blockquote>
+<p>这是大一上学期临近期末考试，自己每天早出晚归独自学习的一次崩溃经历。</p>
+</blockquote>
+<p>今天我很难受，有一点抑郁，就是很茫然，不知道要做什么，确实我有很多任务要去完成，但就是不想做，没有任何想去做的欲望和动力。呼吸好像也很沉重迟缓，头脑有似曾相识的放空感。我也不知道该说什么了，懒得去写了。</p>
+<p>我到底想要什么呢？想做什么呢？不知道。是打篮球？做程序题？画画？看电影？打游戏？找APP？好像都没有兴趣了。我到底该做些什么呢？</p>
+<p>期末考试要到了，可以说明天考英语口语，我有些担心，但事实上这并没有那么重要，而且精心准备或许还是被束缚在条条框框里。那个高数期末考试也要来了，这本书看起来很简单，就是说极限和微积分的，考的题目大都一样。但为什么我就是不能写出来或是很快写出来呢？内容并没有那么多啊，为什么？<br>再说说程序设计，它也就是那样，看懂，记住，做经典题型也就没有什么东西了，但什么但，我不知道。但我做得很慢，而且很明显，我有一些不懂，没记住。</p>
+<p>这都是让我烦心的事，我却没有任何动力去一个一个地解决。为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么？我在凑字数吗？可能吧。</p>
+<p>所以，我现在该做什么呢？</p>
+<p>刚才看了闻香识女人的劝说片段，感觉好了很多，很理解中校的心情，失去珍贵的一切，而又孤独一人，确实没有什么值得再留恋的。<br>跳探戈和开法拉利很帅。<br>这是他那一瞬间活下去的唯一理由，我又想到了在暑假时对人生意义的思考了，人生短短，人生苦长，人生又有什么意义呢？支持我们无意义人生存在的是什么呢？可能就是自己喜欢的人或东西上了吧。<br>烦心了就跳探戈。<br>跳探戈时很自豪很快乐，心中没有无尽的苦恼，而且身边又有佳人为伴。</p>
+<p>所以快乐，喜悦，兴奋是那份支持的感觉吧。现在想到复习高数和程序设计就有很大的厌烦和不情愿，这可能就是我之前做了那么多的学习方案却没有任何作用的原因了吧。</p>
+<p>对学习的热爱可以基本满足学好的要素。<br>热爱学习，自然愿意投入大量时间。<br>热爱学习，自然愿意迎接挑战。<br>热爱学习，自然不会被其他的事物给分散注意力。<br>热爱学习，自然能形成正反馈。<br>热爱学习，自然能有一种一切尽在掌握之中的感觉。<br>总之，我离学习好和爱学习只差一步了——找到我爱学习的理由，以及如何真正地爱上学习。</p>
+<p>好的。</p>
+]]></content>
+      <categories>
+        <category>思考记录</category>
+      </categories>
+      <tags>
+        <tag>大学</tag>
+        <tag>困扰</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSS入门学习笔记</title>
     <url>/2021/04/03/css-ru-men-xue-xi/</url>
     <content><![CDATA[<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><h3 id="（1）元素选择器"><a href="#（1）元素选择器" class="headerlink" title="（1）元素选择器"></a>（1）元素选择器</h3> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/f7afcbdda1aa6gga07a3b59g.png" alt="f7afcbdda1aa6gga07a3b59g"  />
@@ -361,189 +544,6 @@ border-color: red;
       </tags>
   </entry>
   <entry>
-    <title>HTML入门学习笔记</title>
-    <url>/2021/04/03/html-ru-men-xue-xi-bi-ji/</url>
-    <content><![CDATA[<blockquote>
-<p>对功能模块代码进行注释尤为重要</p>
-</blockquote>
-<blockquote>
-<h2 id="文字标签"><a href="#文字标签" class="headerlink" title="文字标签"></a>文字标签</h2><table>
-<thead>
-<tr>
-<th align="left">标签</th>
-<th align="left">语义</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">strong</td>
-<td align="left">strong（强调）</td>
-<td align="left">粗体</td>
-</tr>
-<tr>
-<td align="left">em</td>
-<td align="left">emphasized（强调）</td>
-<td align="left">斜体</td>
-</tr>
-<tr>
-<td align="left">sup</td>
-<td align="left">superscripted（上标）</td>
-<td align="left">上标</td>
-</tr>
-<tr>
-<td align="left">sub</td>
-<td align="left">subscripted（下标）</td>
-<td align="left">下标</td>
-</tr>
-</tbody></table>
-<h2 id="自闭合标签"><a href="#自闭合标签" class="headerlink" title="自闭合标签"></a>自闭合标签</h2><table>
-<thead>
-<tr>
-<th align="left">标签</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><meta /></td>
-<td align="left">定义网页的信息（供搜索引擎查看）</td>
-</tr>
-<tr>
-<td align="left"><link /></td>
-<td align="left">引入“外部CSS文件”</td>
-</tr>
-<tr>
-<td align="left"><br /></td>
-<td align="left">换行标签</td>
-</tr>
-<tr>
-<td align="left"><hr /></td>
-<td align="left">水平线标签</td>
-</tr>
-<tr>
-<td align="left"><img /></td>
-<td align="left">图片标签</td>
-</tr>
-<tr>
-<td align="left"><input /></td>
-<td align="left">表单标签</td>
-</tr>
-</tbody></table>
-<h2 id="有序列表标签"><a href="#有序列表标签" class="headerlink" title="有序列表标签"></a>有序列表标签</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>属性值<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-&lt;/ol
-</code></pre>
-<h2 id="无序列表标签"><a href="#无序列表标签" class="headerlink" title="无序列表标签"></a>无序列表标签</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>列表项<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">></span></span>
-</code></pre>
-<h2 id="定义列表标签"><a href="#定义列表标签" class="headerlink" title="定义列表标签"></a>定义列表标签</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>HTML<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>制作网页的标准语言，控制网页的结构<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>CSS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>层叠样式表，控制网页的样式<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">></span></span>JavaScript<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">></span></span>脚本语言，控制网页的行为<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">></span></span>
-</code></pre>
-<h2 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h2><blockquote>
-<p>完整语义化及合并行列的用法</p>
-</blockquote>
-<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>编程题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style language-css">
-        table,tr,td&amp;<span class="token hexcode">#123</span><span class="token punctuation">;</span><span class="token property">border</span><span class="token punctuation">:</span><span class="token number">1</span>px solid silver<span class="token punctuation">;</span>&amp;<span class="token hexcode">#125</span><span class="token punctuation">;</span>
-    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>caption</span><span class="token punctuation">></span></span>学生成绩表<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>caption</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>thead</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>姓名<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>性别<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">></span></span>成绩<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>thead</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tbody</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>张三<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>男<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>250<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>李四<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>男<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>520<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tbody</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tfoot</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">></span></span>平均分<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span> <span class="token attr-name">colspan</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>385<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">></span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">></span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tfoot</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
-</code></pre>
-<blockquote>
-<p>效果图 </p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/QQ%E6%88%AA%E5%9B%BE20210328152741.png"></p>
-<h2 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/2.png<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img/3.gif<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>                
-</code></pre>
-<h2 id="a标签-超链接"><a href="#a标签-超链接" class="headerlink" title="a标签(超链接)"></a>a标签(超链接)</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://www.lvyestudy.com<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>_blank<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>绿叶学习网<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
-</code></pre>
-<h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><p>单选框，多选框的Name属性不要忘。暂时可以用该代码来调整位置。</p>
-<pre class=" language-html"><code class="language-html"><span class="token entity" title="&nbsp;">&amp;nbsp;</span>
-</code></pre>
-</blockquote>
-]]></content>
-      <categories>
-        <category>前端笔记</category>
-      </categories>
-      <tags>
-        <tag>html</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一次学习中的崩溃经历</title>
-    <url>/2021/04/03/yi-ci-xue-xi-zhong-de-beng-kui-jing-li/</url>
-    <content><![CDATA[<blockquote>
-<p>这是大一上学期临近期末考试，自己每天早出晚归独自学习的一次崩溃经历。</p>
-</blockquote>
-<p>今天我很难受，有一点抑郁，就是很茫然，不知道要做什么，确实我有很多任务要去完成，但就是不想做，没有任何想去做的欲望和动力。呼吸好像也很沉重迟缓，头脑有似曾相识的放空感。我也不知道该说什么了，懒得去写了。</p>
-<p>我到底想要什么呢？想做什么呢？不知道。是打篮球？做程序题？画画？看电影？打游戏？找APP？好像都没有兴趣了。我到底该做些什么呢？</p>
-<p>期末考试要到了，可以说明天考英语口语，我有些担心，但事实上这并没有那么重要，而且精心准备或许还是被束缚在条条框框里。那个高数期末考试也要来了，这本书看起来很简单，就是说极限和微积分的，考的题目大都一样。但为什么我就是不能写出来或是很快写出来呢？内容并没有那么多啊，为什么？<br>再说说程序设计，它也就是那样，看懂，记住，做经典题型也就没有什么东西了，但什么但，我不知道。但我做得很慢，而且很明显，我有一些不懂，没记住。</p>
-<p>这都是让我烦心的事，我却没有任何动力去一个一个地解决。为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么？我在凑字数吗？可能吧。</p>
-<p>所以，我现在该做什么呢？</p>
-<p>刚才看了闻香识女人的劝说片段，感觉好了很多，很理解中校的心情，失去珍贵的一切，而又孤独一人，确实没有什么值得再留恋的。<br>跳探戈和开法拉利很帅。<br>这是他那一瞬间活下去的唯一理由，我又想到了在暑假时对人生意义的思考了，人生短短，人生苦长，人生又有什么意义呢？支持我们无意义人生存在的是什么呢？可能就是自己喜欢的人或东西上了吧。<br>烦心了就跳探戈。<br>跳探戈时很自豪很快乐，心中没有无尽的苦恼，而且身边又有佳人为伴。</p>
-<p>所以快乐，喜悦，兴奋是那份支持的感觉吧。现在想到复习高数和程序设计就有很大的厌烦和不情愿，这可能就是我之前做了那么多的学习方案却没有任何作用的原因了吧。</p>
-<p>对学习的热爱可以基本满足学好的要素。<br>热爱学习，自然愿意投入大量时间。<br>热爱学习，自然愿意迎接挑战。<br>热爱学习，自然不会被其他的事物给分散注意力。<br>热爱学习，自然能形成正反馈。<br>热爱学习，自然能有一种一切尽在掌握之中的感觉。<br>总之，我离学习好和爱学习只差一步了——找到我爱学习的理由，以及如何真正地爱上学习。</p>
-<p>好的。</p>
-]]></content>
-      <categories>
-        <category>思考记录</category>
-      </categories>
-      <tags>
-        <tag>大学</tag>
-        <tag>困扰</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>也入一场辩论赛</title>
     <url>/2021/04/03/ye-ru-yi-chang-bian-lun-sai/</url>
     <content><![CDATA[<blockquote>
@@ -560,46 +560,6 @@ border-color: red;
       </categories>
       <tags>
         <tag>大学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>已选择的路</title>
-    <url>/2021/04/12/yi-xuan-ze-de-lu/</url>
-    <content><![CDATA[<blockquote>
-<p>今天我收到了一条来自<strong>Akilar</strong>大佬的评论，在回复评论时，我想到了很多事情，很多想写的事情，而且今天是个雨天，比较适合思考，也正好记录一下最近的情况。</p>
-<p>好吧，在下午准备写这篇文章，但有课所以放到了现在，但晚上又有一些作业要完成，一些东西要学，所以又没有了写的兴趣，但感觉是培养出来的，那还是继续吧。</p>
-</blockquote>
-<blockquote>
-<p>引发这篇文章的评论如下：</p>
-<p><strong>Akilar</strong>：</p>
-<p>我和你这个年纪的时候，差不多都有这种想法过。顺其自然就好。没必要太过担心别人的想法。花时间画张表格，把自己拥有的和自己期望拥有的写出来。然后划掉自己可以失去的。保留自己不能失去的。顾好纸上最后的东西就行。</p>
-<p><strong>csong</strong>：</p>
-<p>没想到会收到来自互联网陌生人的关心，我现在已经大二下学期了，上一学期经历了地狱一般的学习强度，折磨得死去活来，另外这过去的一年中我也遭遇了多方面的困难与折磨，最终在不断的反思尝试中做出了取舍，这将是我比较冒险的一个决定，但我愿意承受后果，因为我坚信自己能做到，不管三年五年十年还是多长时间，结果至少比未改变的要好。所以现在我已经不再迷茫了，因为我找到了自己真正喜欢的东西，并且每天都为之奋斗，虽然每一天每一天都很忙碌，但我并不感到讨厌，反而感到充实与自信，再一次感谢你的关心。现在终于明白，自己的许多纠结都没有必要，因为对于我这种性格的人来说，终将走向自己热爱的东西。</p>
-</blockquote>
-<p>想写的事情主要是自己这一年中的大致经历和转变，即大二上学期到现在大二下学期期中。</p>
-<p>大一下学期末选大二上学期课的时候，我没有明白这个选课是选的选修课，以为和大一上学期一样是必修课，所以我就全部选上了，然后还选了两门公选课，最终在大二上学期算了一下是要学十六课，当时我就觉得这个学期肯定是要忙了，所以我就退出了参加的大创社团，空手道社团。事实证明我还是比较有先见之名的，果然很忙，每天七点十几分起床然后晚上有时候要忙到一点钟，每天都这样。当时的日子让我感觉就是在坐牢，每一天每一天都在为上课写作业奔忙，而且还有体育课的体测，每天吃完晚饭在上课前都要去练1000米和引体向上，然后就是在户外的健身设备上锻炼，常常累得腿脚发软然后忙着去上课，可能是5g可能是设计艺术欣赏，这一学期看成绩单时才发现设计艺术欣赏竟然不算入学分了，因为大一修过这门课，当时自己的愿望是做一名设计师，但自己却被调剂到石油工程专业了，所以打算是多了解一下设计，因此大二的设计艺术欣赏就等于刷分了，可怜我我在如此煎熬的一个学期竟然浪费了那么多时间，这样其他学科也就更紧张了。大二上学期的期中考试前自己一直忙着复习几门功课，然而每天课外时间最多只有两三节课，也就是说，在考前的一周我每天都是在上课和完成作业中度过，然而我还必须挤出一切时间抓紧复习几门功课，而且是不简单的功课。记得期中考前每天晚上写完作业熬夜复习，最终感冒了，一般我很少感冒，因为体质还是比较强的，但还是感冒了，主要是压力太大，睡眠不足，抵抗力下降，然后晚上稍微冻冻就这样了。结果，在考试期间自己还是感冒着晕乎乎的，成绩也不算太差，但也就是一般，七八十分。</p>
-<p>然后是大二上学期的下半部分了，那就是更痛苦的一段时光了，这一个学期的课大概有五分之三的在下学期，而且是更难的学科，什么线性代数，复变函数，工程力学，数学实验等等，这一学期光是数学类的科目我就有五门，而我比较不擅长太抽象的东西，因为我没办法去把握关键的地方，理解不了，像是线性代数，虽然学得不算太难，考试也不算太难，但是太抽象了，我完全找不到现实中的事物去对应。而很多同学觉得更难的复变函数，由于是高等数学的进阶版，很多问题思想一致，而且有很多图像来表示，因此我觉得并不是把握不了，最后期末考试的时候，我基本上全部题目都写完了，提前大半小时交卷。还有就是概率论与数理统计，说实话，我感觉自己掌握得确实不错，平时会把公式都记住，作业也认真写，不会的也没有跳过，而是认真思考解决，最后考了九十多分，不知道是因为自己比较擅长，还是因为女老师是我的老乡比较亲切呢。像是大学化学之类的，我还记得今年过年前学校里的大寒潮，风雪交加，那是我在这座城市里第一次感受到比家里还要冷，满天的大雪以及根本挡不住的能吹飞学校里的石墩子的大风，我就在这样的考前日子，尽管在周末，每天早早地起床，冒着严寒大雪独自上自习，呆上一天，然后晚上自习到没有一个人后独自迎着风雪和夜色返回寝室。我现在能够不带感情地说出那段最艰辛的时光，因为我不喜欢留恋过去，将这些事忘得一干二净我会活得更轻松自在，没有烦恼。除了这些还有无穷无尽的困难与烦恼，可以说我切实地体会到度日如年的感觉，而且我没有甚至没有陪伴自己的伙伴，甚至没有可以分享的伙伴，因为我在高中时曾经分享给一位室友，但他转眼就告诉了别人，然后我就得面对别人的嘲笑目光，我并不怪他，因为他并不知道那些事情我没有说给别人听，不知道那对我来说是多么重要的事，我只能怪自己。自此，我不再分享自己的经历自己的想法给任何人，包括父母老师及其他亲人朋友，但我还是选择了将这些写了下来，放到网上去，因为这些还远远不及我的思考想法的冰山一角，而且是并不那么隐私的事，尽管如此，我还是希望在读我这篇文章以及其他文章的朋友能够埋藏心里。</p>
-<p>到此为止是对上一学期学习部分的简单介绍，其实那段时间真正让我痛苦的远不止学习上的艰辛和忙碌，主要是未来的方向。</p>
-<p>其实我从小到大都基本没有思考过，因为自己只需要把书读好，其他一切基本上不用操心。说句实话，初中的学习也不简单，只是比我的大学忙碌要稍逊一筹，但比高中的要忙一点。那是个私立的初中，为了提高学生的升学率和分数，以各种形式提高学习的比重，可以说是个小型监狱，我愿意这样去称呼，但就在那里我的填鸭式学习成果达到高峰，成为全校第一，从最初的200开外到每一次考试的进步，我现在去想那也许并不是一种荣耀，我只是被刀压着脖子走上台阶的，来自父母，老师，同学的锋利的刃，我根本没有任何未来的打算和目标。有时候，成绩优秀也是一种罪过，这不是我的作秀和炫耀，是我真正体会到的事，为了达到，你放弃一切无目的地争先，而到达之后，你会疲于奔命小心谨慎地维持自己的名次，而就算能够持续地名列前茅，你也只是做只井底之蛙，没有认识到世界的广阔和高远，白白地浪费时间。这里我并没有否定成绩好，而是对为了成绩而学习的批判，以及缺乏长久人生目标的警告。现在的我也这样，面对我没有丝毫兴趣的石油工程，我现在基本上可以做到保研，如果我真心喜爱的话，我一定会全力投入而不是应付了事。但我不能让自己去认真学，这可能在你看来是很奇怪的事，能够学得更好，走得更远不是件非常好的事吗？</p>
-<p>真的是件好事吗？</p>
-<p>这是我从大学一直到上个月无尽烦恼与困惑的源头。高中毕业时，我在选学校选专业的时候才开始思考未来自己要做什么，最终我确立了当设计师的愿望，然而我被调剂到石油工程专业，我的性格以及自己常年的习惯让我无法敷衍地对待任何一门学科，我曾为每一门学科的学习而发愁，大一的时候沉迷找各种的所谓的“学习窍门”，什么工作法，记忆术，思维方式，时间管理，现在的我真的可以放心地去嘲笑过去的那个自己了，因为我明白了怎么学习，或者说是怎么应对应试学习，考的不是那些高大上的东西，而是每一天早出晚归学习，无数次的失败反思中积累的切实有用的战斗经验（呵呵），至少让我能相对轻松地通过每一门课程。那继续我的设计师之梦，既然不是自己想要的专业，为什么不转专业呢？简单地说我不敢，不敢让父母知道，不敢让同学知道，不敢面对在石油工程上付出的心血付诸东流，换来一学期要上两门专业来挽回差距，不敢和任何老师交流。这就是我的懦弱，看似强大的冷漠的我的懦弱。但我仍抱有希望，想着自己学学吧，毕业之后再靠自己的努力当上设计师，甚至我还列出一个非常“合理”的计划，当时做出计划的我“大彻大悟”，感到目标如此的清晰，未来如此光明，但第二天我就忘了这件事，不是真的遗忘，而是选择放弃，因为那个计划有着我无法逾越的鸿沟，是过于华丽的人生，我没有信心去实现，而且我也逐渐开始思考自己是否真的非常想当设计师。</p>
-<p>由此，我又再一次陷入了迷茫。原本我只要顺水推舟，选择我学的这门专业继续下去，我会学得很轻松，活得很自在，没有那么多的事情要去考虑，不需要在努力学习的时候质问自己是否真的要走这条路，前往一个自己明明知道会是个自己没有任何兴趣和动力的人生。</p>
-<p>我不要。</p>
-<p>当我犹豫时，我就应该明白自己早就做出了选择，遵从内心的选择。虽然我在别人，任何人看来会是一个听话的小孩，但我明白我自己，我懂我自己，我不会像其他人一样从我的表现去判定我自己，判断我是个没有主见，可以随意摆布的人。说句实话，这些都是给别人看的，为的是封住别人的口，让他们管好自己的事情，少来插手我的事。作为交换，我得给他们想要的东西，一个乖巧的不用操心的人，一个好成绩。却从来没有想到我的这副虚伪的面具下的真实想法，真正想要的东西，真正的性格。我愿意这样去评价自己：一个伪善的人，一个极度傲慢的人，一个极度自卑的人，一个无比自私的人，一个嫉妒别人的人。但我也是一个无比坚强的人，超级无比极其固执的人，超级有主见的人。我想，这样的性格来自我的野蛮生长，从小父母在外工作，没有任何人去管教自己，一切事情自己做主，一切事情自己解决，我决定下来的事情就要去做，去做好，我不允许自己懈怠偷懒，不愿意看到一个自甘堕落的人，不断严格要求自己，但人的能力总是有限的，在无法完成时，我就会无限放大对自己的批判，而成功时，我却没有任何对自己的鼓励，我认为鼓励是没有用的，只会浪费时间。这是我过去的想法，我也因此陷入无限的自卑之中，而现在我切身体会到鼓励对一个人的重要性以及一个人总是对自己反思批判反而会适得其反的事实。</p>
-<p>那么，正如我在评论中说到的，我找到了真正喜欢热爱的事情，不是设计师，而是一个我可以连续一个月每天从早到晚忙碌不停，周六周日如此，清明节三天假期亦是如此，然而基本没有感到迷茫和困扰以及任何怨言的事。我从来没有感到如此地充实而有动力，而且对未来充满希望和期待，这将是我不会后悔的事业。</p>
-<p>其实，我还有很多思考和想法，但时间有限，我还想向着目标抓紧努力。最后，我想放一首诗，外国现代诗，我最喜欢的诗之一，其中的意境和心理活动我都无比感同身受，但我没有对另一条路的丝毫留恋，尽管我曾倾注无尽的血和泪。找到注定踏上的一条路时，再面对一条不想走下去的路，离开时我无所顾忌。</p>
-<p><strong>《未选择的路》</strong></p>
-<p><strong>黄色的树林里分出两条路，</strong><br><strong>可惜我不能同时去涉足，</strong><br><strong>我在那路口久久伫立，</strong><br><strong>我向着一条路极目望去，</strong><br><strong>直到它消失在丛林深处。</strong></p>
-<p><strong>但我却选择了另外一条路，</strong><br><strong>它荒草萋萋，十分幽寂，</strong><br><strong>显得更诱人，更美丽；</strong><br><strong>虽然在这条小路上，</strong><br><strong>很少留下旅人的足迹。</strong></p>
-<p><strong>那天清晨落叶满地，</strong><br><strong>两条路都未经脚印污染。</strong><br><strong>啊，留下一条路等改日再见！</strong><br><strong>但我知道路径延綿无尽头，</strong><br><strong>恐怕我难以再回返。</strong></p>
-<p><strong>也许多少年后在某个地方，</strong><br><strong>我将轻声叹息将往事回顾：</strong><br><strong>一片树林里分出两条路——</strong><br><strong>而我选择了人际更少的一条，</strong><br><strong>从此决定了我一生的道路。</strong></p>
-]]></content>
-      <categories>
-        <category>思考记录</category>
-      </categories>
-      <tags>
-        <tag>大学</tag>
-        <tag>人生</tag>
       </tags>
   </entry>
   <entry>
@@ -670,6 +630,46 @@ border-color: red;
       <tags>
         <tag>大学</tag>
         <tag>考试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>已选择的路</title>
+    <url>/2021/04/12/yi-xuan-ze-de-lu/</url>
+    <content><![CDATA[<blockquote>
+<p>今天我收到了一条来自<strong>Akilar</strong>大佬的评论，在回复评论时，我想到了很多事情，很多想写的事情，而且今天是个雨天，比较适合思考，也正好记录一下最近的情况。</p>
+<p>好吧，在下午准备写这篇文章，但有课所以放到了现在，但晚上又有一些作业要完成，一些东西要学，所以又没有了写的兴趣，但感觉是培养出来的，那还是继续吧。</p>
+</blockquote>
+<blockquote>
+<p>引发这篇文章的评论如下：</p>
+<p><strong>Akilar</strong>：</p>
+<p>我和你这个年纪的时候，差不多都有这种想法过。顺其自然就好。没必要太过担心别人的想法。花时间画张表格，把自己拥有的和自己期望拥有的写出来。然后划掉自己可以失去的。保留自己不能失去的。顾好纸上最后的东西就行。</p>
+<p><strong>csong</strong>：</p>
+<p>没想到会收到来自互联网陌生人的关心，我现在已经大二下学期了，上一学期经历了地狱一般的学习强度，折磨得死去活来，另外这过去的一年中我也遭遇了多方面的困难与折磨，最终在不断的反思尝试中做出了取舍，这将是我比较冒险的一个决定，但我愿意承受后果，因为我坚信自己能做到，不管三年五年十年还是多长时间，结果至少比未改变的要好。所以现在我已经不再迷茫了，因为我找到了自己真正喜欢的东西，并且每天都为之奋斗，虽然每一天每一天都很忙碌，但我并不感到讨厌，反而感到充实与自信，再一次感谢你的关心。现在终于明白，自己的许多纠结都没有必要，因为对于我这种性格的人来说，终将走向自己热爱的东西。</p>
+</blockquote>
+<p>想写的事情主要是自己这一年中的大致经历和转变，即大二上学期到现在大二下学期期中。</p>
+<p>大一下学期末选大二上学期课的时候，我没有明白这个选课是选的选修课，以为和大一上学期一样是必修课，所以我就全部选上了，然后还选了两门公选课，最终在大二上学期算了一下是要学十六课，当时我就觉得这个学期肯定是要忙了，所以我就退出了参加的大创社团，空手道社团。事实证明我还是比较有先见之名的，果然很忙，每天七点十几分起床然后晚上有时候要忙到一点钟，每天都这样。当时的日子让我感觉就是在坐牢，每一天每一天都在为上课写作业奔忙，而且还有体育课的体测，每天吃完晚饭在上课前都要去练1000米和引体向上，然后就是在户外的健身设备上锻炼，常常累得腿脚发软然后忙着去上课，可能是5g可能是设计艺术欣赏，这一学期看成绩单时才发现设计艺术欣赏竟然不算入学分了，因为大一修过这门课，当时自己的愿望是做一名设计师，但自己却被调剂到石油工程专业了，所以打算是多了解一下设计，因此大二的设计艺术欣赏就等于刷分了，可怜我我在如此煎熬的一个学期竟然浪费了那么多时间，这样其他学科也就更紧张了。大二上学期的期中考试前自己一直忙着复习几门功课，然而每天课外时间最多只有两三节课，也就是说，在考前的一周我每天都是在上课和完成作业中度过，然而我还必须挤出一切时间抓紧复习几门功课，而且是不简单的功课。记得期中考前每天晚上写完作业熬夜复习，最终感冒了，一般我很少感冒，因为体质还是比较强的，但还是感冒了，主要是压力太大，睡眠不足，抵抗力下降，然后晚上稍微冻冻就这样了。结果，在考试期间自己还是感冒着晕乎乎的，成绩也不算太差，但也就是一般，七八十分。</p>
+<p>然后是大二上学期的下半部分了，那就是更痛苦的一段时光了，这一个学期的课大概有五分之三的在下学期，而且是更难的学科，什么线性代数，复变函数，工程力学，数学实验等等，这一学期光是数学类的科目我就有五门，而我比较不擅长太抽象的东西，因为我没办法去把握关键的地方，理解不了，像是线性代数，虽然学得不算太难，考试也不算太难，但是太抽象了，我完全找不到现实中的事物去对应。而很多同学觉得更难的复变函数，由于是高等数学的进阶版，很多问题思想一致，而且有很多图像来表示，因此我觉得并不是把握不了，最后期末考试的时候，我基本上全部题目都写完了，提前大半小时交卷。还有就是概率论与数理统计，说实话，我感觉自己掌握得确实不错，平时会把公式都记住，作业也认真写，不会的也没有跳过，而是认真思考解决，最后考了九十多分，不知道是因为自己比较擅长，还是因为女老师是我的老乡比较亲切呢。像是大学化学之类的，我还记得今年过年前学校里的大寒潮，风雪交加，那是我在这座城市里第一次感受到比家里还要冷，满天的大雪以及根本挡不住的能吹飞学校里的石墩子的大风，我就在这样的考前日子，尽管在周末，每天早早地起床，冒着严寒大雪独自上自习，呆上一天，然后晚上自习到没有一个人后独自迎着风雪和夜色返回寝室。我现在能够不带感情地说出那段最艰辛的时光，因为我不喜欢留恋过去，将这些事忘得一干二净我会活得更轻松自在，没有烦恼。除了这些还有无穷无尽的困难与烦恼，可以说我切实地体会到度日如年的感觉，而且我没有甚至没有陪伴自己的伙伴，甚至没有可以分享的伙伴，因为我在高中时曾经分享给一位室友，但他转眼就告诉了别人，然后我就得面对别人的嘲笑目光，我并不怪他，因为他并不知道那些事情我没有说给别人听，不知道那对我来说是多么重要的事，我只能怪自己。自此，我不再分享自己的经历自己的想法给任何人，包括父母老师及其他亲人朋友，但我还是选择了将这些写了下来，放到网上去，因为这些还远远不及我的思考想法的冰山一角，而且是并不那么隐私的事，尽管如此，我还是希望在读我这篇文章以及其他文章的朋友能够埋藏心里。</p>
+<p>到此为止是对上一学期学习部分的简单介绍，其实那段时间真正让我痛苦的远不止学习上的艰辛和忙碌，主要是未来的方向。</p>
+<p>其实我从小到大都基本没有思考过，因为自己只需要把书读好，其他一切基本上不用操心。说句实话，初中的学习也不简单，只是比我的大学忙碌要稍逊一筹，但比高中的要忙一点。那是个私立的初中，为了提高学生的升学率和分数，以各种形式提高学习的比重，可以说是个小型监狱，我愿意这样去称呼，但就在那里我的填鸭式学习成果达到高峰，成为全校第一，从最初的200开外到每一次考试的进步，我现在去想那也许并不是一种荣耀，我只是被刀压着脖子走上台阶的，来自父母，老师，同学的锋利的刃，我根本没有任何未来的打算和目标。有时候，成绩优秀也是一种罪过，这不是我的作秀和炫耀，是我真正体会到的事，为了达到，你放弃一切无目的地争先，而到达之后，你会疲于奔命小心谨慎地维持自己的名次，而就算能够持续地名列前茅，你也只是做只井底之蛙，没有认识到世界的广阔和高远，白白地浪费时间。这里我并没有否定成绩好，而是对为了成绩而学习的批判，以及缺乏长久人生目标的警告。现在的我也这样，面对我没有丝毫兴趣的石油工程，我现在基本上可以做到保研，如果我真心喜爱的话，我一定会全力投入而不是应付了事。但我不能让自己去认真学，这可能在你看来是很奇怪的事，能够学得更好，走得更远不是件非常好的事吗？</p>
+<p>真的是件好事吗？</p>
+<p>这是我从大学一直到上个月无尽烦恼与困惑的源头。高中毕业时，我在选学校选专业的时候才开始思考未来自己要做什么，最终我确立了当设计师的愿望，然而我被调剂到石油工程专业，我的性格以及自己常年的习惯让我无法敷衍地对待任何一门学科，我曾为每一门学科的学习而发愁，大一的时候沉迷找各种的所谓的“学习窍门”，什么工作法，记忆术，思维方式，时间管理，现在的我真的可以放心地去嘲笑过去的那个自己了，因为我明白了怎么学习，或者说是怎么应对应试学习，考的不是那些高大上的东西，而是每一天早出晚归学习，无数次的失败反思中积累的切实有用的战斗经验（呵呵），至少让我能相对轻松地通过每一门课程。那继续我的设计师之梦，既然不是自己想要的专业，为什么不转专业呢？简单地说我不敢，不敢让父母知道，不敢让同学知道，不敢面对在石油工程上付出的心血付诸东流，换来一学期要上两门专业来挽回差距，不敢和任何老师交流。这就是我的懦弱，看似强大的冷漠的我的懦弱。但我仍抱有希望，想着自己学学吧，毕业之后再靠自己的努力当上设计师，甚至我还列出一个非常“合理”的计划，当时做出计划的我“大彻大悟”，感到目标如此的清晰，未来如此光明，但第二天我就忘了这件事，不是真的遗忘，而是选择放弃，因为那个计划有着我无法逾越的鸿沟，是过于华丽的人生，我没有信心去实现，而且我也逐渐开始思考自己是否真的非常想当设计师。</p>
+<p>由此，我又再一次陷入了迷茫。原本我只要顺水推舟，选择我学的这门专业继续下去，我会学得很轻松，活得很自在，没有那么多的事情要去考虑，不需要在努力学习的时候质问自己是否真的要走这条路，前往一个自己明明知道会是个自己没有任何兴趣和动力的人生。</p>
+<p>我不要。</p>
+<p>当我犹豫时，我就应该明白自己早就做出了选择，遵从内心的选择。虽然我在别人，任何人看来会是一个听话的小孩，但我明白我自己，我懂我自己，我不会像其他人一样从我的表现去判定我自己，判断我是个没有主见，可以随意摆布的人。说句实话，这些都是给别人看的，为的是封住别人的口，让他们管好自己的事情，少来插手我的事。作为交换，我得给他们想要的东西，一个乖巧的不用操心的人，一个好成绩。却从来没有想到我的这副虚伪的面具下的真实想法，真正想要的东西，真正的性格。我愿意这样去评价自己：一个伪善的人，一个极度傲慢的人，一个极度自卑的人，一个无比自私的人，一个嫉妒别人的人。但我也是一个无比坚强的人，超级无比极其固执的人，超级有主见的人。我想，这样的性格来自我的野蛮生长，从小父母在外工作，没有任何人去管教自己，一切事情自己做主，一切事情自己解决，我决定下来的事情就要去做，去做好，我不允许自己懈怠偷懒，不愿意看到一个自甘堕落的人，不断严格要求自己，但人的能力总是有限的，在无法完成时，我就会无限放大对自己的批判，而成功时，我却没有任何对自己的鼓励，我认为鼓励是没有用的，只会浪费时间。这是我过去的想法，我也因此陷入无限的自卑之中，而现在我切身体会到鼓励对一个人的重要性以及一个人总是对自己反思批判反而会适得其反的事实。</p>
+<p>那么，正如我在评论中说到的，我找到了真正喜欢热爱的事情，不是设计师，而是一个我可以连续一个月每天从早到晚忙碌不停，周六周日如此，清明节三天假期亦是如此，然而基本没有感到迷茫和困扰以及任何怨言的事。我从来没有感到如此地充实而有动力，而且对未来充满希望和期待，这将是我不会后悔的事业。</p>
+<p>其实，我还有很多思考和想法，但时间有限，我还想向着目标抓紧努力。最后，我想放一首诗，外国现代诗，我最喜欢的诗之一，其中的意境和心理活动我都无比感同身受，但我没有对另一条路的丝毫留恋，尽管我曾倾注无尽的血和泪。找到注定踏上的一条路时，再面对一条不想走下去的路，离开时我无所顾忌。</p>
+<p><strong>《未选择的路》</strong></p>
+<p><strong>黄色的树林里分出两条路，</strong><br><strong>可惜我不能同时去涉足，</strong><br><strong>我在那路口久久伫立，</strong><br><strong>我向着一条路极目望去，</strong><br><strong>直到它消失在丛林深处。</strong></p>
+<p><strong>但我却选择了另外一条路，</strong><br><strong>它荒草萋萋，十分幽寂，</strong><br><strong>显得更诱人，更美丽；</strong><br><strong>虽然在这条小路上，</strong><br><strong>很少留下旅人的足迹。</strong></p>
+<p><strong>那天清晨落叶满地，</strong><br><strong>两条路都未经脚印污染。</strong><br><strong>啊，留下一条路等改日再见！</strong><br><strong>但我知道路径延綿无尽头，</strong><br><strong>恐怕我难以再回返。</strong></p>
+<p><strong>也许多少年后在某个地方，</strong><br><strong>我将轻声叹息将往事回顾：</strong><br><strong>一片树林里分出两条路——</strong><br><strong>而我选择了人际更少的一条，</strong><br><strong>从此决定了我一生的道路。</strong></p>
+]]></content>
+      <categories>
+        <category>思考记录</category>
+      </categories>
+      <tags>
+        <tag>大学</tag>
+        <tag>人生</tag>
       </tags>
   </entry>
   <entry>
