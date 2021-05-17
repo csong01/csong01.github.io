@@ -1,8 +1,8 @@
-@font-face{
-    font-family: 'pmzdcst';
-    src: url('https://cdn.jsdelivr.net/gh/csong01/picgo@master/honglei.ttf');
-}
-body{
-    font-family: 'pmzdcst';
-    font-size: large;
+/* @font-face {
+    font-family: 'zqlqbzcsfh';
+    src: url('https://cdn.jsdelivr.net/gh/csong01/picgo@master/zqlqbzcsfh.ttf');
+} */
+body {
+    font-family: -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB',
+        'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
 }
