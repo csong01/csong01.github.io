@@ -1,0 +1,244 @@
+/* 普通通用样式 */
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font: 16px/1.5 "Microsoft Yahei","Helvetica Neue"; */
+    /* font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif; */
+    /* 常用：
+    Arial
+    Helvetica
+    "FangSong" 仿宋
+    sans-serif 无衬线字体
+    "PingFang SC" 苹方
+    "Microsoft Yahei" 微软雅黑
+    判断是否加""可以根据在编辑器的颜色 */
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    text-shadow: 1px 1px #ccc;
+}
+/* a:link {
+	color: #fff;
+}
+a:visited {
+	color: #fff;
+}
+a:active {
+	color: #fff;
+} */
+input::-ms-clear {
+    display: none;
+}
+input::-ms-reveal {
+    display: none;
+}
+input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+    -webkit-appearance: none;
+}
+input::-webkit-input-placeholder {
+    color: #ccc;
+}
+input::-ms-input-placeholder {
+    color: #ccc;
+}
+input::-moz-placeholder {
+    color: #ccc;
+}
+img {
+    border: none;
+}
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+/* 公共样式 */
+/* 
+解决移动端出现横向滚动条 
+https://www.cnblogs.com/yszblog/p/10135507.html
+*/
+
+/* html {
+	overflow-y: scroll;
+}
+
+:root {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+:root body {
+	position: absolute;
+}
+
+body {
+	overflow-x: scroll;
+	width: 100vw;
+} */
+
+html {
+    font-size: 14px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #e6e6e6;
+    font-family: system-ui, 'Segoe UI', Arial, 'Microsoft Yahei', sans-serif;
+    font-size: 1rem;
+    color: #101010;
+    /* 背景图片 */
+    /* background-image: url("https://api.ixiaowai.cn/mcapi/mcapi.php"); */
+
+    /* background-image: url("https://api.ixiaowai.cn/api/api.php"); */
+    /* background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover; */
+}
+/* 滚动条 */
+:not(.highlight)::-webkit-scrollbar {
+    display: none;
+}
+
+.list-item a {
+    margin: 3px;
+    padding: 5px 8px 5px 8px;
+    background: #fff;
+    box-shadow: 0 0 5px -5px rgba(0, 0, 0, 0.3), 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    font-size: normal;
+}
+
+@keyframes huerotate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+button {
+    border: none;
+}
+
+.header-container {
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background: #fff;
+    box-shadow: 0 12px 5px -10px rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.1);
+
+    /* backdrop-filter: saturate(180%) blur(20px); */
+}
+.header {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+/* 导航栏 */
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-container a,
+.site-name {
+    display: block;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+.site-name {
+    margin-right: 1.5rem;
+}
+.nav-container a:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 785px) {
+    .header-container {
+        height: 3rem;
+    }
+    .nav-container a,
+    .site-name {
+        font-size: 1rem;
+    }
+}
+
+.btn-totop {
+    opacity: 0.6;
+    display: flex;
+    position: fixed;
+    right: 4vw;
+    bottom: 4vw;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #fff;
+    box-shadow: 0 12px 5px -10px rgba(0, 0, 0, 0.1), 0 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+.btn-totop:hover {
+    box-shadow: 0 12.8px 28.8px rgba(0, 0, 0, 0.13908558841119492),
+        0 0 9.2px rgba(0, 0, 0, 0.1176878055787034);
+}
+
+.main-conatiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    /* padding: 10vw; */
+    overflow-wrap: break-word;
+}
+@media screen and (max-width: 785px) {
+    .main-container {
+        width: 95vw;
+    }
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+/* footer */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35rem;
+    margin-bottom: 30px;
+    font-size: medium;
+}
