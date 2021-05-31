@@ -21,12 +21,13 @@
 	width: 100%;
 }
 .post-article {
+    border: solid 1px #ccc;
 	margin-bottom: 5vw;
 	padding: 3vw;
 	width: 100%;
 	width: 100%;
 	background: #fff;
-	box-shadow: 0 12.8px 28.8px rgba(0,0,0,.13908558841119492), 0 0 9.2px rgba(0,0,0,.1176878055787034);	/* backdrop-filter: saturate(180%) blur(20px); */
+	/* box-shadow: 0 12.8px 28.8px rgba(0,0,0,.13908558841119492), 0 0 9.2px rgba(0,0,0,.1176878055787034);	backdrop-filter: saturate(180%) blur(20px); */
 	line-height: 36px;
 	text-align: justify;
 }
