@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML5学习笔记</title>
+    <url>/2021/04/17/html5-xue-xi-bi-ji/</url>
+    <content><![CDATA[<blockquote>
+<p>IE9+以上浏览器兼容</p>
+</blockquote>
+<h2 id="新增的语义化标签"><a href="#新增的语义化标签" class="headerlink" title="新增的语义化标签"></a>新增的语义化标签</h2><figure class="highlight asciidoc"><table><tr><td class="code"><pre class=" language-hljs asciidoc"><span class="hljs-bullet">- </span>这种语义化标准主要是针对搜索引擎的<br><span class="hljs-bullet">- </span>这些新标签页面中可以使用多次<br><span class="hljs-bullet">- </span>在IE9中，需要把这些元素转换为块级元素 display: block<br><span class="hljs-bullet"><code class="language-hljs asciidoc"><span class="hljs-bullet">- </span>这种语义化标准主要是针对搜索引擎的<br><span class="hljs-bullet">- </span>这些新标签页面中可以使用多次<br><span class="hljs-bullet">- </span>在IE9中，需要把这些元素转换为块级元素 display: block<br><span class="hljs-bullet">- </span>移动端更喜欢使用这些标签<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span> :头部标签<br><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>:导航标签<br><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>内容标签<br><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>:定义文档某个区域<br><span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span> :侧边栏标签<br><span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span> :头部标签<br><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>:导航标签<br><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>内容标签<br><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>:定义文档某个区域<br><span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span> :侧边栏标签<br><span class="hljs-tag">&lt;<span class="hljs-name">footer</span>></span> :尾部标签<br></code></pre></td></tr></table></figure>
+
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415160729817.png" alt="image-20210415160729817"></p>
+<h2 id="新增的多媒体标签"><a href="#新增的多媒体标签" class="headerlink" title="新增的多媒体标签"></a>新增的多媒体标签</h2><h3 id="1-音频"><a href="#1-音频" class="headerlink" title="1. 音频"></a><strong>1.<audio> 音频</strong></h3><figure class="highlight xml"><table><tr><td class="code"><pre class=" language-hljs xml">当前<span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs xml">当前<span class="hljs-tag">&lt;<span class="hljs-name">audio</span>></span>元素支持三种视频格式MP3、Wav、Ogg，尽量使用mp3格式。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot; controls&quot;</span>&gt;</span>&lt;/ audio&gt;<br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.mp3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/mpeg&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/ogg&quot;</span>&gt;</span><br>  Your browser does not support this audio format.<br><span class="hljs-tag">&lt;/<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot; controls&quot;</span>&gt;</span>&lt;/ audio&gt;<br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.mp3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/mpeg&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/ogg&quot;</span>&gt;</span><br>  Your browser does not support this audio format.<br><span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>></span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415165747670.png" alt="image-20210415165747670"></p>
+<h3 id="2-视频"><a href="#2-视频" class="headerlink" title="2. 视频"></a>2.<video> 视频</h3><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">当前&lt;<span class="hljs-selector-tag">video</span>&gt;元素支持三种视频格式MP4、WebM、Ogg，尽量使用mp4格式。<br><span class="hljs-number">1</span>. controls 属性供添加播放、暂停和音量控件。<br><span class="hljs-number">2</span>. &lt;<span class="hljs-selector-tag">video</span>&gt; 与 &lt;/<span class="hljs-selector-tag">video</span>&gt; 之间插入的内容是供不支持 <span class="hljs-selector-tag"><code class="language-hljs css">当前&lt;<span class="hljs-selector-tag">video</span>&gt;元素支持三种视频格式MP4、WebM、Ogg，尽量使用mp4格式。<br><span class="hljs-number">1</span>. controls 属性供添加播放、暂停和音量控件。<br><span class="hljs-number">2</span>. &lt;<span class="hljs-selector-tag">video</span>&gt; 与 &lt;/<span class="hljs-selector-tag">video</span>&gt; 之间插入的内容是供不支持 <span class="hljs-selector-tag">video</span> 元素的浏览器显示的。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span><br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/ogg&quot;</span> &gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">souree</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> &gt;</span><br>	您的浏览器暂不支持<span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span><br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/ogg&quot;</span> &gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">souree</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> &gt;</span><br>	您的浏览器暂不支持<span class="hljs-tag">&lt;<span class="hljs-name">video</span>></span>标签播放视频<br></ video ><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415164818736.png" alt="image-20210415164818736"></p>
+<h2 id="新增的input类型"><a href="#新增的input类型" class="headerlink" title="新增的input类型"></a>新增的input类型</h2><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag"><code class="language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag">form</span>表单域<br></code></pre></td></tr></table></figure>
+
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415170217357.png" alt="image-20210415170217357"></p>
+<h2 id="新增的表单属性"><a href="#新增的表单属性" class="headerlink" title="新增的表单属性"></a>新增的表单属性</h2><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag"><code class="language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag">form</span>表单域<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">::placeholder</span>&#123;<br>		<span class="hljs-attribute"><code class="language-hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">::placeholder</span>&#123;<br>		<span class="hljs-attribute">color</span>: pink;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415171352091.png" alt="image-20210415171352091"></p>
+]]></content>
+      <categories>
+        <category>前端笔记</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>7月14日的想法</title>
+    <url>/2021/04/03/7-yue-14-ri-de-xiang-fa/</url>
+    <content><![CDATA[<blockquote>
+<p>这篇文章写于去年七月份，从原博客迁移而来。</p>
+</blockquote>
+<p>今天看到了7月14日的一个思考记录，是手写的，但我觉得挺值得以后回忆一下的，因为里面有几个对我来说难得领悟的的观点。如下：</p>
+<p>今天又想起来记想法了，因为内心充满烦恼，感到难受。主要是总存在的来自外界的质问和不理解和觉得自己有点无能的挫败感。<span id="more"></span></p>
+<p>真的烦人，最讨厌的就是来自别人的质问，实在不懂哪有那么多的问题，说话前过过脑子好不好，总是认为我什么都不懂？为什么成年是18岁？因为心智成熟，能独立生活做事。我已经20岁了，难道这些日常该做的事我都不知道吗？谈话都是质问。为什么没有？怎么这样？是不是有毛病？真的无语，不想再去说什么了。但我的不愿意说话并不是我什么都不懂的体现。就像是沉睡沉默的狮子，自己的锋芒被隐藏，但绝不代表你的一次次试探干扰都是那么随意自在，终归会有危险的那刻。我愿意这样去比喻。我真是不明白，不明白我什么时候对你提出这个那个要求，而你总是这个做一下，那个怎么不知道搞一下。我承认，我很自私，因为我只想把自己照顾好就够了，我并不渴望来自别人的关心关爱，我只求不要干扰我，用一些无足轻重的屁大点的，没有什么意义的事去叽叽歪歪，有什么大不了的，有什么大的影响。不得了了，真的是。</p>
+<p>正是这样极端的追求个人生活的想法让我逐渐想要真正的摆脱他们，证明给他们看，在重要的方面，我已经不在是过去的自己，我可以变得更强，比他们更强。摆脱那些无意义的质问，摆脱这样不自在的生活，摆脱两边夹的尴尬难受，拜托对别人的真正依赖。当我把一起问题去归因是时，我发现一个共同的问题：钱。</p>
+<p>我以前是这样认为的，钱并不能代表什么，这在很多作品中都表达了出来，我也认为如此。但毕竟当时我的环境并不对钱提出多大的要求，真正进入这个熔炉的部分还是少之又少。现在，我似乎终于能感受钱这个物品的含义。终结生活绝大多数的问题与困难，树立自己的价值和位置，就是这么纯粹。我很庆幸钱能解决这么多的问题，这样目标与方向就变得明确清晰起来。挣钱，这个困扰大多数大多数人的事情也成为我人生中的重要部分。先定个小目标，我是这样想的。在追jojo第五部，我终于获得了自己一直在追寻的东西，那个道理。有时候，太执着于结果，我们往往会去找各种各样的捷径，而正是自己的这一行为却成为获得结果的最大障碍。最终往往会秘事自我，连最简单明确的道路也把握不住。这真是足够让我抱头痛哭的事实了。我在追求某样东西时，总是会去找各种各样的捷径，头脑发热，失去理性。时间证明一切，积累证明一切。这又是我切身体会到的东西。说句实在话，我感到自己变得越来越无能，越来越懦弱，总会在一切小小开始就失去自信，毫无自豪尊严可言。恶心恶心恶心。这难道就是人越长越大，逐渐失去热情信心，而把心中所有美好都强加给自己下一代的过程吗？我自己就在这个过程中吗？我已经能体会到这一点了。我想年轻的成功来自初生时的不畏，中年后的成功来自清楚认识残酷现实的不屈与拼搏。没有能逃过这个道理的，做任何事都一样。满怀热情与自信不畏，成功的stand才会伴随左右，我现在竟觉得这样的stand正在抛弃我这个无聊不堪的本体。所以，自己该做什么？</p>
+<p>在遥远的以前，我一直逼迫自己去拼，后来认为顺其自然，方法大于天，沉醉于找方法，现在才明白人定胜天，自信的热情的重要意义。我有点过于轻视自己了，有一点吧，这也能解释自己为什么会一直拖延但在临期前仍能逼迫自己完成了。我又明白了一个道理，我能做到。所以所以所以，总觉得歧途深渊又在拖我下去。也许，下次每当面对任务时，我都应该像对待2分钟那样不畏地积极地去处理，这是积极的生活态度，不是吗？开拓新天地，就是需要这样的觉悟。对了，要有觉悟，面对这狂风骤雨的觉悟，明知自己会千疮百孔但仍愿去为希望而斗争的觉悟，这样的觉悟不需要自己去顾及很多，掩护很多。也许正是这样的胆量才是正确的。</p>
+<p>后面的一点点内容就不记上去了，因为是不太正确的或是现在看起来比较蠢的做法。就是这样，现在看来确实有很多值得回忆的，即使当时的痛苦烦恼现在已经不太能体会了。</p>
+]]></content>
+      <categories>
+        <category>思考记录</category>
+      </categories>
+      <tags>
+        <tag>家庭</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSS入门学习笔记</title>
     <url>/2021/04/03/css-ru-men-xue-xi/</url>
     <content><![CDATA[<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><h3 id="（1）元素选择器"><a href="#（1）元素选择器" class="headerlink" title="（1）元素选择器"></a>（1）元素选择器</h3> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/f7afcbdda1aa6gga07a3b59g.png" alt="f7afcbdda1aa6gga07a3b59g"  />
@@ -108,24 +166,75 @@
       </tags>
   </entry>
   <entry>
-    <title>7月14日的想法</title>
-    <url>/2021/04/03/7-yue-14-ri-de-xiang-fa/</url>
+    <title>一次学习中的崩溃经历</title>
+    <url>/2021/04/03/yi-ci-xue-xi-zhong-de-beng-kui-jing-li/</url>
     <content><![CDATA[<blockquote>
-<p>这篇文章写于去年七月份，从原博客迁移而来。</p>
+<p>这是大一上学期临近期末考试，自己每天早出晚归独自学习的一次崩溃经历。</p>
 </blockquote>
-<p>今天看到了7月14日的一个思考记录，是手写的，但我觉得挺值得以后回忆一下的，因为里面有几个对我来说难得领悟的的观点。如下：</p>
-<p>今天又想起来记想法了，因为内心充满烦恼，感到难受。主要是总存在的来自外界的质问和不理解和觉得自己有点无能的挫败感。<span id="more"></span></p>
-<p>真的烦人，最讨厌的就是来自别人的质问，实在不懂哪有那么多的问题，说话前过过脑子好不好，总是认为我什么都不懂？为什么成年是18岁？因为心智成熟，能独立生活做事。我已经20岁了，难道这些日常该做的事我都不知道吗？谈话都是质问。为什么没有？怎么这样？是不是有毛病？真的无语，不想再去说什么了。但我的不愿意说话并不是我什么都不懂的体现。就像是沉睡沉默的狮子，自己的锋芒被隐藏，但绝不代表你的一次次试探干扰都是那么随意自在，终归会有危险的那刻。我愿意这样去比喻。我真是不明白，不明白我什么时候对你提出这个那个要求，而你总是这个做一下，那个怎么不知道搞一下。我承认，我很自私，因为我只想把自己照顾好就够了，我并不渴望来自别人的关心关爱，我只求不要干扰我，用一些无足轻重的屁大点的，没有什么意义的事去叽叽歪歪，有什么大不了的，有什么大的影响。不得了了，真的是。</p>
-<p>正是这样极端的追求个人生活的想法让我逐渐想要真正的摆脱他们，证明给他们看，在重要的方面，我已经不在是过去的自己，我可以变得更强，比他们更强。摆脱那些无意义的质问，摆脱这样不自在的生活，摆脱两边夹的尴尬难受，拜托对别人的真正依赖。当我把一起问题去归因是时，我发现一个共同的问题：钱。</p>
-<p>我以前是这样认为的，钱并不能代表什么，这在很多作品中都表达了出来，我也认为如此。但毕竟当时我的环境并不对钱提出多大的要求，真正进入这个熔炉的部分还是少之又少。现在，我似乎终于能感受钱这个物品的含义。终结生活绝大多数的问题与困难，树立自己的价值和位置，就是这么纯粹。我很庆幸钱能解决这么多的问题，这样目标与方向就变得明确清晰起来。挣钱，这个困扰大多数大多数人的事情也成为我人生中的重要部分。先定个小目标，我是这样想的。在追jojo第五部，我终于获得了自己一直在追寻的东西，那个道理。有时候，太执着于结果，我们往往会去找各种各样的捷径，而正是自己的这一行为却成为获得结果的最大障碍。最终往往会秘事自我，连最简单明确的道路也把握不住。这真是足够让我抱头痛哭的事实了。我在追求某样东西时，总是会去找各种各样的捷径，头脑发热，失去理性。时间证明一切，积累证明一切。这又是我切身体会到的东西。说句实在话，我感到自己变得越来越无能，越来越懦弱，总会在一切小小开始就失去自信，毫无自豪尊严可言。恶心恶心恶心。这难道就是人越长越大，逐渐失去热情信心，而把心中所有美好都强加给自己下一代的过程吗？我自己就在这个过程中吗？我已经能体会到这一点了。我想年轻的成功来自初生时的不畏，中年后的成功来自清楚认识残酷现实的不屈与拼搏。没有能逃过这个道理的，做任何事都一样。满怀热情与自信不畏，成功的stand才会伴随左右，我现在竟觉得这样的stand正在抛弃我这个无聊不堪的本体。所以，自己该做什么？</p>
-<p>在遥远的以前，我一直逼迫自己去拼，后来认为顺其自然，方法大于天，沉醉于找方法，现在才明白人定胜天，自信的热情的重要意义。我有点过于轻视自己了，有一点吧，这也能解释自己为什么会一直拖延但在临期前仍能逼迫自己完成了。我又明白了一个道理，我能做到。所以所以所以，总觉得歧途深渊又在拖我下去。也许，下次每当面对任务时，我都应该像对待2分钟那样不畏地积极地去处理，这是积极的生活态度，不是吗？开拓新天地，就是需要这样的觉悟。对了，要有觉悟，面对这狂风骤雨的觉悟，明知自己会千疮百孔但仍愿去为希望而斗争的觉悟，这样的觉悟不需要自己去顾及很多，掩护很多。也许正是这样的胆量才是正确的。</p>
-<p>后面的一点点内容就不记上去了，因为是不太正确的或是现在看起来比较蠢的做法。就是这样，现在看来确实有很多值得回忆的，即使当时的痛苦烦恼现在已经不太能体会了。</p>
+<p>今天我很难受，有一点抑郁，就是很茫然，不知道要做什么，确实我有很多任务要去完成，但就是不想做，没有任何想去做的欲望和动力。呼吸好像也很沉重迟缓，头脑有似曾相识的放空感。我也不知道该说什么了，懒得去写了。</p>
+<p>我到底想要什么呢？想做什么呢？不知道。是打篮球？做程序题？画画？看电影？打游戏？找APP？好像都没有兴趣了。我到底该做些什么呢？<span id="more"></span></p>
+<p>期末考试要到了，可以说明天考英语口语，我有些担心，但事实上这并没有那么重要，而且精心准备或许还是被束缚在条条框框里。那个高数期末考试也要来了，这本书看起来很简单，就是说极限和微积分的，考的题目大都一样。但为什么我就是不能写出来或是很快写出来呢？内容并没有那么多啊，为什么？<br>再说说程序设计，它也就是那样，看懂，记住，做经典题型也就没有什么东西了，但什么但，我不知道。但我做得很慢，而且很明显，我有一些不懂，没记住。</p>
+<p>这都是让我烦心的事，我却没有任何动力去一个一个地解决。为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么？我在凑字数吗？可能吧。</p>
+<p>所以，我现在该做什么呢？</p>
+<p>刚才看了闻香识女人的劝说片段，感觉好了很多，很理解中校的心情，失去珍贵的一切，而又孤独一人，确实没有什么值得再留恋的。<br>跳探戈和开法拉利很帅。<br>这是他那一瞬间活下去的唯一理由，我又想到了在暑假时对人生意义的思考了，人生短短，人生苦长，人生又有什么意义呢？支持我们无意义人生存在的是什么呢？可能就是自己喜欢的人或东西上了吧。<br>烦心了就跳探戈。<br>跳探戈时很自豪很快乐，心中没有无尽的苦恼，而且身边又有佳人为伴。</p>
+<p>所以快乐，喜悦，兴奋是那份支持的感觉吧。现在想到复习高数和程序设计就有很大的厌烦和不情愿，这可能就是我之前做了那么多的学习方案却没有任何作用的原因了吧。</p>
+<p>对学习的热爱可以基本满足学好的要素。<br>热爱学习，自然愿意投入大量时间。<br>热爱学习，自然愿意迎接挑战。<br>热爱学习，自然不会被其他的事物给分散注意力。<br>热爱学习，自然能形成正反馈。<br>热爱学习，自然能有一种一切尽在掌握之中的感觉。<br>总之，我离学习好和爱学习只差一步了——找到我爱学习的理由，以及如何真正地爱上学习。</p>
+<p>好的。</p>
 ]]></content>
       <categories>
         <category>思考记录</category>
       </categories>
       <tags>
-        <tag>家庭</tag>
+        <tag>大学</tag>
+        <tag>困扰</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>也入一场辩论赛</title>
+    <url>/2021/04/03/ye-ru-yi-chang-bian-lun-sai/</url>
+    <content><![CDATA[<blockquote>
+<p>这是大一上学期自己身为组织委员动员同学参加辩论赛的时候写的，然而我并没有参加。</p>
+</blockquote>
+<p>亲爱的同学们，新生辩论赛报名今晚6:00就截止了，报名的几位同学让我们欣喜而感动，同时也为跃跃欲试的同学而紧张。</p>
+<p>一开始看到这个辩论赛，想想也就是个普通的活动，平时时间那么紧，哪里还能参加呢？但想想在上次思修课辩论赛中，自己的表现并不如意，我是不是还在起点低头徘徊呢？<span id="more"></span></p>
+<p>我追求思维提升，在知识的丛林中建起一座瞭望塔，透过迷雾，看清真正方向。<br>我追求生活体验，让人生的旧房里闯入一只花猫，打翻油漆桶，让墙壁上梅花朵朵。<br>我追求谈笑大方，让自己的眼眸中常常闪烁别人的脸庞，女生前的自己不必万分紧张。</p>
+<p>这就是我的追求吧，大学时光也多也少，值得回味与感激的时光屈指可数。也许我们没有辩论经验，但赛前会有专业培训；也许比赛期间我们忙得焦头烂额，但回报远大于三五天的倾尽全力；也许我们在场上紧张战栗，但身后有最可靠亲近的同学们，目光里是无尽的期许和肯定。这一切的珍贵，怎么能成为以后的某个背过身去，叹息自己的好不争气，好没勇气。</p>
+<p>我的亲爱的同学们，你们完全有能力，可让那些可以成就自己想要成为的样子的机遇再回来，实在难。但现在简简单单的报名又有多难呢？</p>
+]]></content>
+      <categories>
+        <category>思考记录</category>
+      </categories>
+      <tags>
+        <tag>大学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大二开学考前复习及经验回顾一</title>
+    <url>/2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-yi/</url>
+    <content><![CDATA[<blockquote>
+<p>这篇文章写于去年八月份，从原博客迁移而来。</p>
+</blockquote>
+<p>23号大学开学，我也就莫名其妙地成为一名大二学生了，现在有一件要命的事摆在眼前，开学期末考试。</p>
+<p>上个学期在家里浑浑噩噩的，也没有学到什么东西，这个挺长的暑假又在碌碌无为中度过。<br>结果就是我要在这几天内复习完数理化三门的全部知识，然后拿起久违的笔去考试了。<br>果然感到一丝痛苦和绝望呢。</p>
+<p>但假期无事可做，开学前几天高强度完成作业和复习好像是常干的事了，我也没有太多的悔意，毕竟假期实在不愿意学习，这可能有一丝孤单的因素在里面，如果能有人陪伴我该多好。<span id="more"></span></p>
+<p>明天开始就是正式的复习时期了，估计我真的会很忙。记得上个这样的经历是在高三了，那段时间是每天学习16小时，睡6小时，吃饭加其他时间2小时，因为那么多的作业要补啊。现在想来都是痛苦的回忆。更不要说21号我还有科二考试，这几天还要多加练习。</p>
+<p>时间就更少了。</p>
+<p>贴个计划表吧。<br>18号浏览画思维导图，找重点<br>19，20，21号整理重点并找典型题目<br>22，25 高数做典型题和真题（23号为周日会有家庭聚会，24号要坐6个小时高铁去学校）<br>26，27大物做典型题和真题<br>28，29大化做典型题和真题</p>
+<p>虽然，在有限的时间里我没有理由去拖延了，也就会强迫自己坐在那里乖乖学习，但自己只要一个人去学习就经常会有强烈的逆反心理，总会把不好的情绪放大，这可能会影响自己的复习效率，带来更大的痛苦，所以我在想要不要来个云同桌。所谓云同桌就是像B站的学习直播，自己边放直播边学习营造氛围，带来比较好的仪式感，代入更好的状态。但每当有这样类似的想法产生时，内心就会有一个声音说道：怎么屁事这么多？好好坐着学习不行吗？搞这么多花样？我又会犹豫不决。<br>这是常有的事了，这源自我一直以来的不断批评自己的思维。我比较明确自己的这个缺陷是在高中的一次经历。<br>记得当时就是老师把我们的作业打乱发给我们让我们互相批。我是只把错误的部分打上红叉然后在旁边写上正确答案。而我旁边的一位学霸则是把对的全打上红勾，在错误部分旁写上正确答案。（我在高中成绩算中等偏上，大概全校15-20名的样子，这位同学就一般是全校全校第5左右）他看到我的批改方式说了一句：你怎么就打叉，同学看到了要难过的。当时我思考了一下发现确实在我的记忆里只有叉没有对勾。不管是考试卷，模拟题还是平时的作业，我只会把自己的错误标出来，仅此而已。我确实尝试过把对的地方打上勾，但试了几次就没有继续了。因为我在打勾时内心总会反复对我说：你怎么那么做作，对了就对了呗，还要那么刻意地打勾，打勾就是浪费时间。这就是我的真实想法。</p>
+<p>这次经历让我深刻感觉到自己有否定自己的习惯。但当时学习挺忙的也就没有去深究这个问题，后来也就淡忘了。</p>
+<p>这个问题在我大一上学期期末考前复习阶段又重新拾起。<br>大一上学期自己成绩挺一般的，高数期中考试50多分，辅导员找我谈话。在谈话的结尾他说给自己定个目标吧，我想了想，70多吧。他说不行，要80多，总成绩，然后记在表格上就让我走了。总成绩80多，这次50多占比不算太大，算了算期末考试要80多才能达到目标。辅导员说说而已，自己没事找什么无趣呢。他说考90多那你也去考呗。我应该没有义务去按照他说的去做的。但我还是觉得考80多努努力还是可以的，虽然数学是我七八年学习生涯里最拉胯的学科，经常徘徊在及格线边缘，但自己也在高三市联考考过数学全校第一。另一方面还是因为自己脸皮薄，害怕丢面子。我可以自信地说百分之七十做的蠢事都来自我的好面子。所以我决定要考80多。</p>
+<p>在制定计划时我深刻思考了上面的那个缺陷。否定自己是我一直存在的严重错误，这在高中就开始变得明显起来。记得初中是全校第一的，当时自己好像做事都挺有信心。虽然不能仅凭成绩去下结论，但我想试一试，去发现我的大考必砸，小考必不顺是不是自我否定造成的。</p>
+<p>我尝试的方法很简单，就是每当有想法出现时就以我最NB，天底下只有我最牛，没有是我做不到的等等的话去抢夺它的话语权。这看起来确实有点蠢，有点幼稚，就像是每天早上在镜子前鼓励自己一句，但我也不知道该怎么办才好。</p>
+<p>所以就经常对自己说这些话。逐渐发现自己更加能进入状态，上课能一直跟住老师节奏，写作业更加得心应手，遇到的问题也没有什么太难的。虽然没有那么夸张，但改善得很明显。这其中更是因为那段时间只要没有课我都会去自习室默默地学习，风雨无阻，学习逐渐变成惯性。还有就是发现我一直没有信心还因为我确实比较懒，很多要记的公式定理基本上没记住几个，看到其他人张口就来，我很心虚，我觉得这也是我在学习上自卑的一个原因。所以我就老老实实地去背公式了，把所有公式列在一张纸上，每当做对应学科作业前就全部默写一遍，默写七八遍就差不多记住了。做题上课也就变得很有信心，不怕老师点名背公式了。</p>
+<p>C语言在上学期也一直困扰我，期中还考了0分，虽然是机器的问题但自己确实很多不会。后来练得还好，但考试前又犯了焦虑症。我经常考试失败很大程度上是因为考试时遇到一题不太会，我就会无限地放大，不断怀疑自己，不断跳题，最后也做不了几题。所以我决定找其他东西转移一下自己的注意力，保持平常愉悦的心情。我选的是看一些有趣的图片，表情包，视频之类的。记得当时看完后心情变得平和许多，敲代码手指也不太僵，最后是10道对了差不多7道，70多分，很满意了。</p>
+<p>现在0:31了，明天要早起复习，剩下的有空写在下一篇文章吧。</p>
+]]></content>
+      <categories>
+        <category>思考记录</category>
+      </categories>
+      <tags>
+        <tag>大学</tag>
+        <tag>考试</tag>
       </tags>
   </entry>
   <entry>
@@ -228,112 +337,42 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML5学习笔记</title>
-    <url>/2021/04/17/html5-xue-xi-bi-ji/</url>
+    <title>我的梦和中国梦</title>
+    <url>/2021/04/03/wo-de-meng-he-zhong-guo-meng/</url>
     <content><![CDATA[<blockquote>
-<p>IE9+以上浏览器兼容</p>
+<p>这是大一上学期政治课上的自己的简短演讲，当时想了很长时间呢。</p>
 </blockquote>
-<h2 id="新增的语义化标签"><a href="#新增的语义化标签" class="headerlink" title="新增的语义化标签"></a>新增的语义化标签</h2><figure class="highlight asciidoc"><table><tr><td class="code"><pre class=" language-hljs asciidoc"><span class="hljs-bullet">- </span>这种语义化标准主要是针对搜索引擎的<br><span class="hljs-bullet">- </span>这些新标签页面中可以使用多次<br><span class="hljs-bullet">- </span>在IE9中，需要把这些元素转换为块级元素 display: block<br><span class="hljs-bullet"><code class="language-hljs asciidoc"><span class="hljs-bullet">- </span>这种语义化标准主要是针对搜索引擎的<br><span class="hljs-bullet">- </span>这些新标签页面中可以使用多次<br><span class="hljs-bullet">- </span>在IE9中，需要把这些元素转换为块级元素 display: block<br><span class="hljs-bullet">- </span>移动端更喜欢使用这些标签<br></code></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span> :头部标签<br><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>:导航标签<br><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>内容标签<br><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>:定义文档某个区域<br><span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span> :侧边栏标签<br><span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span> :头部标签<br><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>:导航标签<br><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>内容标签<br><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>:定义文档某个区域<br><span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span> :侧边栏标签<br><span class="hljs-tag">&lt;<span class="hljs-name">footer</span>></span> :尾部标签<br></code></pre></td></tr></table></figure>
-
-<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415160729817.png" alt="image-20210415160729817"></p>
-<h2 id="新增的多媒体标签"><a href="#新增的多媒体标签" class="headerlink" title="新增的多媒体标签"></a>新增的多媒体标签</h2><h3 id="1-音频"><a href="#1-音频" class="headerlink" title="1. 音频"></a><strong>1.<audio> 音频</strong></h3><figure class="highlight xml"><table><tr><td class="code"><pre class=" language-hljs xml">当前<span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs xml">当前<span class="hljs-tag">&lt;<span class="hljs-name">audio</span>></span>元素支持三种视频格式MP3、Wav、Ogg，尽量使用mp3格式。<br></code></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot; controls&quot;</span>&gt;</span>&lt;/ audio&gt;<br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.mp3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/mpeg&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/ogg&quot;</span>&gt;</span><br>  Your browser does not support this audio format.<br><span class="hljs-tag">&lt;/<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot; controls&quot;</span>&gt;</span>&lt;/ audio&gt;<br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.mp3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/mpeg&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/ogg&quot;</span>&gt;</span><br>  Your browser does not support this audio format.<br><span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>></span><br></code></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415165747670.png" alt="image-20210415165747670"></p>
-<h3 id="2-视频"><a href="#2-视频" class="headerlink" title="2. 视频"></a>2.<video> 视频</h3><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">当前&lt;<span class="hljs-selector-tag">video</span>&gt;元素支持三种视频格式MP4、WebM、Ogg，尽量使用mp4格式。<br><span class="hljs-number">1</span>. controls 属性供添加播放、暂停和音量控件。<br><span class="hljs-number">2</span>. &lt;<span class="hljs-selector-tag">video</span>&gt; 与 &lt;/<span class="hljs-selector-tag">video</span>&gt; 之间插入的内容是供不支持 <span class="hljs-selector-tag"><code class="language-hljs css">当前&lt;<span class="hljs-selector-tag">video</span>&gt;元素支持三种视频格式MP4、WebM、Ogg，尽量使用mp4格式。<br><span class="hljs-number">1</span>. controls 属性供添加播放、暂停和音量控件。<br><span class="hljs-number">2</span>. &lt;<span class="hljs-selector-tag">video</span>&gt; 与 &lt;/<span class="hljs-selector-tag">video</span>&gt; 之间插入的内容是供不支持 <span class="hljs-selector-tag">video</span> 元素的浏览器显示的。<br></code></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span><br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/ogg&quot;</span> &gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">souree</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> &gt;</span><br>	您的浏览器暂不支持<span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span><br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/ogg&quot;</span> &gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">souree</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> &gt;</span><br>	您的浏览器暂不支持<span class="hljs-tag">&lt;<span class="hljs-name">video</span>></span>标签播放视频<br></ video ><br></code></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415164818736.png" alt="image-20210415164818736"></p>
-<h2 id="新增的input类型"><a href="#新增的input类型" class="headerlink" title="新增的input类型"></a>新增的input类型</h2><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag"><code class="language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag">form</span>表单域<br></code></pre></td></tr></table></figure>
-
-<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415170217357.png" alt="image-20210415170217357"></p>
-<h2 id="新增的表单属性"><a href="#新增的表单属性" class="headerlink" title="新增的表单属性"></a>新增的表单属性</h2><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag"><code class="language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag">form</span>表单域<br></code></pre></td></tr></table></figure>
-
-<figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">::placeholder</span>&#123;<br>		<span class="hljs-attribute"><code class="language-hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">::placeholder</span>&#123;<br>		<span class="hljs-attribute">color</span>: pink;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415171352091.png" alt="image-20210415171352091"></p>
-]]></content>
-      <categories>
-        <category>前端笔记</category>
-      </categories>
-      <tags>
-        <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一次学习中的崩溃经历</title>
-    <url>/2021/04/03/yi-ci-xue-xi-zhong-de-beng-kui-jing-li/</url>
-    <content><![CDATA[<blockquote>
-<p>这是大一上学期临近期末考试，自己每天早出晚归独自学习的一次崩溃经历。</p>
-</blockquote>
-<p>今天我很难受，有一点抑郁，就是很茫然，不知道要做什么，确实我有很多任务要去完成，但就是不想做，没有任何想去做的欲望和动力。呼吸好像也很沉重迟缓，头脑有似曾相识的放空感。我也不知道该说什么了，懒得去写了。</p>
-<p>我到底想要什么呢？想做什么呢？不知道。是打篮球？做程序题？画画？看电影？打游戏？找APP？好像都没有兴趣了。我到底该做些什么呢？<span id="more"></span></p>
-<p>期末考试要到了，可以说明天考英语口语，我有些担心，但事实上这并没有那么重要，而且精心准备或许还是被束缚在条条框框里。那个高数期末考试也要来了，这本书看起来很简单，就是说极限和微积分的，考的题目大都一样。但为什么我就是不能写出来或是很快写出来呢？内容并没有那么多啊，为什么？<br>再说说程序设计，它也就是那样，看懂，记住，做经典题型也就没有什么东西了，但什么但，我不知道。但我做得很慢，而且很明显，我有一些不懂，没记住。</p>
-<p>这都是让我烦心的事，我却没有任何动力去一个一个地解决。为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么为什么？我在凑字数吗？可能吧。</p>
-<p>所以，我现在该做什么呢？</p>
-<p>刚才看了闻香识女人的劝说片段，感觉好了很多，很理解中校的心情，失去珍贵的一切，而又孤独一人，确实没有什么值得再留恋的。<br>跳探戈和开法拉利很帅。<br>这是他那一瞬间活下去的唯一理由，我又想到了在暑假时对人生意义的思考了，人生短短，人生苦长，人生又有什么意义呢？支持我们无意义人生存在的是什么呢？可能就是自己喜欢的人或东西上了吧。<br>烦心了就跳探戈。<br>跳探戈时很自豪很快乐，心中没有无尽的苦恼，而且身边又有佳人为伴。</p>
-<p>所以快乐，喜悦，兴奋是那份支持的感觉吧。现在想到复习高数和程序设计就有很大的厌烦和不情愿，这可能就是我之前做了那么多的学习方案却没有任何作用的原因了吧。</p>
-<p>对学习的热爱可以基本满足学好的要素。<br>热爱学习，自然愿意投入大量时间。<br>热爱学习，自然愿意迎接挑战。<br>热爱学习，自然不会被其他的事物给分散注意力。<br>热爱学习，自然能形成正反馈。<br>热爱学习，自然能有一种一切尽在掌握之中的感觉。<br>总之，我离学习好和爱学习只差一步了——找到我爱学习的理由，以及如何真正地爱上学习。</p>
-<p>好的。</p>
+<p>我的梦是什么？一直在梦，一直在想，什么样的算作我的梦。苦苦的思索也许连真正前的那块帷幕也碰不到。想象着，能够找到那种那片土地，一片长满青草的小山坡，向上能看到蓝白斑驳的天空，向下能看到最平静缓和的生活姿态。静静地躺着，习习的风连我和草一起拂动，温暖的明晰的阳光撒在身上。过着没有人会把我惊起的生活。<span id="more"></span></p>
+<p>这是我的模糊的梦吧，但希望它成为明朗的中国梦，一个用绿树鲜花簇拥着的，一个用青山绿水环抱着的，一个用清风明月笼罩着的中国之梦。</p>
 ]]></content>
       <categories>
         <category>思考记录</category>
       </categories>
       <tags>
         <tag>大学</tag>
-        <tag>困扰</tag>
       </tags>
   </entry>
   <entry>
-    <title>大二开学考前复习及经验回顾一</title>
-    <url>/2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-yi/</url>
+    <title>给可爱的小朋友的一封信</title>
+    <url>/2021/04/03/gei-ke-ai-de-xiao-peng-you-de-yi-feng-xin/</url>
     <content><![CDATA[<blockquote>
-<p>这篇文章写于去年八月份，从原博客迁移而来。</p>
+<p>这篇文章是大学学校给“特殊”小朋友的征文活动写的，没有敷衍混学时，写的是自己的真实想法。</p>
 </blockquote>
-<p>23号大学开学，我也就莫名其妙地成为一名大二学生了，现在有一件要命的事摆在眼前，开学期末考试。</p>
-<p>上个学期在家里浑浑噩噩的，也没有学到什么东西，这个挺长的暑假又在碌碌无为中度过。<br>结果就是我要在这几天内复习完数理化三门的全部知识，然后拿起久违的笔去考试了。<br>果然感到一丝痛苦和绝望呢。</p>
-<p>但假期无事可做，开学前几天高强度完成作业和复习好像是常干的事了，我也没有太多的悔意，毕竟假期实在不愿意学习，这可能有一丝孤单的因素在里面，如果能有人陪伴我该多好。<span id="more"></span></p>
-<p>明天开始就是正式的复习时期了，估计我真的会很忙。记得上个这样的经历是在高三了，那段时间是每天学习16小时，睡6小时，吃饭加其他时间2小时，因为那么多的作业要补啊。现在想来都是痛苦的回忆。更不要说21号我还有科二考试，这几天还要多加练习。</p>
-<p>时间就更少了。</p>
-<p>贴个计划表吧。<br>18号浏览画思维导图，找重点<br>19，20，21号整理重点并找典型题目<br>22，25 高数做典型题和真题（23号为周日会有家庭聚会，24号要坐6个小时高铁去学校）<br>26，27大物做典型题和真题<br>28，29大化做典型题和真题</p>
-<p>虽然，在有限的时间里我没有理由去拖延了，也就会强迫自己坐在那里乖乖学习，但自己只要一个人去学习就经常会有强烈的逆反心理，总会把不好的情绪放大，这可能会影响自己的复习效率，带来更大的痛苦，所以我在想要不要来个云同桌。所谓云同桌就是像B站的学习直播，自己边放直播边学习营造氛围，带来比较好的仪式感，代入更好的状态。但每当有这样类似的想法产生时，内心就会有一个声音说道：怎么屁事这么多？好好坐着学习不行吗？搞这么多花样？我又会犹豫不决。<br>这是常有的事了，这源自我一直以来的不断批评自己的思维。我比较明确自己的这个缺陷是在高中的一次经历。<br>记得当时就是老师把我们的作业打乱发给我们让我们互相批。我是只把错误的部分打上红叉然后在旁边写上正确答案。而我旁边的一位学霸则是把对的全打上红勾，在错误部分旁写上正确答案。（我在高中成绩算中等偏上，大概全校15-20名的样子，这位同学就一般是全校全校第5左右）他看到我的批改方式说了一句：你怎么就打叉，同学看到了要难过的。当时我思考了一下发现确实在我的记忆里只有叉没有对勾。不管是考试卷，模拟题还是平时的作业，我只会把自己的错误标出来，仅此而已。我确实尝试过把对的地方打上勾，但试了几次就没有继续了。因为我在打勾时内心总会反复对我说：你怎么那么做作，对了就对了呗，还要那么刻意地打勾，打勾就是浪费时间。这就是我的真实想法。</p>
-<p>这次经历让我深刻感觉到自己有否定自己的习惯。但当时学习挺忙的也就没有去深究这个问题，后来也就淡忘了。</p>
-<p>这个问题在我大一上学期期末考前复习阶段又重新拾起。<br>大一上学期自己成绩挺一般的，高数期中考试50多分，辅导员找我谈话。在谈话的结尾他说给自己定个目标吧，我想了想，70多吧。他说不行，要80多，总成绩，然后记在表格上就让我走了。总成绩80多，这次50多占比不算太大，算了算期末考试要80多才能达到目标。辅导员说说而已，自己没事找什么无趣呢。他说考90多那你也去考呗。我应该没有义务去按照他说的去做的。但我还是觉得考80多努努力还是可以的，虽然数学是我七八年学习生涯里最拉胯的学科，经常徘徊在及格线边缘，但自己也在高三市联考考过数学全校第一。另一方面还是因为自己脸皮薄，害怕丢面子。我可以自信地说百分之七十做的蠢事都来自我的好面子。所以我决定要考80多。</p>
-<p>在制定计划时我深刻思考了上面的那个缺陷。否定自己是我一直存在的严重错误，这在高中就开始变得明显起来。记得初中是全校第一的，当时自己好像做事都挺有信心。虽然不能仅凭成绩去下结论，但我想试一试，去发现我的大考必砸，小考必不顺是不是自我否定造成的。</p>
-<p>我尝试的方法很简单，就是每当有想法出现时就以我最NB，天底下只有我最牛，没有是我做不到的等等的话去抢夺它的话语权。这看起来确实有点蠢，有点幼稚，就像是每天早上在镜子前鼓励自己一句，但我也不知道该怎么办才好。</p>
-<p>所以就经常对自己说这些话。逐渐发现自己更加能进入状态，上课能一直跟住老师节奏，写作业更加得心应手，遇到的问题也没有什么太难的。虽然没有那么夸张，但改善得很明显。这其中更是因为那段时间只要没有课我都会去自习室默默地学习，风雨无阻，学习逐渐变成惯性。还有就是发现我一直没有信心还因为我确实比较懒，很多要记的公式定理基本上没记住几个，看到其他人张口就来，我很心虚，我觉得这也是我在学习上自卑的一个原因。所以我就老老实实地去背公式了，把所有公式列在一张纸上，每当做对应学科作业前就全部默写一遍，默写七八遍就差不多记住了。做题上课也就变得很有信心，不怕老师点名背公式了。</p>
-<p>C语言在上学期也一直困扰我，期中还考了0分，虽然是机器的问题但自己确实很多不会。后来练得还好，但考试前又犯了焦虑症。我经常考试失败很大程度上是因为考试时遇到一题不太会，我就会无限地放大，不断怀疑自己，不断跳题，最后也做不了几题。所以我决定找其他东西转移一下自己的注意力，保持平常愉悦的心情。我选的是看一些有趣的图片，表情包，视频之类的。记得当时看完后心情变得平和许多，敲代码手指也不太僵，最后是10道对了差不多7道，70多分，很满意了。</p>
-<p>现在0:31了，明天要早起复习，剩下的有空写在下一篇文章吧。</p>
+<p>因为我想要给特殊儿童关爱和祝福，所以我选择了参与这个活动。虽然一开始是想要做个手工当你们的玩具，但想了想你们可能最需要的不是玩具，所以我就写了这封信，写下自己想要对你们说的话。</p>
+<p>首先呢，关于特殊儿童这个词，我一开始不是很明白，我想是不是有什么特长而特殊呢，但仔细一想既然需要关爱和祝福，可能就不是这样了。其实对于我来说，这个世界上的每一个人真的没有什么特殊的，只是不同罢了。他选择了一个别人都不建议的行业是特殊吗？只不过就是根据他自己的想法做自己想做的事。我时常在自己的心里告诉自己，在某些事上，我也会成为别人眼中的特殊，遭到特殊的对待，所以我更应该从对方的角度看问题，尊重别人的想法。总而言之，没有什么特殊的。<span id="more"></span></p>
+<p>然后是关于我自己的经历了。小时候，我的家庭就不和睦，没有父母在身边，一个人在外住校学习，自己也不喜欢和别人说太多话，只想做好自己的事。基本上没有人会关心和理解我的感受，但其实我并不在乎，我只觉得更加自由自在，能专心做一件事就已经足够了。但偶尔我也会感到难过无比，特别是家长会的时候，我只能做自己的家长。我还记得自己打电话告诉妈妈家长会的事，我明明知道她远在千里之外辛苦工作根本没有可能参加，但我就是想要打那个电话，心里想着我能不能也能骄傲地看着自己家长会上的父母，让他们知道我付出了多少的努力，在多少的痛苦孤独的时光中不断进步，成绩名列前茅。但现实就是现实，她只是说知道了，然后就不知道说什么了，我也明白她的为难，只能在哭出声前挂了电话，回到寝室一个人愤怒地锤铁柜子，哭得稀里哗啦。</p>
+<p>但现在我不会再这样了，为什么呢？因为我已经长大了，成为一个男子汉，我不能再在没有实际作用的事上去浪费时间，我必须不断努力，向着自己的目标前进，在别人都在熟睡的时间去学习新技能，为了将来能多赚一点钱。我时常问自己，如果我找到了自己喜欢的人，在她也喜欢我的情况下，如果我没有能力让她让孩子过上幸福的生活，我还算是什么男人呢？我现在的小小肩膀能够承担得起家庭的重担吗？</p>
+<p>我说这些事并不为了回顾自己的过去，我只想告诉你们，不管是男孩还是女孩，不管你有多么特殊，在我眼里都只是不同，我会为你的痛苦经历而感到伤心，但如果你只是沉浸在悲伤之中，我只会认为你是是个懦弱的人，没有尊严的人。</p>
+<p>在你们这样宝贵的年纪里，有无限的可能性。总有人说自己已经努力了，但结果就是这样，我也无可奈何，这都是命，我的努力又能改变什么呢？我的亲身经历让我明白，这些人并没有真正地努力，因为每个人的条件不同，引起质变的努力也不同，如果你真的有勇气，相信自己，愿意做任何的尝试，放弃许多东西，你就一定可以。如果你虽然努力坚持，但在内心深处仍然悄悄地告诉自己不可能的话，虽然你会进步许多，但仍不会达到最初的目标。</p>
+<p>我不懂得如何安慰和关心别人，因为我也从不安慰和关心自己，认真做事，严格要求，不断思考，是我唯一会做的事。</p>
+<p>祝你开心。</p>
 ]]></content>
       <categories>
         <category>思考记录</category>
       </categories>
       <tags>
         <tag>大学</tag>
-        <tag>考试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>也入一场辩论赛</title>
-    <url>/2021/04/03/ye-ru-yi-chang-bian-lun-sai/</url>
-    <content><![CDATA[<blockquote>
-<p>这是大一上学期自己身为组织委员动员同学参加辩论赛的时候写的，然而我并没有参加。</p>
-</blockquote>
-<p>亲爱的同学们，新生辩论赛报名今晚6:00就截止了，报名的几位同学让我们欣喜而感动，同时也为跃跃欲试的同学而紧张。</p>
-<p>一开始看到这个辩论赛，想想也就是个普通的活动，平时时间那么紧，哪里还能参加呢？但想想在上次思修课辩论赛中，自己的表现并不如意，我是不是还在起点低头徘徊呢？<span id="more"></span></p>
-<p>我追求思维提升，在知识的丛林中建起一座瞭望塔，透过迷雾，看清真正方向。<br>我追求生活体验，让人生的旧房里闯入一只花猫，打翻油漆桶，让墙壁上梅花朵朵。<br>我追求谈笑大方，让自己的眼眸中常常闪烁别人的脸庞，女生前的自己不必万分紧张。</p>
-<p>这就是我的追求吧，大学时光也多也少，值得回味与感激的时光屈指可数。也许我们没有辩论经验，但赛前会有专业培训；也许比赛期间我们忙得焦头烂额，但回报远大于三五天的倾尽全力；也许我们在场上紧张战栗，但身后有最可靠亲近的同学们，目光里是无尽的期许和肯定。这一切的珍贵，怎么能成为以后的某个背过身去，叹息自己的好不争气，好没勇气。</p>
-<p>我的亲爱的同学们，你们完全有能力，可让那些可以成就自己想要成为的样子的机遇再回来，实在难。但现在简简单单的报名又有多难呢？</p>
-]]></content>
-      <categories>
-        <category>思考记录</category>
-      </categories>
-      <tags>
-        <tag>大学</tag>
+        <tag>人生</tag>
       </tags>
   </entry>
   <entry>
@@ -408,45 +447,6 @@
 <p><em>但我却选择了另外一条路，</em><br><em>它荒草萋萋，十分幽寂，</em><br><em>显得更诱人，更美丽；</em><br><em>虽然在这条小路上，</em><br><em>很少留下旅人的足迹。</em></p>
 <p><em>那天清晨落叶满地，</em><br><em>两条路都未经脚印污染。</em><br><em>啊，留下一条路等改日再见！</em><br><em>但我知道路径延绵无尽头，</em><br><em>恐怕我难以再回返。</em></p>
 <p><em>也许多少年后在某个地方，</em><br><em>我将轻声叹息将往事回顾：</em><br><em>一片树林里分出两条路——</em><br><em>而我选择了人际更少的一条，</em><br><em>从此决定了我一生的道路。</em></p>
-]]></content>
-      <categories>
-        <category>思考记录</category>
-      </categories>
-      <tags>
-        <tag>大学</tag>
-        <tag>人生</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的梦和中国梦</title>
-    <url>/2021/04/03/wo-de-meng-he-zhong-guo-meng/</url>
-    <content><![CDATA[<blockquote>
-<p>这是大一上学期政治课上的自己的简短演讲，当时想了很长时间呢。</p>
-</blockquote>
-<p>我的梦是什么？一直在梦，一直在想，什么样的算作我的梦。苦苦的思索也许连真正前的那块帷幕也碰不到。想象着，能够找到那种那片土地，一片长满青草的小山坡，向上能看到蓝白斑驳的天空，向下能看到最平静缓和的生活姿态。静静地躺着，习习的风连我和草一起拂动，温暖的明晰的阳光撒在身上。过着没有人会把我惊起的生活。<span id="more"></span></p>
-<p>这是我的模糊的梦吧，但希望它成为明朗的中国梦，一个用绿树鲜花簇拥着的，一个用青山绿水环抱着的，一个用清风明月笼罩着的中国之梦。</p>
-]]></content>
-      <categories>
-        <category>思考记录</category>
-      </categories>
-      <tags>
-        <tag>大学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>给可爱的小朋友的一封信</title>
-    <url>/2021/04/03/gei-ke-ai-de-xiao-peng-you-de-yi-feng-xin/</url>
-    <content><![CDATA[<blockquote>
-<p>这篇文章是大学学校给“特殊”小朋友的征文活动写的，没有敷衍混学时，写的是自己的真实想法。</p>
-</blockquote>
-<p>因为我想要给特殊儿童关爱和祝福，所以我选择了参与这个活动。虽然一开始是想要做个手工当你们的玩具，但想了想你们可能最需要的不是玩具，所以我就写了这封信，写下自己想要对你们说的话。</p>
-<p>首先呢，关于特殊儿童这个词，我一开始不是很明白，我想是不是有什么特长而特殊呢，但仔细一想既然需要关爱和祝福，可能就不是这样了。其实对于我来说，这个世界上的每一个人真的没有什么特殊的，只是不同罢了。他选择了一个别人都不建议的行业是特殊吗？只不过就是根据他自己的想法做自己想做的事。我时常在自己的心里告诉自己，在某些事上，我也会成为别人眼中的特殊，遭到特殊的对待，所以我更应该从对方的角度看问题，尊重别人的想法。总而言之，没有什么特殊的。<span id="more"></span></p>
-<p>然后是关于我自己的经历了。小时候，我的家庭就不和睦，没有父母在身边，一个人在外住校学习，自己也不喜欢和别人说太多话，只想做好自己的事。基本上没有人会关心和理解我的感受，但其实我并不在乎，我只觉得更加自由自在，能专心做一件事就已经足够了。但偶尔我也会感到难过无比，特别是家长会的时候，我只能做自己的家长。我还记得自己打电话告诉妈妈家长会的事，我明明知道她远在千里之外辛苦工作根本没有可能参加，但我就是想要打那个电话，心里想着我能不能也能骄傲地看着自己家长会上的父母，让他们知道我付出了多少的努力，在多少的痛苦孤独的时光中不断进步，成绩名列前茅。但现实就是现实，她只是说知道了，然后就不知道说什么了，我也明白她的为难，只能在哭出声前挂了电话，回到寝室一个人愤怒地锤铁柜子，哭得稀里哗啦。</p>
-<p>但现在我不会再这样了，为什么呢？因为我已经长大了，成为一个男子汉，我不能再在没有实际作用的事上去浪费时间，我必须不断努力，向着自己的目标前进，在别人都在熟睡的时间去学习新技能，为了将来能多赚一点钱。我时常问自己，如果我找到了自己喜欢的人，在她也喜欢我的情况下，如果我没有能力让她让孩子过上幸福的生活，我还算是什么男人呢？我现在的小小肩膀能够承担得起家庭的重担吗？</p>
-<p>我说这些事并不为了回顾自己的过去，我只想告诉你们，不管是男孩还是女孩，不管你有多么特殊，在我眼里都只是不同，我会为你的痛苦经历而感到伤心，但如果你只是沉浸在悲伤之中，我只会认为你是是个懦弱的人，没有尊严的人。</p>
-<p>在你们这样宝贵的年纪里，有无限的可能性。总有人说自己已经努力了，但结果就是这样，我也无可奈何，这都是命，我的努力又能改变什么呢？我的亲身经历让我明白，这些人并没有真正地努力，因为每个人的条件不同，引起质变的努力也不同，如果你真的有勇气，相信自己，愿意做任何的尝试，放弃许多东西，你就一定可以。如果你虽然努力坚持，但在内心深处仍然悄悄地告诉自己不可能的话，虽然你会进步许多，但仍不会达到最初的目标。</p>
-<p>我不懂得如何安慰和关心别人，因为我也从不安慰和关心自己，认真做事，严格要求，不断思考，是我唯一会做的事。</p>
-<p>祝你开心。</p>
 ]]></content>
       <categories>
         <category>思考记录</category>
