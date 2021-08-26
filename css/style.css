@@ -55,6 +55,10 @@ body {
     #center {
         width: 100% !important;
     }
+    .article,
+    .article-list-container {
+        padding-top: 0 !important;
+    }
     /* .article-list-item-wrapper{
         flex-direction: column;
     } */
