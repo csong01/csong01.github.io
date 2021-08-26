@@ -1,558 +1,277 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <title></title>
-        <link rel="stylesheet" href="/css/layout.css" />
-        <link rel="stylesheet" href="/css/index.css" />
-        <link rel="stylesheet" href="/css/post.css" />
-        <link rel="stylesheet" href="/css/ct.css" />
-        <!-- highlight主题 -->
-        <link
-            href="/css/highlight_style/obsidian.min.css"
-            rel="stylesheet"
-        />
-        <!-- Vssue 的样式文件 -->
-        <link rel="stylesheet" href="/css/vssue.min.css" />
-    <!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
-<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
-  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="CSONG" type="application/atom+xml">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>
+        
+    </title>
+    <!-- fontawosome -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- 普通默认样式 -->
+    <link rel="stylesheet" href="/css/initialize.css" />
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/left.css" />
+    <link rel="stylesheet" href="/css/center.css" />
+    <link rel="stylesheet" href="/css/archive.css" />
+    <link rel="stylesheet" href="/css/list.css" />
+    <link rel="stylesheet" href="/css/post.css" />
+    <link rel="stylesheet" href="/css/code.css" />
+    <!-- vsssue评论 -->
+    <link rel="stylesheet" href="/css/vssue.min.css" />
+    <!-- highlight高亮主题 -->
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/atom-one-light.min.css">
+    <!-- <link href="/css/obsidian.min.css" rel="stylesheet" /> -->
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="CSONG" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
-    <body>
-        <h1 id="top"></h1>
-        https://csong.vercel.app
-        <header class="header-container">
-            <div class="header">
-                <a class="site-name" href="/">CSONG</a>
-                <div class="nav-container">
-                    <a href="https://csong.vercel.app#about">关于</a>
-                    <a href="https://csong.vercel.app#article">文章</a>
-                    <a href="https://csong.vercel.app#category">分类</a>
-                    <a href="https://csong.vercel.app#tag">标签</a>
-                    <a href="https://csong.vercel.app#archive">归档</a>
-                    <a href="https://csong.vercel.app#link">友链</a>
+<body>
+    <div class="body-container">
+        <div id="left">
+            <div class="blogger-info">
+                <div class="blogger-info-img">
+                    <a href="#"></a>
+                </div>
+                <div class="blogger-info-nickname">
+                    CSONG
+                </div>
+                <div class="blogger-info-desc">
+                    大步前进，消除恐惧
+                </div>
+                <div class="blogger-info-social">
+                    <a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=442529798&amp;site=qq&amp;menu=yes" class="fa fa-qq"></a>
+                    <a target="_blank" rel="noopener" href="https://github.com/csong01" class="fa fa-github-square"></a>
+                    <a href="/atom.xml" class="fa fa-rss"></a>
+                    <a href="mailto:442529798@qq.com" class="fa fa-envelope"></a>
                 </div>
             </div>
-        </header>
-
-        <section class="main-conatiner">
-            <div class="main"><a name="about"></a>
-<div class="part-container">
-    <div class="index-about">
-        <div class="part-title-container">
-            <h1 class="part-title">关于</h1>
+            <div class="line"></div>
+            <!-- <div class="menu-label">导航</div> -->
+            <nav class="nav">
+                <a href="/" class="nav-list">
+                    <span class="fa fa-home"></span>
+                    主页
+                </a>
+                <a href="/archives" class="nav-list">
+                    <span class="fa fa-save"></span>
+                    归档
+                </a>
+                <!-- <a href="#" class="nav-list">
+                    <span class="fa fa-list-alt"></span>
+                    项目1
+                </a>
+                <a href="#" class="nav-list">
+                    <span class="fa fa-list-alt"></span>
+                    项目2
+                </a>
+                <a href="#" class="nav-list">
+                    <span class="fa fa-paste"></span>
+                    留言板
+                </a> -->
+                <a href="/about" class="nav-list">
+                    <span class="fa fa-user"></span>
+                    关于
+                </a>
+                <div class="left-category">
+                    <ul class="left-category-list">
+                        <li>
+                            <input id="left-category-list-1" type="checkbox" hidden />
+                            <label for="left-category-list-1" class="left-category-list-1st">
+                                <span id="left-category-list-1-icon" class="fa fa-link"></span>
+                                <span class="fa fa-angle-right"></span>
+                                友链
+                            </label>
+                            <ul class="left-category-list-sub">
+                                
+                                    <li><a target="_blank" rel="noopener" href="https://blog.zhheo.com/">
+                                            Heo
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://zfe.space">
+                                            小冰博客
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://akilar.top/">
+                                            Akilarの糖果屋
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://ccs.zone">
+                                            CC’s Zone
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://guaotat.github.io/">
+                                            孤傲
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://blog.nianbroken.top/">
+                                            SuiNian's Blog
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://cnhuazhu.gitee.io/">
+                                            花猪のBlog
+                                        </a></li>
+                                    
+                                        <!-- <li>
+                                    <input id="left-category-list-1-sub" type="checkbox" hidden />
+                                    <label for="left-category-list-1-sub">
+                                        <span class="fa fa-angle-right"></span>
+                                        第二级
+                                    </label>
+                                    <ul class="sub-left-category-list-sub">
+                                        <li><a href="#">第三级</a></li>
+                                        <li><a href="#">第三级</a></li>
+                                        <li><a href="#">第三级</a></li>
+                                    </ul> -->
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="part about">
-            <div class="index-about-contact">
-                <a target="_blank" rel="noopener" href="https://github.com/csong01" class="index-about-contact-icon"><img src="/img/github.svg"
-                        alt="github"></a>
-                <a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=442529798&amp;site=qq&amp;menu=yes" class="index-about-contact-icon"><img src="/img/qq.svg" alt="qq"></a>
-                <a href="mailto:442529798@qq.com" class="index-about-contact-icon"><img src="/img/email.svg"
-                        alt="email"></a>
-                <a href="/atom.xml" class="index-about-contact-icon"><img src="/img/rss.svg" alt="rss"></a>
+        <div id="center" class="center-active-left">
+            <div id="top-nav-container" class="top-nav-container">
+                <div class="top-nav">
+                    <a href="/" class="nav-list">
+                        <span class="fa fa-home"></span>
+                        主页
+                    </a>
+                    <a href="/archives" class="nav-list">
+                        <span class="fa fa-save"></span>
+                        归档
+                    </a>
+                    <a href="/about" class="nav-list">
+                        <span class="fa fa-user"></span>
+                        关于
+                    </a>
+                    <div class="top-category">
+                        <ul class="top-category-list">
+                            <li>
+                                <input id="top-category-list-1" type="checkbox" hidden />
+                                <label for="top-category-list-1" class="top-category-list-1st">
+                                    <span id="top-category-list-1-icon" class="fa fa-link"></span>
+                                    <span class="fa fa-angle-right"></span>
+                                    友链
+                                </label>
+                                <ul class="top-category-list-sub">
+                                    
+                                        <li><a target="_blank" rel="noopener" href="https://blog.zhheo.com/">
+                                                Heo
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://zfe.space">
+                                                小冰博客
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://akilar.top/">
+                                                Akilarの糖果屋
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://ccs.zone">
+                                                CC’s Zone
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://guaotat.github.io/">
+                                                孤傲
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://blog.nianbroken.top/">
+                                                SuiNian's Blog
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://cnhuazhu.gitee.io/">
+                                                花猪のBlog
+                                            </a></li>
+                                        
+                                            <!-- <li>
+                                            <input id="top-category-list-1-sub" type="checkbox" hidden />
+                                            <label for="top-category-list-1-sub">
+                                                <span class="fa fa-angle-right"></span>
+                                                第二级
+                                            </label>
+                                            <ul class="sub-top-category-list-sub">
+                                                <li><a href="#">第三级</a></li>
+                                                <li><a href="#">第三级</a></li>
+                                                <li><a href="#">第三级</a></li>
+                                            </ul> -->
+                            </li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="index-about-desc">
-                首先很高兴你能来到我的网站，也许你曾经来过并且发现网站不一样了。这是我初学前端两个月后自己开发的一款主题，说实话，费了很大的精力，解决了很多的问题。也许，这个网站在你的界面上乱了套，因为我还没有比较好地掌握兼容性。总之，这个主题还没有结束，现在基本上没有用到js，因为这一段时间一直在研究css。等到我的下一阶段js学得还好的时候，我就会给这个主题添加本地搜索等功能，不过这个学期快要结束，学业压力大，可能要等到暑假了。
-            </div>
-        </div>
-    </div>
-</div>
-
-<a name="article"></a>
-<div class="part-container">
-    <div class="articles">
-        <div class="part-title-container">
-            <h1 class="part-title">文章</h1>
-        </div>
+            <header>
+                <button class="top-nav-button">
+                    <i class="fa fa-navicon"></i>
+                </button>
+            </header>
+            <div class="content">
+                <div class="archive">
+    <div class="archive-content">
         
-            <a href="/2021/04/12/yi-xuan-ze-de-lu/">
-                <div class="part article">
-                    <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85%E9%81%93%E5%85%89+%E6%B9%98%E7%BB%A3%E8%8A%99%E8%93%89%E9%B9%AD%E4%B8%9D%E5%9B%BE%E8%BD%B4.jpg" class="article-img">
-                    </img>
-                    <div class="article-info">
-                        <div class="article-title">
-                            已选择的路
-                        </div>
-                        <div class="article-desc">
-                            <blockquote>
-<p>今天我收到了一条来自<strong>Akilar</strong>大佬的评论，在回复评论时，我想到了很多事情，很多想写的事情，而且今天是个雨天，比较适合思考，也正好记录一下最近的情况。</p>
-<p>好吧，在下午准备写这篇文章，但有课所以放到了现在，但晚上又有一些作业要完成，一些东西要学，所以又没有了写的兴趣，但感觉是培养出来的，那还是继续吧。</p>
-</blockquote>
-<blockquote>
-<p>引发这篇文章的评论如下：</p>
-<p><strong>Akilar</strong>：</p>
-<p>我和你这个年纪的时候，差不多都有这种想法过。顺其自然就好。没必要太过担心别人的想法。花时间画张表格，把自己拥有的和自己期望拥有的写出来。然后划掉自己可以失去的。保留自己不能失去的。顾好纸上最后的东西就行。</p>
-<p><strong>csong</strong>：</p>
-<p>没想到会收到来自互联网陌生人的关心，我现在已经大二下学期了，上一学期经历了地狱一般的学习强度，折磨得死去活来，另外这过去的一年中我也遭遇了多方面的困难与折磨，最终在不断的反思尝试中做出了取舍，这将是我比较冒险的一个决定，但我愿意承受后果，因为我坚信自己能做到，不管三年五年十年还是多长时间，结果至少比未改变的要好。所以现在我已经不再迷茫了，因为我找到了自己真正喜欢的东西，并且每天都为之奋斗，虽然每一天每一天都很忙碌，但我并不感到讨厌，反而感到充实与自信，再一次感谢你的关心。现在终于明白，自己的许多纠结都没有必要，因为对于我这种性格的人来说，终将走向自己热爱的东西。</p>
-</blockquote>
-<p>想写的事情主要是自己这一年中的大致经历和转变，即大二上学期到现在大二下学期期中。
-                        </div>
-                        <div class="article-time">
-                            2021-04-12
-                        </div>
-                    </div>
+            <a class="archive-item-container" href="/2021/04/12/yi-xuan-ze-de-lu/">
+                <div class="archive-item">
+                    <span class="archive-item-title">
+                        已选择的路
+                    </span>
+                    <span class="archive-item-date">
+                        2021-04-12
+                    </span>
                 </div>
             </a>
             
-            <a href="/2021/04/03/yi-ci-xue-xi-zhong-de-beng-kui-jing-li/">
-                <div class="part article">
-                    <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%98%8E+%E9%A1%BE%E5%BA%86%E6%81%A9%E5%AD%A4%E5%B1%B1%E5%8D%81%E6%99%AF%E5%9B%BE%E5%86%8C.jpg" class="article-img">
-                    </img>
-                    <div class="article-info">
-                        <div class="article-title">
-                            一次学习中的崩溃经历
-                        </div>
-                        <div class="article-desc">
-                            <blockquote>
-<p>这是大一上学期临近期末考试，自己每天早出晚归独自学习的一次崩溃经历。</p>
-</blockquote>
-<p>今天我很难受，有一点抑郁，就是很茫然，不知道要做什么，确实我有很多任务要去完成，但就是不想做，没有任何想去做的欲望和动力。呼吸好像也很沉重迟缓，头脑有似曾相识的放空感。我也不知道该说什么了，懒得去写了。</p>
-<p>我到底想要什么呢？想做什么呢？不知道。是打篮球？做程序题？画画？看电影？打游戏？找APP？好像都没有兴趣了。我到底该做些什么呢？
-                        </div>
-                        <div class="article-time">
-                            2021-04-03
-                        </div>
-                    </div>
+            <a class="archive-item-container" href="/2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-er/">
+                <div class="archive-item">
+                    <span class="archive-item-title">
+                        大二开学考前复习及经验回顾二
+                    </span>
+                    <span class="archive-item-date">
+                        2021-04-03
+                    </span>
                 </div>
             </a>
             
-            <a href="/2021/04/03/ye-ru-yi-chang-bian-lun-sai/">
-                <div class="part article">
-                    <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85++%E8%A2%81%E7%85%A6%E8%A7%88%E7%BF%A0%E8%AF%BB%E4%B9%A6%E7%BA%A8%E6%89%87%EF%BC%88%E5%B1%80%E9%83%A8%EF%BC%89.jpg" class="article-img">
-                    </img>
-                    <div class="article-info">
-                        <div class="article-title">
-                            也入一场辩论赛
-                        </div>
-                        <div class="article-desc">
-                            <blockquote>
-<p>这是大一上学期自己身为组织委员动员同学参加辩论赛的时候写的，然而我并没有参加。</p>
-</blockquote>
-<p>亲爱的同学们，新生辩论赛报名今晚6:00就截止了，报名的几位同学让我们欣喜而感动，同时也为跃跃欲试的同学而紧张。</p>
-<p>一开始看到这个辩论赛，想想也就是个普通的活动，平时时间那么紧，哪里还能参加呢？但想想在上次思修课辩论赛中，自己的表现并不如意，我是不是还在起点低头徘徊呢？
-                        </div>
-                        <div class="article-time">
-                            2021-04-03
-                        </div>
-                    </div>
+            <a class="archive-item-container" href="/2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-yi/">
+                <div class="archive-item">
+                    <span class="archive-item-title">
+                        大二开学考前复习及经验回顾一
+                    </span>
+                    <span class="archive-item-date">
+                        2021-04-03
+                    </span>
                 </div>
             </a>
             
-            <a href="/2021/04/03/7-yue-14-ri-de-xiang-fa/">
-                <div class="part article">
-                    <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/21233.jpg" class="article-img">
-                    </img>
-                    <div class="article-info">
-                        <div class="article-title">
-                            7月14日的想法
-                        </div>
-                        <div class="article-desc">
-                            <blockquote>
-<p>这篇文章写于去年七月份，从原博客迁移而来。</p>
-</blockquote>
-<p>今天看到了7月14日的一个思考记录，是手写的，但我觉得挺值得以后回忆一下的，因为里面有几个对我来说难得领悟的的观点。如下：</p>
-<p>今天又想起来记想法了，因为内心充满烦恼，感到难受。主要是总存在的来自外界的质问和不理解和觉得自己有点无能的挫败感。
-                        </div>
-                        <div class="article-time">
-                            2021-04-03
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="/2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-yi/">
-                <div class="part article">
-                    <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85+%E5%8D%8E%E5%96%A6%E5%B1%B1%E6%B0%B4%E5%9B%BE%E8%BD%B4%EF%BC%88%E5%B1%80%E9%83%A8%EF%BC%89.jpg" class="article-img">
-                    </img>
-                    <div class="article-info">
-                        <div class="article-title">
-                            大二开学考前复习及经验回顾一
-                        </div>
-                        <div class="article-desc">
-                            <blockquote>
-<p>这篇文章写于去年八月份，从原博客迁移而来。</p>
-</blockquote>
-<p>23号大学开学，我也就莫名其妙地成为一名大二学生了，现在有一件要命的事摆在眼前，开学期末考试。</p>
-<p>上个学期在家里浑浑噩噩的，也没有学到什么东西，这个挺长的暑假又在碌碌无为中度过。<br>结果就是我要在这几天内复习完数理化三门的全部知识，然后拿起久违的笔去考试了。<br>果然感到一丝痛苦和绝望呢。</p>
-<p>但假期无事可做，开学前几天高强度完成作业和复习好像是常干的事了，我也没有太多的悔意，毕竟假期实在不愿意学习，这可能有一丝孤单的因素在里面，如果能有人陪伴我该多好。
-                        </div>
-                        <div class="article-time">
-                            2021-04-03
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="/2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-er/">
-                <div class="part article">
-                    <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85+%E4%BB%BB%E9%A2%90%E5%9B%9B%E5%AD%A3%E5%B9%B3%E5%AE%89%E5%9B%BE%E8%BD%B4.jpg" class="article-img">
-                    </img>
-                    <div class="article-info">
-                        <div class="article-title">
-                            大二开学考前复习及经验回顾二
-                        </div>
-                        <div class="article-desc">
-                            <blockquote>
-<p>这篇文章写于去年八月份，从原博客迁移而来。</p>
-</blockquote>
-<p>现在在补牙，等的人有点多就不要浪费时间了，继续上一篇。</p>
-<p>说说我的另一个经历吧。</p>
-<p>大一我的体育课选的是篮球。但其实我基本上没有打过篮球，而且高中的时候有一次被同学鼓动去打篮球。当时我拿到球直接就投了，什么也没想，因为我连基本的规则都不知道。球没进，我感到实在太丢脸了，自己也不好意思去请教具体的规则，于是灰溜溜地下场了。
-                        </div>
-                        <div class="article-time">
-                            2021-04-03
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="/2021/04/03/wo-de-meng-he-zhong-guo-meng/">
-                <div class="part article">
-                    <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85+%E4%B8%81%E8%A7%82%E9%B9%8F%E8%A5%BF%E5%9B%AD%E9%9B%85%E9%9B%86%E5%9B%BE%E8%BD%B4%EF%BC%88%E5%B1%80%E9%83%A8%EF%BC%89.jpg" class="article-img">
-                    </img>
-                    <div class="article-info">
-                        <div class="article-title">
-                            我的梦和中国梦
-                        </div>
-                        <div class="article-desc">
-                            <blockquote>
-<p>这是大一上学期政治课上的自己的简短演讲，当时想了很长时间呢。</p>
-</blockquote>
-<p>我的梦是什么？一直在梦，一直在想，什么样的算作我的梦。苦苦的思索也许连真正前的那块帷幕也碰不到。想象着，能够找到那种那片土地，一片长满青草的小山坡，向上能看到蓝白斑驳的天空，向下能看到最平静缓和的生活姿态。静静地躺着，习习的风连我和草一起拂动，温暖的明晰的阳光撒在身上。过着没有人会把我惊起的生活。
-                        </div>
-                        <div class="article-time">
-                            2021-04-03
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-            <a href="/2021/04/03/gei-ke-ai-de-xiao-peng-you-de-yi-feng-xin/">
-                <div class="part article">
-                    <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85+%E9%A1%BE%E9%93%A8%E4%B8%B9%E6%9E%AB%E5%91%A6%E9%B9%BF%E5%9B%BE%E8%BD%B4.jpg" class="article-img">
-                    </img>
-                    <div class="article-info">
-                        <div class="article-title">
-                            给可爱的小朋友的一封信
-                        </div>
-                        <div class="article-desc">
-                            <blockquote>
-<p>这篇文章是大学学校给“特殊”小朋友的征文活动写的，没有敷衍混学时，写的是自己的真实想法。</p>
-</blockquote>
-<p>因为我想要给特殊儿童关爱和祝福，所以我选择了参与这个活动。虽然一开始是想要做个手工当你们的玩具，但想了想你们可能最需要的不是玩具，所以我就写了这封信，写下自己想要对你们说的话。</p>
-<p>首先呢，关于特殊儿童这个词，我一开始不是很明白，我想是不是有什么特长而特殊呢，但仔细一想既然需要关爱和祝福，可能就不是这样了。其实对于我来说，这个世界上的每一个人真的没有什么特殊的，只是不同罢了。他选择了一个别人都不建议的行业是特殊吗？只不过就是根据他自己的想法做自己想做的事。我时常在自己的心里告诉自己，在某些事上，我也会成为别人眼中的特殊，遭到特殊的对待，所以我更应该从对方的角度看问题，尊重别人的想法。总而言之，没有什么特殊的。
-                        </div>
-                        <div class="article-time">
-                            2021-04-03
-                        </div>
-                    </div>
+            <a class="archive-item-container" href="/2021/04/03/gei-ke-ai-de-xiao-peng-you-de-yi-feng-xin/">
+                <div class="archive-item">
+                    <span class="archive-item-title">
+                        给可爱的小朋友的一封信
+                    </span>
+                    <span class="archive-item-date">
+                        2021-04-03
+                    </span>
                 </div>
             </a>
             
     </div>
-</div>
-
-<a name="category"></a>
-<div class="part-container">
-    <div class="index-category">
-        <div class="part-title-container">
-            <h1 class="part-title">分类</h1>
-        </div>
-        <div class="part list-item index-category-list">
-            
-                <a href="/categories/%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/">
-                    思考记录
-                </a>
-                
-        </div>
-    </div>
-</div>
-
-<a name="tag"></a>
-<div class="part-container">
-    <div class="index-tag">
-        <div class="part-title-container">
-            <h1 class="part-title">标签</h1>
-        </div>
-        <div class="part list-item index-tag-list">
-            
-                <a href="/tags/%E5%A4%A7%E5%AD%A6/">
-                    大学
-                </a>
-                
-                <a href="/tags/%E5%9B%B0%E6%89%B0/">
-                    困扰
-                </a>
-                
-                <a href="/tags/%E5%AE%B6%E5%BA%AD/">
-                    家庭
-                </a>
-                
-                <a href="/tags/%E8%80%83%E8%AF%95/">
-                    考试
-                </a>
-                
-                <a href="/tags/%E4%BA%BA%E7%94%9F/">
-                    人生
-                </a>
-                
-        </div>
-    </div>
-</div>
-
-<a name="archive"></a>
-<div class="part-container">
-    <div class="index-archive">
-        <div class="part-title-container">
-            <h1 class="part-title">归档</h1>
-        </div>
-        <div class="part index-archive-list">
-            <ul>
-                
-                    <li class="part index-archive-list-item">
-                        <a href="/2021/04/12/yi-xuan-ze-de-lu/">
-                            已选择的路
-                                <span class="index-archive-list-time">
-                                    2021-04-12
-                                </span>
-                        </a>
-                    </li>
-                    
-                    <li class="part index-archive-list-item">
-                        <a href="/2021/04/03/yi-ci-xue-xi-zhong-de-beng-kui-jing-li/">
-                            一次学习中的崩溃经历
-                                <span class="index-archive-list-time">
-                                    2021-04-03
-                                </span>
-                        </a>
-                    </li>
-                    
-                    <li class="part index-archive-list-item">
-                        <a href="/2021/04/03/ye-ru-yi-chang-bian-lun-sai/">
-                            也入一场辩论赛
-                                <span class="index-archive-list-time">
-                                    2021-04-03
-                                </span>
-                        </a>
-                    </li>
-                    
-                    <li class="part index-archive-list-item">
-                        <a href="/2021/04/03/7-yue-14-ri-de-xiang-fa/">
-                            7月14日的想法
-                                <span class="index-archive-list-time">
-                                    2021-04-03
-                                </span>
-                        </a>
-                    </li>
-                    
-                    <li class="part index-archive-list-item">
-                        <a href="/2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-yi/">
-                            大二开学考前复习及经验回顾一
-                                <span class="index-archive-list-time">
-                                    2021-04-03
-                                </span>
-                        </a>
-                    </li>
-                    
-                    <li class="part index-archive-list-item">
-                        <a href="/2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-er/">
-                            大二开学考前复习及经验回顾二
-                                <span class="index-archive-list-time">
-                                    2021-04-03
-                                </span>
-                        </a>
-                    </li>
-                    
-                    <li class="part index-archive-list-item">
-                        <a href="/2021/04/03/wo-de-meng-he-zhong-guo-meng/">
-                            我的梦和中国梦
-                                <span class="index-archive-list-time">
-                                    2021-04-03
-                                </span>
-                        </a>
-                    </li>
-                    
-                    <li class="part index-archive-list-item">
-                        <a href="/2021/04/03/gei-ke-ai-de-xiao-peng-you-de-yi-feng-xin/">
-                            给可爱的小朋友的一封信
-                                <span class="index-archive-list-time">
-                                    2021-04-03
-                                </span>
-                        </a>
-                    </li>
-                    
-            </ul>
-        </div>
-    </div>
-</div>
-
-<a name="link"></a>
-<div class="part-container">
-    <div class="links">
-        <div class="part-title-container">
-            <h1 class="part-title">友链</h1>
-        </div>
-        <div class="link-container">
-            
-                <a class="link-item" target="_blank" rel="noopener" href="https://blog.zhheo.com/">
-                    <div class="link-img-container">
-                        <img src="https://blog.zhheo.com/img/avatar.png" class="link-img" style="object-fit: cover;"></img>
-                    </div>
-                    <div class="link-info-container">
-                        <div class="link-info">
-                            <div class="link-info-name">
-                                Heo
-                            </div>
-                            <div class="link-info-desc">
-                                爱折腾的设计师
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-                <a class="link-item" target="_blank" rel="noopener" href="https://zfe.space">
-                    <div class="link-img-container">
-                        <img src="https://zfe.space/images/headimage.png" class="link-img" style="object-fit: cover;"></img>
-                    </div>
-                    <div class="link-info-container">
-                        <div class="link-info">
-                            <div class="link-info-name">
-                                小冰博客
-                            </div>
-                            <div class="link-info-desc">
-                                做个有梦想的人！
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-                <a class="link-item" target="_blank" rel="noopener" href="https://akilar.top/">
-                    <div class="link-img-container">
-                        <img src="https://akilar.top/img/siteicon/favicon.png" class="link-img" style="object-fit: cover;"></img>
-                    </div>
-                    <div class="link-info-container">
-                        <div class="link-info">
-                            <div class="link-info-name">
-                                Akilarの糖果屋
-                            </div>
-                            <div class="link-info-desc">
-                                期待您的光临！
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-                <a class="link-item" target="_blank" rel="noopener" href="https://ccs.zone">
-                    <div class="link-img-container">
-                        <img src="https://cdn.jsdelivr.net/gh/caicheng918/CDN/photo/avater.jpg" class="link-img" style="object-fit: cover;"></img>
-                    </div>
-                    <div class="link-info-container">
-                        <div class="link-info">
-                            <div class="link-info-name">
-                                CC’s Zone
-                            </div>
-                            <div class="link-info-desc">
-                                从未来再见
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-                <a class="link-item" target="_blank" rel="noopener" href="https://guaotat.github.io/">
-                    <div class="link-img-container">
-                        <img src="https://cdn.jsdelivr.net/gh/guaoTAT/image/guaoya.jpg" class="link-img" style="object-fit: cover;"></img>
-                    </div>
-                    <div class="link-info-container">
-                        <div class="link-info">
-                            <div class="link-info-name">
-                                孤傲
-                            </div>
-                            <div class="link-info-desc">
-                                一个写bug的程序员
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-                <a class="link-item" target="_blank" rel="noopener" href="https://blog.nianbroken.top/">
-                    <div class="link-img-container">
-                        <img src="https://blog.nianbroken.top/favicon.png" class="link-img" style="object-fit: cover;"></img>
-                    </div>
-                    <div class="link-info-container">
-                        <div class="link-info">
-                            <div class="link-info-name">
-                                SuiNian's Blog
-                            </div>
-                            <div class="link-info-desc">
-                                你歪头眯眼一笑 我便沉溺无法逃离
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-                <a class="link-item" target="_blank" rel="noopener" href="https://cnhuazhu.gitee.io/">
-                    <div class="link-img-container">
-                        <img src="https://cdn.jsdelivr.net/gh/CNhuazhu/Image/avatar.jpg" class="link-img" style="object-fit: cover;"></img>
-                    </div>
-                    <div class="link-info-container">
-                        <div class="link-info">
-                            <div class="link-info-name">
-                                花猪のBlog
-                            </div>
-                            <div class="link-info-desc">
-                                佛系青年
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                
-        </div>
-    </div>
-</div></div>
-        </section>
-
-        <section class="footer-container">
-            <div class="footer">
-                <div class="site-meta">
-                    ©2020 - 2021 By
-                    <a href="/">csong</a>
-                </div>
-                <div class="theme-meta">
-                    框架
-                    <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
-                    |主题
-                    <a href="/">origin2</a>
-                </div>
-            </div>
-        </section>
-
-        <button class="btn-totop">
-            <a class="btn-text" href="#top">Top</a>
-        </button>
-
-        <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-        <!-- <script src="js/main.js"></script> -->
-    <!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
-    var parent = document.getElementById('recent-posts');
-    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://csong.vercel.app/categories/思考记录/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">➕ 思考记录 (8)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item" style="visibility: hidden"></div><a class="magnet_link_more"  href="https://csong.vercel.app/categories" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
-    console.log('已挂载magnet')
-    parent.insertAdjacentHTML("afterbegin",child)}
-     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(50% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: #b30070}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
-    <style></style> <script data-pjax>if(document.getElementById('recent-posts') && location.pathname =='/'){
     
-    var parent = document.getElementById('recent-posts');
-    var child = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85%E9%81%93%E5%85%89+%E6%B9%98%E7%BB%A3%E8%8A%99%E8%93%89%E9%B9%AD%E4%B8%9D%E5%9B%BE%E8%BD%B4.jpg" alt="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85%E9%81%93%E5%85%89+%E6%B9%98%E7%BB%A3%E8%8A%99%E8%93%89%E9%B9%AD%E4%B8%9D%E5%9B%BE%E8%BD%B4.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-04-12</span><a class="blog-slider__title" href="2021/04/12/yi-xuan-ze-de-lu/">已选择的路</a><div class="blog-slider__text">扬帆起航</div><a class="blog-slider__button" href="2021/04/12/yi-xuan-ze-de-lu/">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85+%E5%8D%8E%E5%96%A6%E5%B1%B1%E6%B0%B4%E5%9B%BE%E8%BD%B4%EF%BC%88%E5%B1%80%E9%83%A8%EF%BC%89.jpg" alt="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85+%E5%8D%8E%E5%96%A6%E5%B1%B1%E6%B0%B4%E5%9B%BE%E8%BD%B4%EF%BC%88%E5%B1%80%E9%83%A8%EF%BC%89.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-04-03</span><a class="blog-slider__title" href="2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-yi/">大二开学考前复习及经验回顾一</a><div class="blog-slider__text">往事如风</div><a class="blog-slider__button" href="2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-yi/">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85+%E4%BB%BB%E9%A2%90%E5%9B%9B%E5%AD%A3%E5%B9%B3%E5%AE%89%E5%9B%BE%E8%BD%B4.jpg" alt="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85+%E4%BB%BB%E9%A2%90%E5%9B%9B%E5%AD%A3%E5%B9%B3%E5%AE%89%E5%9B%BE%E8%BD%B4.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-04-03</span><a class="blog-slider__title" href="2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-er/">大二开学考前复习及经验回顾二</a><div class="blog-slider__text">往事如风</div><a class="blog-slider__button" href="2021/04/03/da-er-kai-xue-kao-qian-fu-xi-ji-jing-yan-hui-gu-er/">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/21233.jpg" alt="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/21233.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-04-03</span><a class="blog-slider__title" href="2021/04/03/7-yue-14-ri-de-xiang-fa/">7月14日的想法</a><div class="blog-slider__text">往事如风</div><a class="blog-slider__button" href="2021/04/03/7-yue-14-ri-de-xiang-fa/">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85+%E9%A1%BE%E9%93%A8%E4%B8%B9%E6%9E%AB%E5%91%A6%E9%B9%BF%E5%9B%BE%E8%BD%B4.jpg" alt="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%B8%85+%E9%A1%BE%E9%93%A8%E4%B8%B9%E6%9E%AB%E5%91%A6%E9%B9%BF%E5%9B%BE%E8%BD%B4.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-04-03</span><a class="blog-slider__title" href="2021/04/03/gei-ke-ai-de-xiao-peng-you-de-yi-feng-xin/">给可爱的小朋友的一封信</a><div class="blog-slider__text">往事如风</div><a class="blog-slider__button" href="2021/04/03/gei-ke-ai-de-xiao-peng-you-de-yi-feng-xin/">详情</a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms"><div class="blog-slider__img"><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%98%8E+%E9%A1%BE%E5%BA%86%E6%81%A9%E5%AD%A4%E5%B1%B1%E5%8D%81%E6%99%AF%E5%9B%BE%E5%86%8C.jpg" alt="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/%E6%98%8E+%E9%A1%BE%E5%BA%86%E6%81%A9%E5%AD%A4%E5%B1%B1%E5%8D%81%E6%99%AF%E5%9B%BE%E5%86%8C.jpg"/></div><div class="blog-slider__content"><span class="blog-slider__code">2021-04-03</span><a class="blog-slider__title" href="2021/04/03/yi-ci-xue-xi-zhong-de-beng-kui-jing-li/">一次学习中的崩溃经历</a><div class="blog-slider__text">往事如风</div><a class="blog-slider__button" href="2021/04/03/yi-ci-xue-xi-zhong-de-beng-kui-jing-li/">详情</a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
-    console.log('已挂载swiper')
-    parent.insertAdjacentHTML("afterbegin",child)}
-     </script>
-<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.js"></script>
-<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper@0.18/swiper/swiperindex.js"></script>
-<style></style><!-- hexo injector body_end end --></body>
+</div>
+                    <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
+                    <footer>
+                        © 2021 Copyright CSONG Powered by&nbsp;
+                        <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
+                    </footer>
+            </div>
+        </div>
+        <div class="right"></div>
+        <script src="/js/scripts.js"></script>
+        <script src="/js/totop.js"></script>
+    </div>
+</body>
+
 </html>

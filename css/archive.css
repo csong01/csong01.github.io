@@ -1,0 +1,65 @@
+.archive {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.archive-content{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* paginator */
+.archive-paginator {
+    width: 100%;
+    height: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.archive-paginator > * {
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+/* 归档主体 */
+.archive-item-container {
+    transition: all .3s;
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2) !important;
+}
+.archive-item-container:first-child {
+    margin-top: 20px;
+}
+.archive-item-container:hover{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: #fff !important;
+}
+.archive-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.archive-item-title {
+    /* color: rgba(0, 0, 0, 0.7); */
+    font-weight: 600;
+    font-size: larger;
+}
+.archive-item-date {
+    /* color: rgba(0, 0, 0, 0.5); */
+    font-size: 16px;
+}
