@@ -21,7 +21,7 @@ header {
 .top-nav-button {
     font-size: 16px;
     color: #000;
-    /* background-color: #fff; */
+    background-color: #fff;
     border-radius: 5px;
     width: 60px;
     height: 30px;
@@ -33,7 +33,7 @@ header {
     overflow-y: auto;
     overflow-x: hidden;
     background-color: rgba(255, 255, 255, 0.9);
-    /* padding-top: 20px; */
+    padding-top: 10px;
     width: 100%;
     flex: 1;
 }
@@ -65,7 +65,7 @@ footer a {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: ;
+    background-color: #fff;
     color: #000;
     cursor: pointer;
     border-radius: 45px;
