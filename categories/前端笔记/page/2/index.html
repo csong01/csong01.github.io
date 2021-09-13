@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>
-        大二开学考前复习及经验回顾二
+        
     </title>
     <!-- fontawosome -->
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -34,10 +34,12 @@
         <div id="left">
             <div class="blogger-info">
                 <div class="blogger-info-img">
-                    <a href="#"></a>
+                    <a href="/"></a>
                 </div>
                 <div class="blogger-info-nickname">
-                    CSONG
+                    <a href="/">
+                        CSONG
+                    </a>
                 </div>
                 <div class="blogger-info-desc">
                     大步前进，消除恐惧
@@ -56,10 +58,10 @@
                     <span class="fa fa-home"></span>
                     主页
                 </a>
-                <a href="/archives" class="nav-list">
+                <!-- <a href="<= theme.menu.archives " class="nav-list">
                     <span class="fa fa-save"></span>
                     归档
-                </a>
+                </a> -->
                 <!-- <a href="#" class="nav-list">
                     <span class="fa fa-list-alt"></span>
                     项目1
@@ -148,10 +150,10 @@
                         <span class="fa fa-home"></span>
                         主页
                     </a>
-                    <a href="/archives" class="nav-list">
+                    <!-- <a href="theme.menu.archives " class="nav-list">
                         <span class="fa fa-save"></span>
                         归档
-                    </a>
+                    </a> -->
                     <a href="/about" class="nav-list">
                         <span class="fa fa-user"></span>
                         关于
@@ -214,104 +216,117 @@
                 </div>
             </div>
             <div class="content">
-                <!-- 文章页面 -->
-<div class="article">
-    <div class="article-content">
-        <div class="article-info-container">
-            <div class="article-info">
-                <div class="article-info-title">
-                    <h1>大二开学考前复习及经验回顾二</h1>
+                <div class="content-main">
+                    <!-- 文章列表 -->
+<div class="article-list-container">
+    <div class="article-list-item-container">
+        <div class="page-info-title">
+            分类：前端笔记 
+        </div>
+        
+            <div class="article-list-item-wrapper">
+                <div class="article-list-item-wrapper-line"></div>
+                <a class="article-list-item" href="/2021/04/03/js-ru-men-xue-xi-bi-ji/">
+                    <div class="article-list-item-content">
+                        <!-- 文章列表：作者、日期、标签 -->
+                        <div class="article-list-item-element">
+                            <span class="article-list-item-element-author">csong</span>
+                            <span class="article-list-item-element-line"></span>
+                            <span class="article-list-item-element-date">
+                                21-04-03
+                            </span>
+                            <span class="article-list-item-element-line"></span>
+                            <span class="article-list-item-element-tag">
+                            </span>
+                        </div>
+                        <!-- 文章列表：标题、概要、封面图片 -->
+                        <div class="article-list-item-content-main-container">
+                            <div class="article-list-item-content-main">
+                                <div class="article-list-item-info">
+                                    <div class="article-list-item-info-title">
+                                        JS入门学习笔记
+                                    </div>
+                                    <div class="article-list-item-info-desc">
+                                    
+                                        &lt;p&gt;引入方式&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;对于CSS来说，外部CSS文件只能在head中引入。不过对于JavaScript来说，外部JavaScript文件不仅可以在head中引入，还可以在body中引入。&lt;/p&gt;
+&lt;h3 id=&#34;外部引用&#34;&gt;&lt;a href=&#34;#外部引用&#34; class=&#34;headerlink&#34; title=&#34;外部引用&#34;&gt;&lt;/a&gt;外部引用&lt;/h3&gt;&lt;p&gt;此外还需...
+                                     
+                                    </div>
+                                </div>
+                                <!-- 文章列表：阅读量、点赞量、评论量 -->
+                                <div class="article-list-item-data">
+                                    <span class="article-list-item-data-view_count">
+                                        <i class="fa fa-eye"></i>
+                                        <span class="article-list-item-data-view_count-number">20</span>
+                                    </span>
+                                    <span class="article-list-item-data-like">
+                                        <i class="fa fa-thumbs-o-up"></i>
+                                        <span class="article-list-item-data-like-number">20</span>
+                                    </span>
+                                    <span class="article-list-item-data-comment">
+                                        <i class="fa fa-comment-o"></i>
+                                        <span class="article-list-item-data-comment-number">20</span>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                                <div class="article-list-item-cover" style="background-image: url(https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/jojopic3.jpg);">
+                                </div>
+                                
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+
+                <!-- 解决文章列表直接添加标签莫名导致页面混乱 -->
+<div class="tags-data" style="display: none;">
+    
+     <div class="tags-data-item">
+    <a class="tag-link" href="/tags/JS/" rel="tag">JS</a>    
+</div>
+    
+<script>
+let tags_data_item= document.getElementsByClassName("tags-data-item");
+let article_list_item_element_tag= document.getElementsByClassName("article-list-item-element-tag");
+for (let i = 0; i < tags_data_item.length; i++) { 
+    article_list_item_element_tag[i].innerHTML=tags_data_item[i].innerHTML;
+}
+</script> 
+
+
+    </div>
+
+
+    
+        <nav class="list-paginator">
+            <a class="extend prev" rel="prev" href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">&lt;</a><a class="page-number" href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">1</a><span class="page-number current">2</span>
+        </nav>
+        
+</div>
+
+
                 </div>
-                <div class="article-info-data">
-                    <span class="article-info-data-time">
-                        2021-04-03
-                    </span>
-                    
-                    <span class="article-info-data-category">
-                        分类：<ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/">思考记录</a></li></ul>
-                    </span>
-                     
-                    
-                    <span class="article-info-data-tag">
-                        标签：<ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%A7%E5%AD%A6/" rel="tag">大学</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%80%83%E8%AF%95/" rel="tag">考试</a></li></ul>
-                    </span>
-                    
-                </div>
+                <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
+                <footer>
+                    <div class="footer-site-info">
+                        © 2021 Copyright CSONG Powered by
+                        <a class="site-frame" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
+                    </div>
+                    <div class="footer-site-count" id="busuanzi_container_site_uv">
+                        本站访客数<span id="busuanzi_value_site_uv"></span>人次
+                    </div>
+                </footer>
             </div>
         </div>
-        <div class="article-main"><blockquote>
-<p>这篇文章写于去年八月份，从原博客迁移而来。</p>
-</blockquote>
-<p>现在在补牙，等的人有点多就不要浪费时间了，继续上一篇。</p>
-<p>说说我的另一个经历吧。</p>
-<p>大一我的体育课选的是篮球。但其实我基本上没有打过篮球，而且高中的时候有一次被同学鼓动去打篮球。当时我拿到球直接就投了，什么也没想，因为我连基本的规则都不知道。球没进，我感到实在太丢脸了，自己也不好意思去请教具体的规则，于是灰溜溜地下场了。</p>
-<p>大一选篮球也是因为想要克服自己的这个经历，变得更强大，而且篮球选的人挺多，认识的人也多一点。</p>
-<p>但上了才发现，老师对基础部分基本上一笔带过，规则基本上没讲什么。主要的练习就是投篮和运球了。我能够清晰感受到自己的的菜，其他大部分同学都是经常打篮球的，运球投篮基本上没有任何问题，我连运好球都困难。老师说我是独臂大侠，因为我只会右手，只用右手。</p>
-<p>这种窘境也并不难熬，每周一节体育课，简简单单就过去了。但期末考试就比较难受了。</p>
-<p>篮球的期末考试考的是上篮，根据循环四次上篮的时间来决定分数，另外的技巧分一般时间越短越高。所以考前的差不多一个月就是练习上篮了。我忘了满分是多少秒了，但记得很清楚有很多满分的，同寝室的两位同学就是满分。但自己测了测时间，基本上没有及格过，说实话很让人失落，但我也能够理解，自己本来就没打过篮球，大一也把大部分时间花在其他学科上了，这是自己造的孽啊，我真的后悔过选篮球。</p>
-<p>但结果是怎么样呢？我考了70多分，应该人均80多分吧，但我已经非常满意了，毕竟考前还没有及格过呢，而且每人测两次取最好成绩，第一次70多，第二次就不及格了。</p>
-<p>说实话这有有运气的成分在里面，但也好像是因为考前做的事吧。考前一个星期我非常担忧考试，想着要多找时间去练习，但好像只练过一两次，因为大部分时间场地都有人打篮球，而且我也没有篮球，租球的机子又坏了。这真的是天不遂人愿，然后就混了最后一个星期。在正式的考试前老师让我们练习了半节课，就在这半节课上我真真切切地告诉自己：不行就不行吧，我也没有什么办法，大不了放手拼一把，我也懒得去在乎那么多了，都给我去死吧。然后考试时就什么也没想，把基本动作做好，补篮补了一两次，往返就拼了命地跑。结果下来看看自己的分数，70多，虽然陪我看的同学说应该考高一点的，但我已经很庆幸自己能及格了，当时开心了一整天。</p>
-<p>现在回想起来，那段时间也是自己长时间鼓励暗示自己，规律坚持学习的时期。我觉得这并不是巧合，而且我能真切地感受到当自己不断鼓励自己，那些话在我动摇的时候就逐渐地自动冒出来了。我逐渐相信自己真的是厉害的人，在面对很多应该做不到的事情时都会想：凭什么我做不到，只要是人做到的事，我为什么做不到。</p>
-<p>这句话真的似曾相识，我想起来了。在初中的时候，我一直抱着这样的信念，不断想：天底下没有我做不出来的题，只不过是我没有学过罢了，我现在不会只是因为我没有真的想去做，只要我想，没有任何能难得倒我的。我当时是对这句话没有半点怀疑的，而且觉得自己的成绩也能说明这个问题。</p>
-<p>但在过了这么多时间后，自己的自信逐渐就磨没了，基本上一考必败的数学也让我觉得自己真的天生不会数学吧，还想过要不要放弃数学了。这个话我还真的对班主任说过，他只是说我不要想太多了。</p>
-<p>但我有想自己小学的时候数学也考过99.5分啊，尽管那唯一的一次我因为忘了拿成绩单的日期而睡过头了，是同学回来告诉我的。高中数学我也考过全校第一，有几次也是考前几，尽管是百分之几的概率，但我真的不行吗？</p>
-<p>这个问题在高中时期一直萦绕在我的脑海里，而且也延伸到自己的大一时光里。</p>
-<p>现在我可能总结出来数学失败的原因了，尽管不一定对，但我开始选择相信自己，相信自己的能力了。</p>
-<p>这个失败的闭环大概是：我刚开始懒得学懒得背，学得不好题目不会做，怀疑自己不行，上课逐渐听不懂，更加怀疑自己，考试时怀疑自己导致失败，考试后不断失落更加怀疑自己，然后就是罪恶的循环了。<br>真是个可怕的事情。<br>这个总结好像又能对应自己高中的另外一次经历了。</p>
-<p>记得应该是高二刚开学吧，当时我还算勤奋，想要来个好的开头，于是预习了不少内容，教辅书也看了不少，笔记也记了不少，然后那段时间基本上门门90多，基本上就是前几了。结果后来不知道是哪一个偷懒，我坠入了这个循环，在后来的高中时期成绩也没有再好过。</p>
-<p>其实我应该很早就意识到这个问题了，但我为什么没有一开始就多努力努力，坚持坚持呢？</p>
-<p>因为那个时候我还没有深刻认识到自己容易否定自己的缺陷。我在准备好好努力的时候，那个想法又冒了出来：你还准备好好学？你不知道自己有多懒吗？你最好不要逼自己免得又要放弃。然后我就真的没有逼自己一把，逐渐坠入循环。</p>
-<p>但自己到底应该怎么办呢？我现在甚至还在怀疑自己到底应不应该一开始就坚持努力，因为我真的有点怕去努力，因为我还记得坚持的时候的痛苦滋味。你们可能会说坚持一下又有多痛苦，又不是什么大不了的事。但我就是不自觉地感到难过和深渊般无底的痛苦。这种难过的情绪来自哪里呢？</p>
-<p>也许就是害怕孤独感吧，或许还有一丝的好面子。</p>
-<p>记忆里那些痛苦的场景大部分就是我独自在清晨和半夜学习的场景，没有任何人在我身边，没有人会在我感到一丝痛苦无助的时候陪在我身边，而我就会不自觉地把这种痛苦放大。还有一部分的痛苦场景是和大家一起学习时。我的周围大多是学霸，在他们奋笔疾书时我磕磕巴巴，这个时候我就会感到很难受，我就会不自觉地去想同学会不会感觉到我什么都不会，我就是个菜鸡，没有用的东西。这种想法在我和别人离得太近学习时就必定会冒出来，我也就会一直关注同学的举动和状态，自己也就无法专心，又一次坠入怀疑的循环，一直痛苦下去。</p>
-<p>这可能就是我害怕努力学习的原因吧。害怕孤独，害怕顶着无限的压力。</p>
-<p>唉，去回想这些痛苦的记忆让我更加失落了，这是我做噩梦都会真实出现的场景和情绪。</p>
-<p>我到底该怎么样去对抗呢？我能战胜这种痛苦吗？我该怎么办呢？</p>
-<p>好痛苦好痛苦。</p>
-</div>
-    </div>
-    <div class="article-comment"><!-- vssue评论 -->
-
-    <div id="vssue"></div>
-    <!-- 或： Vue 完整版 (runtime + compiler) -->
-    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
-    <!-- 在 Vue 之后引入 Vssue -->
-    <!-- Vssue Github 版  -->
-    <script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
-    <script>
-        new Vue({
-            el: '#vssue',
-            data: {
-                title: '大二开学考前复习及经验回顾二',
-    
-                options: {
-                    owner: 'csong01',
-                    repo: 'comment',
-                    clientId: 'a4b05be7a4726060ec7b',
-                    clientSecret: '845b897aa38a5c4377617c42ca4dd16fe4a43156', // 只有在使用某些平台时需要
-                    autoCreateIssue: true
-                },
-            },
-    
-            template: `<vssue :title="title" :options="options"></vssue>`,
-        });
-    </script>
-    </div>
-    <!-- <script src="/js/post.js"></script> -->
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="/js/code.js"></script>
-</div>
-
-                    <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
-                    <footer>
-                        © 2021 Copyright CSONG Powered by&nbsp;
-                        <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
-                    </footer>
-            </div>
-        </div>
-        <div class="right"></div>
+        <!-- <div class="right"></div> -->
         <script src="/js/scripts.js"></script>
         <script src="/js/totop.js"></script>
+        <!-- 不蒜子网站访问量统计 -->
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+        </script>
     </div>
 </body>
 

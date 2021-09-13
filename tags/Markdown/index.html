@@ -34,10 +34,12 @@
         <div id="left">
             <div class="blogger-info">
                 <div class="blogger-info-img">
-                    <a href="#"></a>
+                    <a href="/"></a>
                 </div>
                 <div class="blogger-info-nickname">
-                    CSONG
+                    <a href="/">
+                        CSONG
+                    </a>
                 </div>
                 <div class="blogger-info-desc">
                     大步前进，消除恐惧
@@ -56,10 +58,10 @@
                     <span class="fa fa-home"></span>
                     主页
                 </a>
-                <a href="/archives" class="nav-list">
+                <!-- <a href="<= theme.menu.archives " class="nav-list">
                     <span class="fa fa-save"></span>
                     归档
-                </a>
+                </a> -->
                 <!-- <a href="#" class="nav-list">
                     <span class="fa fa-list-alt"></span>
                     项目1
@@ -148,10 +150,10 @@
                         <span class="fa fa-home"></span>
                         主页
                     </a>
-                    <a href="/archives" class="nav-list">
+                    <!-- <a href="theme.menu.archives " class="nav-list">
                         <span class="fa fa-save"></span>
                         归档
-                    </a>
+                    </a> -->
                     <a href="/about" class="nav-list">
                         <span class="fa fa-user"></span>
                         关于
@@ -214,63 +216,109 @@
                 </div>
             </div>
             <div class="content">
-                <div class="article-list-container">
-    <div id="article-list-item-container" class="article-list-item-container">
+                <div class="content-main">
+                    <!-- 文章列表 -->
+<div class="article-list-container">
+    <div class="article-list-item-container">
+        <div class="page-info-title">
+            标签：Markdown 
+        </div>
         
             <div class="article-list-item-wrapper">
-                <a class="article-list-item" href="/2021/04/12/yi-xuan-ze-de-lu/">
+                <div class="article-list-item-wrapper-line"></div>
+                <a class="article-list-item" href="/2021/04/17/markdown-test/">
                     <div class="article-list-item-content">
-                        <div style="background-image: url(https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/QQ%E5%9B%BE%E7%89%8720200810161412.jpg);" class="article-list-item-img">
+                        <!-- 文章列表：作者、日期、标签 -->
+                        <div class="article-list-item-element">
+                            <span class="article-list-item-element-author">csong</span>
+                            <span class="article-list-item-element-line"></span>
+                            <span class="article-list-item-element-date">
+                                21-04-17
+                            </span>
+                            <span class="article-list-item-element-line"></span>
+                            <span class="article-list-item-element-tag">
+                            </span>
                         </div>
-                        <div class="article-list-item-info">
-                            <div class="article-list-item-info-title">
-                                已选择的路
+                        <!-- 文章列表：标题、概要、封面图片 -->
+                        <div class="article-list-item-content-main-container">
+                            <div class="article-list-item-content-main">
+                                <div class="article-list-item-info">
+                                    <div class="article-list-item-info-title">
+                                        Markdown测试
+                                    </div>
+                                    <div class="article-list-item-info-desc">
+                                    
+                                            该文件用来测试和展示书写README的各种markdown语法。GitHub的markdown语法在标准的markdown语法基础上做了扩充，称之为`GitHub Flavored Markdown`。简称`GFM`，GFM在GitHub上有广泛应用，除了README文件外，issues和wiki均支持markdown语法。
+                                     
+                                    </div>
+                                </div>
+                                <!-- 文章列表：阅读量、点赞量、评论量 -->
+                                <div class="article-list-item-data">
+                                    <span class="article-list-item-data-view_count">
+                                        <i class="fa fa-eye"></i>
+                                        <span class="article-list-item-data-view_count-number">20</span>
+                                    </span>
+                                    <span class="article-list-item-data-like">
+                                        <i class="fa fa-thumbs-o-up"></i>
+                                        <span class="article-list-item-data-like-number">20</span>
+                                    </span>
+                                    <span class="article-list-item-data-comment">
+                                        <i class="fa fa-comment-o"></i>
+                                        <span class="article-list-item-data-comment-number">20</span>
+                                    </span>
+                                </div>
                             </div>
-                            <div class="article-list-item-info-desc">
-                                关于现状未来以及职业的思考
-                            </div>
-                            <div class="article-list-item-info-line"></div>
-                            <div class="article-list-item-info-date">
-                                2021-04-12
-                            </div>
+                            
                         </div>
                     </div>
                 </a>
             </div>
             
-            <div class="article-list-item-wrapper">
-                <a class="article-list-item" href="/2021/04/03/gei-ke-ai-de-xiao-peng-you-de-yi-feng-xin/">
-                    <div class="article-list-item-content">
-                        <div style="background-image: url(https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/jojopic3.jpg);" class="article-list-item-img">
-                        </div>
-                        <div class="article-list-item-info">
-                            <div class="article-list-item-info-title">
-                                给可爱的小朋友的一封信
-                            </div>
-                            <div class="article-list-item-info-desc">
-                                给小朋友，也是给自己
-                            </div>
-                            <div class="article-list-item-info-line"></div>
-                            <div class="article-list-item-info-date">
-                                2021-04-03
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-    </div>
+
+<!-- 解决文章列表直接添加标签莫名导致页面混乱 -->
+<div class="tags-data" style="display: none;">
+    
+     <div class="tags-data-item">
+    <a class="tag-link" href="/tags/Markdown/" rel="tag">MARKDOWN</a>    
 </div>
-                    <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
-                    <footer>
-                        © 2021 Copyright CSONG Powered by&nbsp;
-                        <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
-                    </footer>
+    
+<script>
+let tags_data_item= document.getElementsByClassName("tags-data-item");
+let article_list_item_element_tag= document.getElementsByClassName("article-list-item-element-tag");
+for (let i = 0; i < tags_data_item.length; i++) { 
+    article_list_item_element_tag[i].innerHTML=tags_data_item[i].innerHTML;
+}
+</script> 
+
+
+</div>
+</div>
+
+
+    
+
+</div>
+
+
+                </div>
+                <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
+                <footer>
+                    <div class="footer-site-info">
+                        © 2021 Copyright CSONG Powered by
+                        <a class="site-frame" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
+                    </div>
+                    <div class="footer-site-count" id="busuanzi_container_site_uv">
+                        本站访客数<span id="busuanzi_value_site_uv"></span>人次
+                    </div>
+                </footer>
             </div>
         </div>
-        <div class="right"></div>
+        <!-- <div class="right"></div> -->
         <script src="/js/scripts.js"></script>
         <script src="/js/totop.js"></script>
+        <!-- 不蒜子网站访问量统计 -->
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+        </script>
     </div>
 </body>
 

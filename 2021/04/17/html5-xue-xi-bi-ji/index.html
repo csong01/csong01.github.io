@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>
-        categories
+        HTML5学习笔记
     </title>
     <!-- fontawosome -->
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -223,7 +223,7 @@
         <div class="article-info">
                 <!-- 文章标题 -->
                 <div class="article-info-title">
-                    <h1>categories</h1>
+                    <h1>HTML5学习笔记</h1>
                 </div>
                 <!-- 文章信息 -->
                 <div class="article-info-data">
@@ -231,12 +231,26 @@
                     <span class="article-info-data-time">
                         <i class="fa fa-calendar-o"></i>
                         <span class="article-info-data-time-main">
-                        2021-04-03
+                        2021-04-17
                         </span>
                     </span>
                 <!-- 文章分类 -->
+                    
+                    <span class="article-info-data-category">
+                        <i class="fa fa-folder-o"></i>
+                        <span class="article-info-data-category-main">
+                        <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">前端笔记</a>
+                        </span>
+                    </span>
                      
                 <!-- 文章标签 -->
+                    
+                    <span class="article-info-data-tag">
+                        <i class="fa fa-bookmark-o"></i>
+                        <span class="article-info-data-tag-main">
+                        <a class="tag-link" href="/tags/HTML5/" rel="tag">HTML5</a>
+                        </span>
+                    </span>
                     
                 <!-- 文章阅读量 -->
                     <span class="article-info-data-view_count" id="busuanzi_container_page_pv">
@@ -250,12 +264,38 @@
                     <span class="article-info-data-comment_count">
                         <i class="fa fa-comment-o"></i>
                         <span class="article-info-data-comment_count-main">
-                        2021-04-03
+                        2021-04-17
                         </span>
                     </span>
             </div>
         </div>
-        <div class="article-main"></div>
+        <div class="article-main"><blockquote>
+<p>IE9+以上浏览器兼容</p>
+</blockquote>
+<h2 id="新增的语义化标签"><a href="#新增的语义化标签" class="headerlink" title="新增的语义化标签"></a>新增的语义化标签</h2><figure class="highlight asciidoc"><table><tr><td class="code"><pre class=" language-hljs asciidoc"><span class="hljs-bullet">- </span>这种语义化标准主要是针对搜索引擎的<br><span class="hljs-bullet">- </span>这些新标签页面中可以使用多次<br><span class="hljs-bullet">- </span>在IE9中，需要把这些元素转换为块级元素 display: block<br><span class="hljs-bullet"><code class="language-hljs asciidoc"><span class="hljs-bullet">- </span>这种语义化标准主要是针对搜索引擎的<br><span class="hljs-bullet">- </span>这些新标签页面中可以使用多次<br><span class="hljs-bullet">- </span>在IE9中，需要把这些元素转换为块级元素 display: block<br><span class="hljs-bullet">- </span>移动端更喜欢使用这些标签<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span> :头部标签<br><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>:导航标签<br><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>内容标签<br><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>:定义文档某个区域<br><span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span> :侧边栏标签<br><span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span> :头部标签<br><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>:导航标签<br><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>内容标签<br><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>:定义文档某个区域<br><span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span> :侧边栏标签<br><span class="hljs-tag">&lt;<span class="hljs-name">footer</span>></span> :尾部标签<br></code></pre></td></tr></table></figure>
+
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415160729817.png" alt="image-20210415160729817"></p>
+<h2 id="新增的多媒体标签"><a href="#新增的多媒体标签" class="headerlink" title="新增的多媒体标签"></a>新增的多媒体标签</h2><h3 id="1-音频"><a href="#1-音频" class="headerlink" title="1. 音频"></a><strong>1.<audio> 音频</strong></h3><figure class="highlight xml"><table><tr><td class="code"><pre class=" language-hljs xml">当前<span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs xml">当前<span class="hljs-tag">&lt;<span class="hljs-name">audio</span>></span>元素支持三种视频格式MP3、Wav、Ogg，尽量使用mp3格式。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot; controls&quot;</span>&gt;</span>&lt;/ audio&gt;<br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.mp3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/mpeg&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/ogg&quot;</span>&gt;</span><br>  Your browser does not support this audio format.<br><span class="hljs-tag">&lt;/<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot; controls&quot;</span>&gt;</span>&lt;/ audio&gt;<br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.mp3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/mpeg&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/ogg&quot;</span>&gt;</span><br>  Your browser does not support this audio format.<br><span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>></span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415165747670.png" alt="image-20210415165747670"></p>
+<h3 id="2-视频"><a href="#2-视频" class="headerlink" title="2. 视频"></a>2.<video> 视频</h3><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">当前&lt;<span class="hljs-selector-tag">video</span>&gt;元素支持三种视频格式MP4、WebM、Ogg，尽量使用mp4格式。<br><span class="hljs-number">1</span>. controls 属性供添加播放、暂停和音量控件。<br><span class="hljs-number">2</span>. &lt;<span class="hljs-selector-tag">video</span>&gt; 与 &lt;/<span class="hljs-selector-tag">video</span>&gt; 之间插入的内容是供不支持 <span class="hljs-selector-tag"><code class="language-hljs css">当前&lt;<span class="hljs-selector-tag">video</span>&gt;元素支持三种视频格式MP4、WebM、Ogg，尽量使用mp4格式。<br><span class="hljs-number">1</span>. controls 属性供添加播放、暂停和音量控件。<br><span class="hljs-number">2</span>. &lt;<span class="hljs-selector-tag">video</span>&gt; 与 &lt;/<span class="hljs-selector-tag">video</span>&gt; 之间插入的内容是供不支持 <span class="hljs-selector-tag">video</span> 元素的浏览器显示的。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span><br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/ogg&quot;</span> &gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">souree</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> &gt;</span><br>	您的浏览器暂不支持<span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span><br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/ogg&quot;</span> &gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">souree</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> &gt;</span><br>	您的浏览器暂不支持<span class="hljs-tag">&lt;<span class="hljs-name">video</span>></span>标签播放视频<br></ video ><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415164818736.png" alt="image-20210415164818736"></p>
+<h2 id="新增的input类型"><a href="#新增的input类型" class="headerlink" title="新增的input类型"></a>新增的input类型</h2><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag"><code class="language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag">form</span>表单域<br></code></pre></td></tr></table></figure>
+
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415170217357.png" alt="image-20210415170217357"></p>
+<h2 id="新增的表单属性"><a href="#新增的表单属性" class="headerlink" title="新增的表单属性"></a>新增的表单属性</h2><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag"><code class="language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag">form</span>表单域<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">::placeholder</span>&#123;<br>		<span class="hljs-attribute"><code class="language-hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">::placeholder</span>&#123;<br>		<span class="hljs-attribute">color</span>: pink;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415171352091.png" alt="image-20210415171352091"></p>
+</div>
     </div>
     <div class="article-comment"><!-- vssue评论 -->
 
@@ -269,7 +309,7 @@
         new Vue({
             el: '#vssue',
             data: {
-                title: 'categories',
+                title: 'HTML5学习笔记',
     
                 options: {
                     owner: 'csong01',

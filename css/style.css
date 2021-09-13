@@ -1,5 +1,20 @@
 @charset "utf-8";
+:root {
+    /* 通用颜色 */
 
+    /* 左栏颜色 */
+    --left-background-color: rgba(255, 255, 255, 0.9);
+    --left-text-color: rgba(0, 0, 0, 0.8);
+    --left-text-color-hover: rgba(51, 51, 51, 0.5);
+    --left-background-color-hover: #f6f6f6;
+    /* 头部导航颜色 */
+    --top_nav-background-color: #f6f6f6;
+    --top_nav-text-color: rgba(0, 0, 0, 0.8);
+    --top_nav-text-color-hover: rgba(0, 0, 0, 0.8);
+    --top_nav-background-color-hover: #f6f6f6;
+    --top_nav-color-hover: #f6f6f6;
+    /* 代码部分颜色 */
+}
 * {
     box-sizing: border-box;
 }
@@ -23,47 +38,46 @@ body {
     width: 100%;
     height: 100%;
     /* background-color: #151515; */
-    background-color: rgba(255, 255, 255, 0.32);
-    background-image: url(/img/2.jpg);
+    background-color: #f6f6f6;
+    /* background-image: url(/img/2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover; */
     /* display: flex; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .body-container {
-    width: 1024px;
+    background-color: #f6f6f6;
+    width: 920px;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 /* 响应式布局 */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 920px) {
     .body-container {
         width: 100% !important;
     }
     .right {
         display: none;
     }
-}
-@media screen and (max-width: 780px) {
     #left {
-        display: none;
+        display: none !important;
     }
     #center {
         width: 100% !important;
     }
+}
+/* @media screen and (max-width: 780px) {
     .article,
     .article-list-container {
         padding-top: 0 !important;
     }
-    /* .article-list-item-wrapper{
-        flex-direction: column;
-    } */
-}
-@media screen and (min-width: 780px) {
+} */
+@media screen and (min-width: 920px) {
     #top-nav-container,
     header {
         display: none !important;
@@ -119,9 +133,24 @@ body {
     display: none !important;
 }
 
-/* 右侧装饰长条 */
-.right {
-    width: 10px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.45);
+/* 单页面标题 */
+.page-info-title {
+    width: 100%;
+    /* height: 50px; */
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 32px;
+    font-weight: 700;
+    word-break: break-all;
+    color: rgba(0, 0, 0, 0.65);
+    padding-left: 20px;
+    line-height: 36px;
+    transition: all 0.4s ease 0s;
+}
+.page-info-title:hover {
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 1px;
+    -webkit-text-fill-color: #fff;/*文字的填充色*/
+    -webkit-text-stroke: 1px #000;
+    cursor: pointer;
 }

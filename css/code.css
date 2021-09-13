@@ -1,587 +1,208 @@
-/* 代码样式 ************************************************************************************************/
-.highlight {
-    overflow-x: auto;
-    width: 100%;
-}
-.highlight table {
-    width: 100%;
-    overflow-x: auto;
-}
-
-/* .language-hljs {
-    background-color: rgba(255, 255, 255, 0.32) !important;
-} */
+/* 布局样式**************************************************************** */
 .article-main {
-    color: #24292e;
-    word-wrap: break-word;
+    line-height: 1.75;
+    font-weight: 400;
     font-size: 14px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
-        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    line-height: 1.5;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: #333;
+    hyphens: auto;
 }
 
-.article-main a {
-    border-bottom: none !important;
-    background-color: transparent;
-    color: #0366d6 !important;
-    text-decoration: none;
-}
-
-.article-main a:hover {
-    border-bottom: 1px solid #0366d6 !important;
-}
-
-.article-main a:active,
-.article-main a:hover {
-    outline-width: 0;
-}
-
-.article-main strong {
-    font-weight: bolder;
-}
-
-.article-main h1 {
-    margin: 0.67em 0;
-    font-size: 2em;
-}
-
-.article-main img {
-    border-style: none;
-}
-
-.article-main code,
-.article-main kbd,
-.article-main pre {
-    font-size: 1em;
-    font-family: monospace, monospace;
-}
-
-.article-main hr {
-    overflow: visible;
-    box-sizing: content-box;
-    height: 0;
-}
-
-.article-main input {
-    margin: 0;
-    font: inherit;
-}
-
-.article-main input {
-    overflow: visible;
-}
-
-.article-main [type="checkbox"] {
-    box-sizing: border-box;
-    padding: 0;
-}
-
-.article-main * {
-    box-sizing: border-box;
-}
-
-.article-main input {
-    font-size: inherit;
-    font-family: inherit;
-    line-height: inherit;
-}
-
-.article-main hr {
-    overflow: hidden;
-    margin: 15px 0;
-    height: 0;
-    border: 0;
-    border-bottom: 1px solid #dfe2e5;
-    background: 0 0;
-}
-
-.article-main hr::before {
-    display: table;
-    content: "";
-}
-
-.article-main hr::after {
-    clear: both;
-    display: table;
-    content: "";
-}
-
-.article-main table {
-    border-collapse: collapse;
-    word-break: keep-all;
-    border-spacing: 0;
-}
-
-.article-main td,
-.article-main th {
-    padding: 0;
-}
-
+/* 文章样式 *****************************************************************/
 .article-main h1,
 .article-main h2,
 .article-main h3,
 .article-main h4,
 .article-main h5,
 .article-main h6 {
-    margin-top: 0;
-    margin-bottom: 0;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
 }
-
 .article-main h1 {
-    font-weight: 600;
-    font-size: 32px;
+    font-size: 30px;
+    margin-bottom: 5px;
 }
-
 .article-main h2 {
-    font-weight: 600;
+    padding-bottom: 12px;
     font-size: 24px;
+    border-bottom: 1px solid #ececec;
 }
-
 .article-main h3 {
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
+    padding-bottom: 0;
 }
-
 .article-main h4 {
-    font-weight: 600;
     font-size: 16px;
 }
-
 .article-main h5 {
-    font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
 }
-
 .article-main h6 {
-    font-weight: 600;
-    font-size: 12px;
+    margin-top: 5px;
 }
-
 .article-main p {
-    margin-top: 0;
-    margin-bottom: 10px;
+    line-height: inherit;
+    margin-top: 22px;
+    margin-bottom: 22px;
 }
-
-/* .article-main blockquote {
-    margin: 0;
-} */
-
-.article-main ol,
-.article-main ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
+.article-main img {
+    max-width: 100%;
 }
-
-.article-main ol ol,
-.article-main ul ol {
-    list-style-type: lower-roman;
-}
-
-.article-main ol ol ol,
-.article-main ol ul ol,
-.article-main ul ol ol,
-.article-main ul ul ol {
-    list-style-type: lower-alpha;
-}
-
-.article-main dd {
-    margin-left: 0;
-}
-
-/* .article-main code {
-    font-size: 14px;
-    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
-} */
-
-/* .article-main pre {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
-} */
-
-.article-main::before {
-    display: table;
-    content: "";
-}
-
-.article-main::after {
-    clear: both;
-    display: table;
-    content: "";
-}
-
-.article-main > :first-child {
-    margin-top: 0 !important;
-}
-
-.article-main > :last-child {
-    margin-bottom: 0 !important;
-}
-
-.article-main a:not([href]) {
-    color: inherit;
-    text-decoration: none;
-}
-
-/* .article-main blockquote,
-.article-main dl,
-.article-main ol,
-.article-main p,
-.article-main pre,
-.article-main table,
-.article-main ul {
-    margin-top: 0;
-} */
-
 .article-main hr {
-    margin: 24px 0;
-    padding: 0;
-    height: 0.25em;
-    border: 0;
-    background-color: #e1e4e8;
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
-
-/* .article-main blockquote {
-    padding: 0 1em;
-    border-left: 0.25em solid #dfe2e5;
-    color: #6a737d;
+.article-main a {
+    text-decoration: none;
+    color: #0269c8;
+    border-bottom: 1px solid #d1e9ff;
 }
-
-.article-main blockquote > :first-child {
-    margin-top: 0;
+.article-main a:hover,
+.article-main a:active {
+    color: #275b8c;
 }
-
-.article-main blockquote > :last-child {
-    margin-bottom: 0;
-} */
-
-.article-main kbd {
-    display: inline-block;
-    padding: 3px 5px;
-    border: solid 1px #c6cbd1;
-    border-radius: 3px;
-    background-color: #fafbfc;
-    box-shadow: inset 0 -1px 0 #959da5;
-    color: #444d56;
-    vertical-align: middle;
-    font-size: 11px;
-    line-height: 10px;
-    border-bottom-color: #959da5;
+strong{
+    font-weight: bold;
 }
-
-.article-main h1,
-.article-main h2,
-.article-main h3,
-.article-main h4,
-.article-main h5,
-.article-main h6 {
-    margin-top: 24px;
-    margin-bottom: 16px;
-    font-weight: 600;
-    line-height: 1.25;
+/* 代码突出标记 *****************************************************************/
+.article-main code {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    word-break: break-word;
+    border-radius: 2px;
+    background-color: #fff5f5;
+    color: #ff502c;
+    font-size: 0.87em;
+    padding: 0.065em 0.4em;
 }
-
-.article-main h1 {
-    padding-bottom: 0.3em;
-    border-bottom: 1px solid #bbb;
-    font-size: 2em;
+/* 代码框部分**************************************************************** */
+.article-main figure {
+    width: 100%;
+    overflow-y: hidden;
 }
-
-.article-main h2 {
-    padding-bottom: 0.3em;
-    border-bottom: 1px solid #bbb;
-    font-size: 1.5em;
-}
-
-.article-main h3 {
-    font-size: 1.25em;
-}
-
-.article-main h4 {
-    font-size: 1em;
-}
-
-.article-main h5 {
-    font-size: 0.875em;
-}
-
-.article-main h6 {
-    color: #6a737d;
-    font-size: 0.85em;
-}
-
-.article-main ol,
-.article-main ul {
-    padding-left: 2em;
-}
-
-.article-main ol ol,
-.article-main ol ul,
-.article-main ul ol,
-.article-main ul ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.article-main li {
-    word-wrap: break-all;
-}
-
-.article-main li > p {
-    margin-top: 16px;
-}
-
-.article-main li + li {
-    margin-top: 0.25em;
-}
-
-.article-main dl {
-    padding: 0;
-}
-
-.article-main dl dt {
-    margin-top: 16px;
-    padding: 0;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 1em;
-}
-
-.article-main dl dd {
-    margin-bottom: 16px;
-    padding: 0 16px;
-}
-
-.article-main table {
-    display: table;
-    overflow: scroll;
+.article-main figure table {
     width: 100%;
 }
-
-.article-main table th {
-    font-weight: 600;
+.article-main pre {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    /* overflow-x: auto; */
+    overflow-y: hidden;
+    padding-left: 15px !important;
+    padding-bottom: 15px !important;
+    background: #f6f6f6 !important;
+    border-radius: 0.35rem;
+    tab-size: 4;
 }
-
-/* .article-main table td,
-.article-main table th {
-    border: 1px solid #dfe2e5;
-} */
-
-.article-main > table tr {
-    border-top: 1px solid #c6cbd1;
-    background-color: #fff;
-}
-
-.article-main table tr:nth-child(2n) {
-    background-color: #f6f8fa;
-}
-
-.article-main img {
-    margin: auto;
-    box-sizing: content-box;
-    max-width: 100%;
-    background-color: #fff;
-}
-/* .article-main img[align="right"] {
-    padding-left: 20px;
-}
-
-.article-main img[align="left"] {
-    padding-right: 20px;
-} */
-
-/* .article-main code {
-    margin: 0;
-    padding: 0.2em 0.4em;
-    border-radius: 3px;
-    background-color: rgba(27, 31, 35, 0.05);
-} */
-
-/* .article-main pre {
-    word-wrap: normal;
-}
-
-.article-main pre > code {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: 0 0;
-    white-space: pre;
-    font-size: 100%;
-    word-break: normal;
-}
-
 .article-main pre code {
-    display: inline;
-    overflow: visible;
-    margin: 0;
+    font-size: 12px !important;
+    white-space: nowrap;
     padding: 0;
-    max-width: auto;
-    border: 0;
-    background-color: transparent;
-    word-wrap: normal;
-    line-height: inherit;
-} */
-
-.article-main kbd {
-    display: inline-block;
-    padding: 3px 5px;
-    border: solid 1px #d1d5da;
-    border-radius: 3px;
-    background-color: #fafbfc;
-    box-shadow: inset 0 -1px 0 #c6cbd1;
-    color: #444d56;
-    vertical-align: middle;
-    font: 11px SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    line-height: 10px;
-    border-bottom-color: #c6cbd1;
+    color: #000 !important;
+    background: #f6f6f6 !important;
 }
-
-.article-main hr {
-    border-bottom-color: #bbb;
-}
-
-/* .article-main li > pre {
-    margin-top: 5px;
-} */
-
-/* *********************************************************************************************** */
-code {
-    padding: 1px 5px;
-    font-family: Inconsolata, Monaco, Consolas, "Courier New", Courier, monospace;
-    /* font-size: 0.91rem; */
-    color: #e96900;
-    background-color: #f8f8f8;
-    border-radius: 2px;
-}
-
-pre code {
-    padding: 0;
-    color: #e8eaf6;
-    background-color: #272822;
-}
-
-pre[class*="language-"] {
-    padding: 1.2em;
-    margin: 0.5em 0;
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-    color: #e8eaf6;
-    white-space: pre-wrap !important;
-}
-*/ .line-numbers-rows {
-    border-right-width: 0px !important;
-}
-
-.line-numbers {
-    padding: 1.5rem 1.5rem 1.5rem 3.2rem !important;
-    margin: 1rem 0 !important;
-    background: #272822;
-    overflow: auto;
-    border-radius: 0.35rem;
-    tab-size: 4;
-}
-
-pre {
-    padding: 1.5rem !important;
-    margin: 1rem 0 !important;
-    background: #272822;
-    overflow: auto;
-    border-radius: 0.35rem;
-    tab-size: 4;
-}
-
 pre::before {
     content: "";
-    height: 16px;
+    height: 18px;
     margin-bottom: 0;
     display: block;
 }
-
-/* pre::after {
-    content: " ";
-    position: absolute;
-    border-radius: 50%;
-    background: #ff5f56;
-    width: 12px;
-    height: 12px;
-    top: 0;
-    left: 12px;
-    margin-top: 12px;
-    -webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
-    box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
-} */
-
-code {
-    padding: 1px 5px;
-    font-family: Inconsolata, Monaco, Consolas, "Courier New", Courier, monospace;
-    font-size: 0.91rem;
-    color: #e96900;
-    background-color: #f8f8f8;
-    border-radius: 2px;
-}
-
-.code_copy {
-    position: absolute;
-    top: 0.7rem;
-    right: 35px;
-    z-index: 1;
-    filter: invert(50%);
-    cursor: pointer;
-}
-
-.code_lang {
-    position: absolute;
-    top: 1.2rem;
-    right: 60px;
-    line-height: 0;
-    font-weight: bold;
-    font-family: normal;
-    z-index: 1;
-    filter: invert(50%);
-    cursor: pointer;
-}
-
-.code-expand {
-    position: absolute;
-    top: 4px;
-    right: 0px;
-    filter: invert(50%);
-    padding: 7px 10px;
-    z-index: 1;
-    cursor: pointer;
-    transition: all 0.3s;
-    transform: rotate(0deg);
-}
-
-.code-closed .code-expand {
-    transform: rotate(-180deg) !important;
-    transition: all 0.3s;
-}
-
-.code-closed pre::before {
-    height: 0px;
-}
-
-pre code {
-    padding: 0;
-    color: #e8eaf6;
-    background-color: #272822;
-}
-
-pre[class*="language-"] {
-    padding: 1.2em;
-    margin: 0.5em 0;
-}
-
 code[class*="language-"],
 pre[class*="language-"] {
-    color: #e8eaf6;
-    white-space: pre-wrap !important;
+    color: #000 !important;
+    white-space: nowrap !important;
+}
+figure table {
+    font-size: 12px;
+    /* overflow: auto; */
+}
+figure table::-webkit-scrollbar-button {
+    display: none;
+}
+figure thead {
+    background: #f6f6f6;
+    color: #000;
+    text-align: left;
+}
+figure thead tr:nth-child(2n),
+figure tbody tr:nth-child(2n) {
+    background-color: #fcfcfc;
+}
+
+/* 代码复制按钮 *****************************************************************/
+.code_copy {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 1;
+    filter: invert(50%);
+    cursor: pointer;
+}
+/* 表格部分 *****************************************************************/
+.article-main > table {
+    display: inline-block !important;
+    width: auto;
+    font-size: 12px;
+    max-width: 100%;
+    overflow: auto;
+    border: solid 1px #f6f6f6;
+}
+.article-main > table > thead {
+    background: #f6f6f6;
+    color: #000;
+    text-align: left;
+}
+.article-main > table > thead > tr:nth-child(2n),
+.article-main > table > tbody > tr:nth-child(2n) {
+    background-color: #fcfcfc;
+}
+.article-main > table > thead > tr > th,
+.article-main > table > thead > tr > td,
+.article-main > table > tbody > tr > th,
+.article-main > table > tbody > tr > td {
+    padding: 12px 7px;
+    line-height: 24px;
+}
+.article-main > table > thead > tr > td,
+.article-main > table > tbody > tr > td {
+    min-width: 120px;
+}
+/* 引用部分 *****************************************************************/
+.article-main blockquote {
+    color: #666;
+    padding: 1px 23px;
+    margin: 22px 0;
+    border-left: 4px solid #cbcbcb;
+    background-color: #f8f8f8;
+}
+.article-main blockquote::after {
+    display: block;
+    content: "";
+}
+.article-main blockquote > p {
+    margin: 10px 0;
+}
+/* 列表部分 *****************************************************************/
+.article-main ol,
+.article-main ul {
+    padding-left: 28px;
+}
+.article-main ol li,
+.article-main ul li {
+    margin-bottom: 0;
+    list-style: inherit;
+}
+.article-main ol ul,
+.article-main ol ol,
+.article-main ul ul,
+.article-main ul ol {
+    margin-top: 3px;
+}
+.article-main ol li {
+    padding-left: 6px;
 }

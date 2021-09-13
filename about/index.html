@@ -34,10 +34,12 @@
         <div id="left">
             <div class="blogger-info">
                 <div class="blogger-info-img">
-                    <a href="#"></a>
+                    <a href="/"></a>
                 </div>
                 <div class="blogger-info-nickname">
-                    CSONG
+                    <a href="/">
+                        CSONG
+                    </a>
                 </div>
                 <div class="blogger-info-desc">
                     大步前进，消除恐惧
@@ -56,10 +58,10 @@
                     <span class="fa fa-home"></span>
                     主页
                 </a>
-                <a href="/archives" class="nav-list">
+                <!-- <a href="<= theme.menu.archives " class="nav-list">
                     <span class="fa fa-save"></span>
                     归档
-                </a>
+                </a> -->
                 <!-- <a href="#" class="nav-list">
                     <span class="fa fa-list-alt"></span>
                     项目1
@@ -148,10 +150,10 @@
                         <span class="fa fa-home"></span>
                         主页
                     </a>
-                    <a href="/archives" class="nav-list">
+                    <!-- <a href="theme.menu.archives " class="nav-list">
                         <span class="fa fa-save"></span>
                         归档
-                    </a>
+                    </a> -->
                     <a href="/about" class="nav-list">
                         <span class="fa fa-user"></span>
                         关于
@@ -214,27 +216,50 @@
                 </div>
             </div>
             <div class="content">
-                <!-- 文章页面 -->
+                <div class="content-main">
+                    <!-- 文章页面 -->
 <div class="article">
     <div class="article-content">
-        <div class="article-info-container">
-            <div class="article-info">
+        <div class="article-info">
+                <!-- 文章标题 -->
                 <div class="article-info-title">
                     <h1>关于</h1>
                 </div>
+                <!-- 文章信息 -->
                 <div class="article-info-data">
+                <!-- 文章日期 -->
                     <span class="article-info-data-time">
+                        <i class="fa fa-calendar-o"></i>
+                        <span class="article-info-data-time-main">
                         2021-08-22
+                        </span>
                     </span>
+                <!-- 文章分类 -->
                      
+                <!-- 文章标签 -->
                     
-                </div>
+                <!-- 文章阅读量 -->
+                    <span class="article-info-data-view_count" id="busuanzi_container_page_pv">
+                        <i class="fa fa-eye"></i>
+                        已被阅读
+                        <span class="article-info-data-view_count-main" id="busuanzi_value_page_pv">
+                        </span>
+                        次
+                    </span>
+                <!-- 文章评论量 -->
+                    <span class="article-info-data-comment_count">
+                        <i class="fa fa-comment-o"></i>
+                        <span class="article-info-data-comment_count-main">
+                        2021-08-22
+                        </span>
+                    </span>
             </div>
         </div>
         <div class="article-main"><blockquote>
 <p>2021-08-26</p>
 </blockquote>
 <p>嗯，在这个依旧忙碌的暑假中总算把这个主题重新写了一下，感觉顺眼了不少。虽然我的js学得还比较一般，但是CSS感觉熟练了不少，而且总结了很多可以直接用在其他项目上的东西。我还没有为这个主题写文档，因为我觉得现在还比较一般，等功能更完善的时候再写吧，但我不喜欢让博客太过复杂，因此应该不久就可以完成。如果你对这个主题有兴趣，有想法或者发现一些bug都可以和我交流，<code>QQ：442529798</code>。现在我主要是学习一下自适应的方法以及更复杂的js来丰富主题功能。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/20210911184608.png" alt="20210911184608"></p>
 <blockquote>
 <p>2021-04-12</p>
 </blockquote>
@@ -272,18 +297,27 @@
     <!-- <script src="/js/post.js"></script> -->
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="/js/code.js"></script>
+    <!-- <script src="/js/code-K-article.js"></script> -->
 </div>
-
-                    <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
-                    <footer>
-                        © 2021 Copyright CSONG Powered by&nbsp;
-                        <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
-                    </footer>
+                </div>
+                <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
+                <footer>
+                    <div class="footer-site-info">
+                        © 2021 Copyright CSONG Powered by
+                        <a class="site-frame" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
+                    </div>
+                    <div class="footer-site-count" id="busuanzi_container_site_uv">
+                        本站访客数<span id="busuanzi_value_site_uv"></span>人次
+                    </div>
+                </footer>
             </div>
         </div>
-        <div class="right"></div>
+        <!-- <div class="right"></div> -->
         <script src="/js/scripts.js"></script>
         <script src="/js/totop.js"></script>
+        <!-- 不蒜子网站访问量统计 -->
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+        </script>
     </div>
 </body>
 

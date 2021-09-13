@@ -1,30 +1,54 @@
 /* 文章列表样式 *************************************************************************************************/
 .article-list-container {
     width: 100%;
-    flex: 1;
+    /* flex: 1; */
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    height: 100%;
+
 }
 /* paginator *************************************************************************************************/
-
-.article-list-paginator {
+.list-paginator {
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
-    height: 20px;
-    padding: 15px;
+    height: 25px;
+    /* padding: 15px; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.article-list-paginator > * {
+.list-paginator a,
+.list-paginator span {
+    transition: all 0.4s ease 0s;
+    color: #000;
+    line-height: 25px;
+    text-align: center;
+    display: block;
+    height: 25px;
+}
+.list-paginator a:hover {
     color: #fff;
-    padding: 10px;
+    background-color: rgba(51, 51, 51, 0.8);
+    /* border-radius: 15px; */
+}
+.list-paginator > * {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-weight: bold;
 }
-.current,
-.extend {
-    color: #000 !important;
+.current {
+    color: #fff !important;
+    /* border-radius: 15px; */
+    background-color: rgba(51, 51, 51, 0.5);
 }
+/* .extend {
+    color: #000 !important;
+    background-color: #000;
+    border-radius: 10px;
+} */
 /* 列表主体 ************************************************************************************************ */
 .article-list-item-container {
     width: 100%;
@@ -34,21 +58,31 @@
     align-items: center;
 }
 .article-list-item-wrapper {
-    border-radius: 5px;
-    /* padding-left: 5%;
-    padding-right: 5%; */
-    height: 286px;
-    width: 90%;
-    margin-bottom: 20px;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2) !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 140px;
+    width: 100%;
+    transition: all 0.4s ease 0s;
 }
-.article-list-item-wrapper:first-child {
-    margin-top: 20px;
+.article-list-item-wrapper:hover {
+    background-color: #f6f6f6;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .article-list-item {
-    height: 100%;
-    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    flex: 1;
     width: 100%;
+    display: block !important;
+}
+.article-list-item-wrapper-line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1.5px solid #dee5e7;
 }
 .article-list-item-content {
     display: flex;
@@ -56,47 +90,127 @@
     width: 100%;
     height: 100%;
 }
-.article-list-item-img {
-    border-radius: 5px 5px 0 0;
+/* 文章列表：作者、日期、标签 */
+.article-list-item-element {
+    width: 100%;
+    height: 21px;
+    display: flex;
+    align-items: center;
+}
+.article-list-item-element-line {
+    width: 1px;
+    height: 15px;
+    border-right: 1px solid #dee5e7;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.article-list-item-element-author {
+    font-size: 16px;
+    color: #4e5969;
+    white-space: nowrap;
+}
+.article-list-item-element-date {
+    white-space: nowrap;
+    font-size: 14px;
+    color: #86909c;
+}
+.article-list-item-element-tag {
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+}
+.article-list-item-element-tag a{
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 12px;
+    color: #86909c;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+}
+.article-list-item-element-tag a:hover{
+    background-color: #86909c;
+    color: #fff;
+}
+/* .tag-link{
+    font-size: 14px;
+    color: #86909c;
+} */
+/* 文章列表信息盒子 */
+.article-list-item-content-main-container {
     width: 100%;
     flex: 1;
-    /* height: 140px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.article-list-item-content-main {
+    margin-right: 24px;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+/* 文章列表：标题、概要、封面图片 */
+.article-list-item-info {
+    /* overflow-x: hidden; */
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.article-list-item-info-title {
+    max-width: 100%;
+    margin-bottom: 8px;
+    color: #1d2129;
+    font-weight: 700;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-height: 24px;
+    display: -webkit-box;
+    word-break: break-all;
+}
+.article-list-item-info-desc {
+    max-width: 100%;
+    color: #86909c;
+    font-size: 13px;
+    line-height: 22px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.article-list-item-cover {
+    background-color: #000;
+    width: 120px;
+    height: 90%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
-.article-list-item-info {
-    border-radius: 0 0 5px 5px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+/* 文章列表：阅读量、点赞量、评论量 */
+.article-list-item-data {
+    color: rgba(51, 51, 51, 0.7);
+    height: 20px;
     width: 100%;
-    max-height: 146px;
-    overflow-x: hidden;
-    background-color: rgba(255, 255, 255);
-    /* color: #fff; */
-}
-.article-list-item-info-title {
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: 600;
-    font-size: larger;
-}
-.article-list-item-info-desc {
-    margin-top: 15px;
-    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
     font-size: 14px;
 }
-.article-list-item-info-line {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-color: #bbb4;
-    width: 100%;
-    height: 2px;
-    border-bottom: 1px solid #dee5e7;
+.article-list-item-data i {
+    color: rgba(78, 89, 105, 0.5) !important;
 }
-.article-list-item-info-date{
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 14px;
-    opacity: .8;
+.article-list-item-data-view_count-number,
+.article-list-item-data-like-number,
+.article-list-item-data-comment-number {
+    margin-right: 8px;
 }

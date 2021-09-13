@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>
-        给可爱的小朋友的一封信
+        
     </title>
     <!-- fontawosome -->
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -34,10 +34,12 @@
         <div id="left">
             <div class="blogger-info">
                 <div class="blogger-info-img">
-                    <a href="#"></a>
+                    <a href="/"></a>
                 </div>
                 <div class="blogger-info-nickname">
-                    CSONG
+                    <a href="/">
+                        CSONG
+                    </a>
                 </div>
                 <div class="blogger-info-desc">
                     大步前进，消除恐惧
@@ -56,10 +58,10 @@
                     <span class="fa fa-home"></span>
                     主页
                 </a>
-                <a href="/archives" class="nav-list">
+                <!-- <a href="<= theme.menu.archives " class="nav-list">
                     <span class="fa fa-save"></span>
                     归档
-                </a>
+                </a> -->
                 <!-- <a href="#" class="nav-list">
                     <span class="fa fa-list-alt"></span>
                     项目1
@@ -148,10 +150,10 @@
                         <span class="fa fa-home"></span>
                         主页
                     </a>
-                    <a href="/archives" class="nav-list">
+                    <!-- <a href="theme.menu.archives " class="nav-list">
                         <span class="fa fa-save"></span>
                         归档
-                    </a>
+                    </a> -->
                     <a href="/about" class="nav-list">
                         <span class="fa fa-user"></span>
                         关于
@@ -214,86 +216,115 @@
                 </div>
             </div>
             <div class="content">
-                <!-- 文章页面 -->
-<div class="article">
-    <div class="article-content">
-        <div class="article-info-container">
-            <div class="article-info">
-                <div class="article-info-title">
-                    <h1>给可爱的小朋友的一封信</h1>
+                <div class="content-main">
+                    <!-- 文章列表 -->
+<div class="article-list-container">
+    <div class="article-list-item-container">
+        <div class="page-info-title">
+            标签：HTML5 
+        </div>
+        
+            <div class="article-list-item-wrapper">
+                <div class="article-list-item-wrapper-line"></div>
+                <a class="article-list-item" href="/2021/04/17/html5-xue-xi-bi-ji/">
+                    <div class="article-list-item-content">
+                        <!-- 文章列表：作者、日期、标签 -->
+                        <div class="article-list-item-element">
+                            <span class="article-list-item-element-author">csong</span>
+                            <span class="article-list-item-element-line"></span>
+                            <span class="article-list-item-element-date">
+                                21-04-17
+                            </span>
+                            <span class="article-list-item-element-line"></span>
+                            <span class="article-list-item-element-tag">
+                            </span>
+                        </div>
+                        <!-- 文章列表：标题、概要、封面图片 -->
+                        <div class="article-list-item-content-main-container">
+                            <div class="article-list-item-content-main">
+                                <div class="article-list-item-info">
+                                    <div class="article-list-item-info-title">
+                                        HTML5学习笔记
+                                    </div>
+                                    <div class="article-list-item-info-desc">
+                                    
+                                        &lt;blockquote&gt;
+&lt;p&gt;IE9+以上浏览器兼容&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;新增的语义化标签&#34;&gt;&lt;a href=&#34;#新增的语义化标签&#34; class=&#34;headerlink&#34; title=&#34;新增的语义化标签&#34;&gt;&lt;/a&gt;新增的语义化标签&lt;/h2&gt;&lt;figure class=&#34;highlight asciidoc&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;cod...
+                                     
+                                    </div>
+                                </div>
+                                <!-- 文章列表：阅读量、点赞量、评论量 -->
+                                <div class="article-list-item-data">
+                                    <span class="article-list-item-data-view_count">
+                                        <i class="fa fa-eye"></i>
+                                        <span class="article-list-item-data-view_count-number">20</span>
+                                    </span>
+                                    <span class="article-list-item-data-like">
+                                        <i class="fa fa-thumbs-o-up"></i>
+                                        <span class="article-list-item-data-like-number">20</span>
+                                    </span>
+                                    <span class="article-list-item-data-comment">
+                                        <i class="fa fa-comment-o"></i>
+                                        <span class="article-list-item-data-comment-number">20</span>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                                <div class="article-list-item-cover" style="background-image: url(https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/jojopic3.jpg);">
+                                </div>
+                                
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+
+<!-- 解决文章列表直接添加标签莫名导致页面混乱 -->
+<div class="tags-data" style="display: none;">
+    
+     <div class="tags-data-item">
+    <a class="tag-link" href="/tags/HTML5/" rel="tag">HTML5</a>    
+</div>
+    
+<script>
+let tags_data_item= document.getElementsByClassName("tags-data-item");
+let article_list_item_element_tag= document.getElementsByClassName("article-list-item-element-tag");
+for (let i = 0; i < tags_data_item.length; i++) { 
+    article_list_item_element_tag[i].innerHTML=tags_data_item[i].innerHTML;
+}
+</script> 
+
+
+</div>
+</div>
+
+
+    
+
+</div>
+
+
                 </div>
-                <div class="article-info-data">
-                    <span class="article-info-data-time">
-                        2021-04-03
-                    </span>
-                    
-                    <span class="article-info-data-category">
-                        分类：<ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/">思考记录</a></li></ul>
-                    </span>
-                     
-                    
-                    <span class="article-info-data-tag">
-                        标签：<ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BA%BA%E7%94%9F/" rel="tag">人生</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A4%A7%E5%AD%A6/" rel="tag">大学</a></li></ul>
-                    </span>
-                    
-                </div>
+                <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
+                <footer>
+                    <div class="footer-site-info">
+                        © 2021 Copyright CSONG Powered by
+                        <a class="site-frame" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
+                    </div>
+                    <div class="footer-site-count" id="busuanzi_container_site_uv">
+                        本站访客数<span id="busuanzi_value_site_uv"></span>人次
+                    </div>
+                </footer>
             </div>
         </div>
-        <div class="article-main"><blockquote>
-<p>这篇文章是大学学校给“特殊”小朋友的征文活动写的，没有敷衍混学时，写的是自己的真实想法。</p>
-</blockquote>
-<p>因为我想要给特殊儿童关爱和祝福，所以我选择了参与这个活动。虽然一开始是想要做个手工当你们的玩具，但想了想你们可能最需要的不是玩具，所以我就写了这封信，写下自己想要对你们说的话。</p>
-<p>首先呢，关于特殊儿童这个词，我一开始不是很明白，我想是不是有什么特长而特殊呢，但仔细一想既然需要关爱和祝福，可能就不是这样了。其实对于我来说，这个世界上的每一个人真的没有什么特殊的，只是不同罢了。他选择了一个别人都不建议的行业是特殊吗？只不过就是根据他自己的想法做自己想做的事。我时常在自己的心里告诉自己，在某些事上，我也会成为别人眼中的特殊，遭到特殊的对待，所以我更应该从对方的角度看问题，尊重别人的想法。总而言之，没有什么特殊的。<span id="more"></span></p>
-<p>然后是关于我自己的经历了。小时候，我的家庭就不和睦，没有父母在身边，一个人在外住校学习，自己也不喜欢和别人说太多话，只想做好自己的事。基本上没有人会关心和理解我的感受，但其实我并不在乎，我只觉得更加自由自在，能专心做一件事就已经足够了。但偶尔我也会感到难过无比，特别是家长会的时候，我只能做自己的家长。我还记得自己打电话告诉妈妈家长会的事，我明明知道她远在千里之外辛苦工作根本没有可能参加，但我就是想要打那个电话，心里想着我能不能也能骄傲地看着自己家长会上的父母，让他们知道我付出了多少的努力，在多少的痛苦孤独的时光中不断进步，成绩名列前茅。但现实就是现实，她只是说知道了，然后就不知道说什么了，我也明白她的为难，只能在哭出声前挂了电话，回到寝室一个人愤怒地锤铁柜子，哭得稀里哗啦。</p>
-<p>但现在我不会再这样了，为什么呢？因为我已经长大了，成为一个男子汉，我不能再在没有实际作用的事上去浪费时间，我必须不断努力，向着自己的目标前进，在别人都在熟睡的时间去学习新技能，为了将来能多赚一点钱。我时常问自己，如果我找到了自己喜欢的人，在她也喜欢我的情况下，如果我没有能力让她让孩子过上幸福的生活，我还算是什么男人呢？我现在的小小肩膀能够承担得起家庭的重担吗？</p>
-<p>我说这些事并不为了回顾自己的过去，我只想告诉你们，不管是男孩还是女孩，不管你有多么特殊，在我眼里都只是不同，我会为你的痛苦经历而感到伤心，但如果你只是沉浸在悲伤之中，我只会认为你是是个懦弱的人，没有尊严的人。</p>
-<p>在你们这样宝贵的年纪里，有无限的可能性。总有人说自己已经努力了，但结果就是这样，我也无可奈何，这都是命，我的努力又能改变什么呢？我的亲身经历让我明白，这些人并没有真正地努力，因为每个人的条件不同，引起质变的努力也不同，如果你真的有勇气，相信自己，愿意做任何的尝试，放弃许多东西，你就一定可以。如果你虽然努力坚持，但在内心深处仍然悄悄地告诉自己不可能的话，虽然你会进步许多，但仍不会达到最初的目标。</p>
-<p>我不懂得如何安慰和关心别人，因为我也从不安慰和关心自己，认真做事，严格要求，不断思考，是我唯一会做的事。</p>
-<p>祝你开心。</p>
-</div>
-    </div>
-    <div class="article-comment"><!-- vssue评论 -->
-
-    <div id="vssue"></div>
-    <!-- 或： Vue 完整版 (runtime + compiler) -->
-    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
-    <!-- 在 Vue 之后引入 Vssue -->
-    <!-- Vssue Github 版  -->
-    <script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
-    <script>
-        new Vue({
-            el: '#vssue',
-            data: {
-                title: '给可爱的小朋友的一封信',
-    
-                options: {
-                    owner: 'csong01',
-                    repo: 'comment',
-                    clientId: 'a4b05be7a4726060ec7b',
-                    clientSecret: '845b897aa38a5c4377617c42ca4dd16fe4a43156', // 只有在使用某些平台时需要
-                    autoCreateIssue: true
-                },
-            },
-    
-            template: `<vssue :title="title" :options="options"></vssue>`,
-        });
-    </script>
-    </div>
-    <!-- <script src="/js/post.js"></script> -->
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="/js/code.js"></script>
-</div>
-
-                    <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
-                    <footer>
-                        © 2021 Copyright CSONG Powered by&nbsp;
-                        <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
-                    </footer>
-            </div>
-        </div>
-        <div class="right"></div>
+        <!-- <div class="right"></div> -->
         <script src="/js/scripts.js"></script>
         <script src="/js/totop.js"></script>
+        <!-- 不蒜子网站访问量统计 -->
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+        </script>
     </div>
 </body>
 

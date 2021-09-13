@@ -12,30 +12,15 @@
     flex-direction: column;
     align-items: center;
 }
-/* paginator */
-.archive-paginator {
-    width: 100%;
-    height: 20px;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.archive-paginator > * {
-    color: #fff;
-    padding: 10px;
-    font-weight: bold;
-}
 /* 归档主体 */
-.archive-item-container {
+/* .archive-item-container {
     transition: all .3s;
     color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
     background-color: rgba(255, 255, 255);
     display: block;
     width: 90%;
     height: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2) !important;
 }
 .archive-item-container:first-child {
@@ -55,11 +40,8 @@
     align-items: center;
 }
 .archive-item-title {
-    /* color: rgba(0, 0, 0, 0.7); */
-    font-weight: 600;
     font-size: larger;
 }
 .archive-item-date {
-    /* color: rgba(0, 0, 0, 0.5); */
     font-size: 16px;
-}
+} */
