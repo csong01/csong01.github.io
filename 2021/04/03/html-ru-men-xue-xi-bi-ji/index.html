@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>
+        HTML入门学习笔记
+    </title>
+    <!-- fontawosome -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- 普通默认样式 -->
+    <link rel="stylesheet" href="/css/initialize.css" />
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/left.css" />
+    <link rel="stylesheet" href="/css/center.css" />
+    <link rel="stylesheet" href="/css/archive.css" />
+    <link rel="stylesheet" href="/css/list.css" />
+    <link rel="stylesheet" href="/css/post.css" />
+    <link rel="stylesheet" href="/css/code.css" />
+    <!-- vsssue评论 -->
+    <link rel="stylesheet" href="/css/vssue.min.css" />
+    <!-- highlight高亮主题 -->
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/atom-one-light.min.css">
+    <!-- <link href="/css/obsidian.min.css" rel="stylesheet" /> -->
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="CSONG" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body>
+    <div class="body-container">
+        <div id="left">
+            <div class="blogger-info">
+                <div class="blogger-info-img">
+                    <a href="/"></a>
+                </div>
+                <div class="blogger-info-nickname">
+                    <a href="/">
+                        CSONG
+                    </a>
+                </div>
+                <div class="blogger-info-desc">
+                    知足常乐
+                </div>
+                <div class="blogger-info-social">
+                    <!-- <a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3375765403&amp;site=qq&amp;menu=yes" class="fa fa-qq"></a> -->
+                    <!-- <a target="_blank" rel="noopener" href="https://github.com/gegexiaoyan" class="fa fa-github-square"></a> -->
+                    <a href="/atom.xml" class="fa fa-rss"></a>
+                    <!-- <a href="mailto:3375765403@qq.com" class="fa fa-envelope"></a> -->
+                </div>
+            </div>
+            <div class="line"></div>
+            <!-- <div class="menu-label">导航</div> -->
+            <nav class="nav">
+                <a href="/" class="nav-list">
+                    <span class="fa fa-home"></span>
+                    主页
+                </a>
+                <!-- <a href="<= theme.menu.archives " class="nav-list">
+                    <span class="fa fa-save"></span>
+                    归档
+                </a> -->
+                <!-- <a href="#" class="nav-list">
+                    <span class="fa fa-list-alt"></span>
+                    项目1
+                </a>
+                <a href="#" class="nav-list">
+                    <span class="fa fa-list-alt"></span>
+                    项目2
+                </a>
+                <a href="#" class="nav-list">
+                    <span class="fa fa-paste"></span>
+                    留言板
+                </a> -->
+                <a href="/about" class="nav-list">
+                    <span class="fa fa-user"></span>
+                    关于
+                </a>
+                <div class="left-category">
+                    <ul class="left-category-list">
+                        <li>
+                            <input id="left-category-list-1" type="checkbox" hidden />
+                            <label for="left-category-list-1" class="left-category-list-1st">
+                                <span id="left-category-list-1-icon" class="fa fa-link"></span>
+                                <span class="fa fa-angle-right"></span>
+                                友链
+                            </label>
+                            <ul class="left-category-list-sub">
+                                
+                                    <li><a target="_blank" rel="noopener" href="https://blog.zhheo.com/">
+                                            Heo
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://zfe.space">
+                                            小冰博客
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://akilar.top/">
+                                            Akilarの糖果屋
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://ccs.zone">
+                                            CC’s Zone
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://guaotat.github.io/">
+                                            孤傲
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://blog.nianbroken.top/">
+                                            SuiNian's Blog
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://cnhuazhu.gitee.io/">
+                                            花猪のBlog
+                                        </a></li>
+                                    
+                                        <!-- <li>
+                                    <input id="left-category-list-1-sub" type="checkbox" hidden />
+                                    <label for="left-category-list-1-sub">
+                                        <span class="fa fa-angle-right"></span>
+                                        第二级
+                                    </label>
+                                    <ul class="sub-left-category-list-sub">
+                                        <li><a href="#">第三级</a></li>
+                                        <li><a href="#">第三级</a></li>
+                                        <li><a href="#">第三级</a></li>
+                                    </ul> -->
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="center" class="center-active-left">
+            <header>
+                <a class="blog-name" href="/">
+                    CSONG
+                </a>
+                <button class="top-nav-button">
+                    <i class="fa fa-navicon"></i>
+                </button>
+            </header>
+            <div id="top-nav-container" class="top-nav-container">
+                <div class="top-nav">
+                    <a href="/" class="nav-list">
+                        <span class="fa fa-home"></span>
+                        主页
+                    </a>
+                    <!-- <a href="theme.menu.archives " class="nav-list">
+                        <span class="fa fa-save"></span>
+                        归档
+                    </a> -->
+                    <a href="/about" class="nav-list">
+                        <span class="fa fa-user"></span>
+                        关于
+                    </a>
+                    <div class="top-category">
+                        <ul class="top-category-list">
+                            <li>
+                                <input id="top-category-list-1" type="checkbox" hidden />
+                                <label for="top-category-list-1" class="top-category-list-1st">
+                                    <span id="top-category-list-1-icon" class="fa fa-link"></span>
+                                    <span class="fa fa-angle-right"></span>
+                                    友链
+                                </label>
+                                <ul class="top-category-list-sub">
+                                    
+                                        <li><a target="_blank" rel="noopener" href="https://blog.zhheo.com/">
+                                                Heo
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://zfe.space">
+                                                小冰博客
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://akilar.top/">
+                                                Akilarの糖果屋
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://ccs.zone">
+                                                CC’s Zone
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://guaotat.github.io/">
+                                                孤傲
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://blog.nianbroken.top/">
+                                                SuiNian's Blog
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://cnhuazhu.gitee.io/">
+                                                花猪のBlog
+                                            </a></li>
+                                        
+                                            <!-- <li>
+                                            <input id="top-category-list-1-sub" type="checkbox" hidden />
+                                            <label for="top-category-list-1-sub">
+                                                <span class="fa fa-angle-right"></span>
+                                                第二级
+                                            </label>
+                                            <ul class="sub-top-category-list-sub">
+                                                <li><a href="#">第三级</a></li>
+                                                <li><a href="#">第三级</a></li>
+                                                <li><a href="#">第三级</a></li>
+                                            </ul> -->
+                            </li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-main">
+                    <!-- 文章页面 -->
+<div class="article">
+    <div class="article-content">
+        <div class="article-info">
+                <!-- 文章标题 -->
+                <div class="article-info-title">
+                    <h1>HTML入门学习笔记</h1>
+                </div>
+                <!-- 文章信息 -->
+                <div class="article-info-data">
+                <!-- 文章日期 -->
+                    <span class="article-info-data-time">
+                        <i class="fa fa-calendar-o"></i>
+                        <span class="article-info-data-time-main">
+                        2021-04-03
+                        </span>
+                    </span>
+                <!-- 文章分类 -->
+                    
+                    <span class="article-info-data-category">
+                        <i class="fa fa-folder-o"></i>
+                        <span class="article-info-data-category-main">
+                        <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">前端笔记</a>
+                        </span>
+                    </span>
+                     
+                <!-- 文章标签 -->
+                    
+                    <span class="article-info-data-tag">
+                        <i class="fa fa-bookmark-o"></i>
+                        <span class="article-info-data-tag-main">
+                        <a class="tag-link" href="/tags/html/" rel="tag">html</a>
+                        </span>
+                    </span>
+                    
+                <!-- 文章阅读量 -->
+                    <span class="article-info-data-view_count" id="busuanzi_container_page_pv">
+                        <i class="fa fa-eye"></i>
+                        已被阅读
+                        <span class="article-info-data-view_count-main" id="busuanzi_value_page_pv">
+                        </span>
+                        次
+                    </span>
+                <!-- 文章评论量 -->
+                    <span class="article-info-data-comment_count">
+                        <i class="fa fa-comment-o"></i>
+                        <span class="article-info-data-comment_count-main">
+                        2021-04-03
+                        </span>
+                    </span>
+            </div>
+        </div>
+        <div class="article-main"><blockquote>
+<p>对功能模块代码进行注释尤为重要</p>
+</blockquote>
+<blockquote>
+<h2 id="文字标签"><a href="#文字标签" class="headerlink" title="文字标签"></a>文字标签</h2><table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">语义</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">strong</td>
+<td align="left">strong（强调）</td>
+<td align="left">粗体</td>
+</tr>
+<tr>
+<td align="left">em</td>
+<td align="left">emphasized（强调）</td>
+<td align="left">斜体</td>
+</tr>
+<tr>
+<td align="left">sup</td>
+<td align="left">superscripted（上标）</td>
+<td align="left">上标</td>
+</tr>
+<tr>
+<td align="left">sub</td>
+<td align="left">subscripted（下标）</td>
+<td align="left">下标</td>
+</tr>
+</tbody></table>
+<h2 id="自闭合标签"><a href="#自闭合标签" class="headerlink" title="自闭合标签"></a>自闭合标签</h2><table>
+<thead>
+<tr>
+<th align="left">标签</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><meta /></td>
+<td align="left">定义网页的信息（供搜索引擎查看）</td>
+</tr>
+<tr>
+<td align="left"><link /></td>
+<td align="left">引入“外部CSS文件”</td>
+</tr>
+<tr>
+<td align="left"><br /></td>
+<td align="left">换行标签</td>
+</tr>
+<tr>
+<td align="left"><hr /></td>
+<td align="left">水平线标签</td>
+</tr>
+<tr>
+<td align="left"><img /></td>
+<td align="left">图片标签</td>
+</tr>
+<tr>
+<td align="left"><input /></td>
+<td align="left">表单标签</td>
+</tr>
+</tbody></table>
+<h2 id="有序列表标签"><a href="#有序列表标签" class="headerlink" title="有序列表标签"></a>有序列表标签</h2><figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;属性值&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;属性值&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>></span><br></ol<br></code></pre></td></tr></table></figure>
+
+<h2 id="无序列表标签"><a href="#无序列表标签" class="headerlink" title="无序列表标签"></a>无序列表标签</h2><figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>列表项<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>></span><br></code></pre></td></tr></table></figure>
+
+<h2 id="定义列表标签"><a href="#定义列表标签" class="headerlink" title="定义列表标签"></a>定义列表标签</h2><figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>制作网页的标准语言，控制网页的结构<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>CSS<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>层叠样式表，控制网页的样式<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>脚本语言，控制网页的行为<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>制作网页的标准语言，控制网页的结构<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>CSS<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>层叠样式表，控制网页的样式<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>脚本语言，控制网页的行为<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>></span><br></code></pre></td></tr></table></figure>
+
+<h2 id="表格标签"><a href="#表格标签" class="headerlink" title="表格标签"></a>表格标签</h2><blockquote>
+<p>完整语义化及合并行列的用法</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span> <br><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>编程题<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>&gt;</span><br><span class="css">        <span class="hljs-selector-tag">table</span>,<span class="hljs-selector-tag">tr</span>,<span class="hljs-selector-tag">td</span>&#123;<span class="hljs-attribute">border</span>:<span class="hljs-number">1px</span> solid silver;&#125;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">caption</span>&gt;</span>学生成绩表<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>姓名<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>性别<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>成绩<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><br>			<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>张三<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>男<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>250<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>			<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>李四<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>男<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>520<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>			<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">tfoot</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>平均分<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>385<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>			<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-name">tfoot</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name"><code class="language-hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span> <br><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;utf-8&quot;</span> /&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>编程题<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>&gt;</span><br><span class="css">        <span class="hljs-selector-tag">table</span>,<span class="hljs-selector-tag">tr</span>,<span class="hljs-selector-tag">td</span>&#123;<span class="hljs-attribute">border</span>:<span class="hljs-number">1px</span> solid silver;&#125;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">caption</span>&gt;</span>学生成绩表<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>姓名<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>性别<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>成绩<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span><br>			<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>张三<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>男<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>250<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>			<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>李四<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>男<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>520<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>			<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span><br>		<span class="hljs-tag">&lt;<span class="hljs-name">tfoot</span>&gt;</span><br>			<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>平均分<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>				<span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>385<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span><br>			<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span><br>		<span class="hljs-tag">&lt;/<span class="hljs-name">tfoot</span>&gt;</span><br>	<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>></span><br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>效果图 </p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/QQ%E6%88%AA%E5%9B%BE20210328152741.png"></p>
+<h2 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h2><figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;img/1.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;img/2.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;img/3.gif&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;img/1.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;img/2.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;img/3.gif&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>/&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>></span>				<br></code></pre></td></tr></table></figure>
+
+<h2 id="a标签-超链接"><a href="#a标签-超链接" class="headerlink" title="a标签(超链接)"></a>a标签(超链接)</h2><figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://www.lvyestudy.com&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>绿叶学习网<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;http://www.lvyestudy.com&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span>&gt;</span>绿叶学习网<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>></span><br></code></pre></td></tr></table></figure>
+
+<h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><p>单选框，多选框的Name属性不要忘。暂时可以用该代码来调整位置。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-symbol"><code class="language-hljs html"><span class="hljs-symbol">&nbsp;</span><br></code></pre></td></tr></table></figure>
+
+</blockquote>
+</div>
+    </div>
+    <div class="article-comment"><!-- vssue评论 -->
+</div>
+    <!-- <script src="/js/post.js"></script> -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/js/code.js"></script>
+    <!-- <script src="/js/code-K-article.js"></script> -->
+</div>
+                </div>
+                <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
+                <footer>
+                    <div class="footer-site-info">
+                        © 2021 Copyright&nbsp;CSONG&nbsp;Powered by
+                        <a class="site-frame" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
+                    </div>
+                    <!-- <div class="footer-site-count" id="busuanzi_container_site_uv">
+                        本站访客数<span id="busuanzi_value_site_uv"></span>人次
+                    </div> -->
+                </footer>
+            </div>
+        </div>
+        <!-- <div class="right"></div> -->
+        <script src="/js/scripts.js"></script>
+        <script src="/js/totop.js"></script>
+        <!-- 不蒜子网站访问量统计 -->
+        <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+        </script> -->
+    </div>
+</body>
+
+</html>

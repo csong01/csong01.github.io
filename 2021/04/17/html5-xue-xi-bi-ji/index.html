@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>
+        HTML5学习笔记
+    </title>
+    <!-- fontawosome -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- 普通默认样式 -->
+    <link rel="stylesheet" href="/css/initialize.css" />
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/left.css" />
+    <link rel="stylesheet" href="/css/center.css" />
+    <link rel="stylesheet" href="/css/archive.css" />
+    <link rel="stylesheet" href="/css/list.css" />
+    <link rel="stylesheet" href="/css/post.css" />
+    <link rel="stylesheet" href="/css/code.css" />
+    <!-- vsssue评论 -->
+    <link rel="stylesheet" href="/css/vssue.min.css" />
+    <!-- highlight高亮主题 -->
+    <link rel="stylesheet"
+        href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/atom-one-light.min.css">
+    <!-- <link href="/css/obsidian.min.css" rel="stylesheet" /> -->
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="CSONG" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+<body>
+    <div class="body-container">
+        <div id="left">
+            <div class="blogger-info">
+                <div class="blogger-info-img">
+                    <a href="/"></a>
+                </div>
+                <div class="blogger-info-nickname">
+                    <a href="/">
+                        CSONG
+                    </a>
+                </div>
+                <div class="blogger-info-desc">
+                    知足常乐
+                </div>
+                <div class="blogger-info-social">
+                    <!-- <a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3375765403&amp;site=qq&amp;menu=yes" class="fa fa-qq"></a> -->
+                    <!-- <a target="_blank" rel="noopener" href="https://github.com/gegexiaoyan" class="fa fa-github-square"></a> -->
+                    <a href="/atom.xml" class="fa fa-rss"></a>
+                    <!-- <a href="mailto:3375765403@qq.com" class="fa fa-envelope"></a> -->
+                </div>
+            </div>
+            <div class="line"></div>
+            <!-- <div class="menu-label">导航</div> -->
+            <nav class="nav">
+                <a href="/" class="nav-list">
+                    <span class="fa fa-home"></span>
+                    主页
+                </a>
+                <!-- <a href="<= theme.menu.archives " class="nav-list">
+                    <span class="fa fa-save"></span>
+                    归档
+                </a> -->
+                <!-- <a href="#" class="nav-list">
+                    <span class="fa fa-list-alt"></span>
+                    项目1
+                </a>
+                <a href="#" class="nav-list">
+                    <span class="fa fa-list-alt"></span>
+                    项目2
+                </a>
+                <a href="#" class="nav-list">
+                    <span class="fa fa-paste"></span>
+                    留言板
+                </a> -->
+                <a href="/about" class="nav-list">
+                    <span class="fa fa-user"></span>
+                    关于
+                </a>
+                <div class="left-category">
+                    <ul class="left-category-list">
+                        <li>
+                            <input id="left-category-list-1" type="checkbox" hidden />
+                            <label for="left-category-list-1" class="left-category-list-1st">
+                                <span id="left-category-list-1-icon" class="fa fa-link"></span>
+                                <span class="fa fa-angle-right"></span>
+                                友链
+                            </label>
+                            <ul class="left-category-list-sub">
+                                
+                                    <li><a target="_blank" rel="noopener" href="https://blog.zhheo.com/">
+                                            Heo
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://zfe.space">
+                                            小冰博客
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://akilar.top/">
+                                            Akilarの糖果屋
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://ccs.zone">
+                                            CC’s Zone
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://guaotat.github.io/">
+                                            孤傲
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://blog.nianbroken.top/">
+                                            SuiNian's Blog
+                                        </a></li>
+                                    
+                                    <li><a target="_blank" rel="noopener" href="https://cnhuazhu.gitee.io/">
+                                            花猪のBlog
+                                        </a></li>
+                                    
+                                        <!-- <li>
+                                    <input id="left-category-list-1-sub" type="checkbox" hidden />
+                                    <label for="left-category-list-1-sub">
+                                        <span class="fa fa-angle-right"></span>
+                                        第二级
+                                    </label>
+                                    <ul class="sub-left-category-list-sub">
+                                        <li><a href="#">第三级</a></li>
+                                        <li><a href="#">第三级</a></li>
+                                        <li><a href="#">第三级</a></li>
+                                    </ul> -->
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="center" class="center-active-left">
+            <header>
+                <a class="blog-name" href="/">
+                    CSONG
+                </a>
+                <button class="top-nav-button">
+                    <i class="fa fa-navicon"></i>
+                </button>
+            </header>
+            <div id="top-nav-container" class="top-nav-container">
+                <div class="top-nav">
+                    <a href="/" class="nav-list">
+                        <span class="fa fa-home"></span>
+                        主页
+                    </a>
+                    <!-- <a href="theme.menu.archives " class="nav-list">
+                        <span class="fa fa-save"></span>
+                        归档
+                    </a> -->
+                    <a href="/about" class="nav-list">
+                        <span class="fa fa-user"></span>
+                        关于
+                    </a>
+                    <div class="top-category">
+                        <ul class="top-category-list">
+                            <li>
+                                <input id="top-category-list-1" type="checkbox" hidden />
+                                <label for="top-category-list-1" class="top-category-list-1st">
+                                    <span id="top-category-list-1-icon" class="fa fa-link"></span>
+                                    <span class="fa fa-angle-right"></span>
+                                    友链
+                                </label>
+                                <ul class="top-category-list-sub">
+                                    
+                                        <li><a target="_blank" rel="noopener" href="https://blog.zhheo.com/">
+                                                Heo
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://zfe.space">
+                                                小冰博客
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://akilar.top/">
+                                                Akilarの糖果屋
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://ccs.zone">
+                                                CC’s Zone
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://guaotat.github.io/">
+                                                孤傲
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://blog.nianbroken.top/">
+                                                SuiNian's Blog
+                                            </a></li>
+                                        
+                                        <li><a target="_blank" rel="noopener" href="https://cnhuazhu.gitee.io/">
+                                                花猪のBlog
+                                            </a></li>
+                                        
+                                            <!-- <li>
+                                            <input id="top-category-list-1-sub" type="checkbox" hidden />
+                                            <label for="top-category-list-1-sub">
+                                                <span class="fa fa-angle-right"></span>
+                                                第二级
+                                            </label>
+                                            <ul class="sub-top-category-list-sub">
+                                                <li><a href="#">第三级</a></li>
+                                                <li><a href="#">第三级</a></li>
+                                                <li><a href="#">第三级</a></li>
+                                            </ul> -->
+                            </li>
+                        </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-main">
+                    <!-- 文章页面 -->
+<div class="article">
+    <div class="article-content">
+        <div class="article-info">
+                <!-- 文章标题 -->
+                <div class="article-info-title">
+                    <h1>HTML5学习笔记</h1>
+                </div>
+                <!-- 文章信息 -->
+                <div class="article-info-data">
+                <!-- 文章日期 -->
+                    <span class="article-info-data-time">
+                        <i class="fa fa-calendar-o"></i>
+                        <span class="article-info-data-time-main">
+                        2021-04-17
+                        </span>
+                    </span>
+                <!-- 文章分类 -->
+                    
+                    <span class="article-info-data-category">
+                        <i class="fa fa-folder-o"></i>
+                        <span class="article-info-data-category-main">
+                        <a class="category-link" href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">前端笔记</a>
+                        </span>
+                    </span>
+                     
+                <!-- 文章标签 -->
+                    
+                    <span class="article-info-data-tag">
+                        <i class="fa fa-bookmark-o"></i>
+                        <span class="article-info-data-tag-main">
+                        <a class="tag-link" href="/tags/HTML5/" rel="tag">HTML5</a>
+                        </span>
+                    </span>
+                    
+                <!-- 文章阅读量 -->
+                    <span class="article-info-data-view_count" id="busuanzi_container_page_pv">
+                        <i class="fa fa-eye"></i>
+                        已被阅读
+                        <span class="article-info-data-view_count-main" id="busuanzi_value_page_pv">
+                        </span>
+                        次
+                    </span>
+                <!-- 文章评论量 -->
+                    <span class="article-info-data-comment_count">
+                        <i class="fa fa-comment-o"></i>
+                        <span class="article-info-data-comment_count-main">
+                        2021-04-17
+                        </span>
+                    </span>
+            </div>
+        </div>
+        <div class="article-main"><blockquote>
+<p>IE9+以上浏览器兼容</p>
+</blockquote>
+<h2 id="新增的语义化标签"><a href="#新增的语义化标签" class="headerlink" title="新增的语义化标签"></a>新增的语义化标签</h2><figure class="highlight asciidoc"><table><tr><td class="code"><pre class=" language-hljs asciidoc"><span class="hljs-bullet">- </span>这种语义化标准主要是针对搜索引擎的<br><span class="hljs-bullet">- </span>这些新标签页面中可以使用多次<br><span class="hljs-bullet">- </span>在IE9中，需要把这些元素转换为块级元素 display: block<br><span class="hljs-bullet"><code class="language-hljs asciidoc"><span class="hljs-bullet">- </span>这种语义化标准主要是针对搜索引擎的<br><span class="hljs-bullet">- </span>这些新标签页面中可以使用多次<br><span class="hljs-bullet">- </span>在IE9中，需要把这些元素转换为块级元素 display: block<br><span class="hljs-bullet">- </span>移动端更喜欢使用这些标签<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span> :头部标签<br><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>:导航标签<br><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>内容标签<br><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>:定义文档某个区域<br><span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span> :侧边栏标签<br><span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span> :头部标签<br><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>:导航标签<br><span class="hljs-tag">&lt;<span class="hljs-name">article</span>&gt;</span>内容标签<br><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>:定义文档某个区域<br><span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span> :侧边栏标签<br><span class="hljs-tag">&lt;<span class="hljs-name">footer</span>></span> :尾部标签<br></code></pre></td></tr></table></figure>
+
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415160729817.png" alt="image-20210415160729817"></p>
+<h2 id="新增的多媒体标签"><a href="#新增的多媒体标签" class="headerlink" title="新增的多媒体标签"></a>新增的多媒体标签</h2><h3 id="1-音频"><a href="#1-音频" class="headerlink" title="1. 音频"></a><strong>1.<audio> 音频</strong></h3><figure class="highlight xml"><table><tr><td class="code"><pre class=" language-hljs xml">当前<span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs xml">当前<span class="hljs-tag">&lt;<span class="hljs-name">audio</span>></span>元素支持三种视频格式MP3、Wav、Ogg，尽量使用mp3格式。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot; controls&quot;</span>&gt;</span>&lt;/ audio&gt;<br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.mp3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/mpeg&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/ogg&quot;</span>&gt;</span><br>  Your browser does not support this audio format.<br><span class="hljs-tag">&lt;/<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot; controls&quot;</span>&gt;</span>&lt;/ audio&gt;<br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">controls</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.mp3&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/mpeg&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;horse.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;audio/ogg&quot;</span>&gt;</span><br>  Your browser does not support this audio format.<br><span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>></span><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415165747670.png" alt="image-20210415165747670"></p>
+<h3 id="2-视频"><a href="#2-视频" class="headerlink" title="2. 视频"></a>2.<video> 视频</h3><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">当前&lt;<span class="hljs-selector-tag">video</span>&gt;元素支持三种视频格式MP4、WebM、Ogg，尽量使用mp4格式。<br><span class="hljs-number">1</span>. controls 属性供添加播放、暂停和音量控件。<br><span class="hljs-number">2</span>. &lt;<span class="hljs-selector-tag">video</span>&gt; 与 &lt;/<span class="hljs-selector-tag">video</span>&gt; 之间插入的内容是供不支持 <span class="hljs-selector-tag"><code class="language-hljs css">当前&lt;<span class="hljs-selector-tag">video</span>&gt;元素支持三种视频格式MP4、WebM、Ogg，尽量使用mp4格式。<br><span class="hljs-number">1</span>. controls 属性供添加播放、暂停和音量控件。<br><span class="hljs-number">2</span>. &lt;<span class="hljs-selector-tag">video</span>&gt; 与 &lt;/<span class="hljs-selector-tag">video</span>&gt; 之间插入的内容是供不支持 <span class="hljs-selector-tag">video</span> 元素的浏览器显示的。<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre class=" language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span><br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/ogg&quot;</span> &gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">souree</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> &gt;</span><br>	您的浏览器暂不支持<span class="hljs-tag">&lt;<span class="hljs-name"><code class="language-hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;文件地址&quot;</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span><br><br><span class="hljs-comment">&lt;!--开发优化--&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">&quot;controls&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span>&gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.ogg&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/ogg&quot;</span> &gt;</span><br>	<span class="hljs-tag">&lt;<span class="hljs-name">souree</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;move.mp4&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;video/mp4&quot;</span> &gt;</span><br>	您的浏览器暂不支持<span class="hljs-tag">&lt;<span class="hljs-name">video</span>></span>标签播放视频<br></ video ><br></code></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415164818736.png" alt="image-20210415164818736"></p>
+<h2 id="新增的input类型"><a href="#新增的input类型" class="headerlink" title="新增的input类型"></a>新增的input类型</h2><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag"><code class="language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag">form</span>表单域<br></code></pre></td></tr></table></figure>
+
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415170217357.png" alt="image-20210415170217357"></p>
+<h2 id="新增的表单属性"><a href="#新增的表单属性" class="headerlink" title="新增的表单属性"></a>新增的表单属性</h2><figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag"><code class="language-hljs css">我们验证的时候必须添加<span class="hljs-selector-tag">form</span>表单域<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="code"><pre class=" language-hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">::placeholder</span>&#123;<br>		<span class="hljs-attribute"><code class="language-hljs css"><span class="hljs-selector-tag">input</span><span class="hljs-selector-pseudo">::placeholder</span>&#123;<br>		<span class="hljs-attribute">color</span>: pink;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p> <img src="https://cdn.jsdelivr.net/gh/csong01/picgo@master/img/image-20210415171352091.png" alt="image-20210415171352091"></p>
+</div>
+    </div>
+    <div class="article-comment"><!-- vssue评论 -->
+</div>
+    <!-- <script src="/js/post.js"></script> -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/js/code.js"></script>
+    <!-- <script src="/js/code-K-article.js"></script> -->
+</div>
+                </div>
+                <button onclick="topFunction()" id="top-btn"><i class="fa fa-chevron-up"></i></button>
+                <footer>
+                    <div class="footer-site-info">
+                        © 2021 Copyright&nbsp;CSONG&nbsp;Powered by
+                        <a class="site-frame" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>
+                    </div>
+                    <!-- <div class="footer-site-count" id="busuanzi_container_site_uv">
+                        本站访客数<span id="busuanzi_value_site_uv"></span>人次
+                    </div> -->
+                </footer>
+            </div>
+        </div>
+        <!-- <div class="right"></div> -->
+        <script src="/js/scripts.js"></script>
+        <script src="/js/totop.js"></script>
+        <!-- 不蒜子网站访问量统计 -->
+        <!-- <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+        </script> -->
+    </div>
+</body>
+
+</html>
